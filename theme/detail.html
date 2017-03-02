@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{%- block title -%}{{entry.title}} |{%- endblock %}
+{%- block post -%}
+	<div class="post">
+		<p class="date">{{ entry.pretty_date }}</p>
+    	<h2>{{ entry.title }}</h2>
+       	{{ entry.content }}
+    </div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+{%- endblock %}

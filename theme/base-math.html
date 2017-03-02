@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>Kresten Jacobsen {%block title %}{% endblock %}</title>
+ <meta name="description" content="Personlig log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="/favicon.ico">
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+ <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er min</span> <a title="Log" href="/">personlige log.</a></h1>
+        </div><!-- /header -->
+
+        {%- block body -%}
+            {%- block post %}{%- endblock %}
+            {%- block footer %}{%- endblock %}
+        {%- endblock %}
+
+        <div id="footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/dk/"><img alt="Creative Commons licens" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.5/dk/80x15.png" /></a></p></div><!-- /footer -->
+    </div><!-- /container -->
+    <!-- MathJax -->
+    <script type="text/javascript">
+        (function () {
+            var mjx = document.createElement('script');
+            mjx.type = 'text/javascript';
+            mjx.src = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML';
+            mjx.async = true;
+            var k = document.getElementsByTagName('script')[0];
+            k.parentNode.insertBefore(mjx, k);
+        })();
+    </script>
+    <!-- /MathJax -->
+</body>
+</html>

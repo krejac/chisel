@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Python
+*.pyc
+venv/
+
+# Chisel
+www/*
+drafts/
+posts/*
