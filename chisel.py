@@ -40,7 +40,7 @@ BASEURL = "http://log.logiskhave.dk/" #end with slash
 SOURCE = "./posts/" #end with slash
 #  The following tells chisel where to generate site:
 DESTINATION = "./www/" #end with slash
-HOME_SHOW = 10 #numer of entries to show on homepage
+HOME_SHOW = 5 #numer of entries to show on homepage
 TEMPLATE_PATH = "./theme/" #end with slash
 TEMPLATE_OPTIONS = {}
 TEMPLATES = {
