@@ -1,5 +1,4 @@
 #encoding: utf-8
-#!/usr/bin/env python
 
 # Chisel
 # David Zhou, github.com/dz
@@ -20,10 +19,8 @@
 # Requires:
 # jinja2, markdown, PyRSS2Gen
 
-import sys, re, time, os, codecs, gzip
-import jinja2, markdown, PyRSS2Gen
-import datetime
-import locale
+import sys, re, time, os, codecs, gzip, datetime, locale
+import jinja2, markdown, PyRSS2Gen # install with pip
 
 #Settings
 # For folders that look like the following (this is primarily
