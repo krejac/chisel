@@ -5,7 +5,7 @@
         <p class="date">{{ entry.pretty_date }}</p>
         <h2>
             {% if entry.link %}
-                <a href="{{ entry.link }}" rel="bookmark" title="Eksternt Link">{{ entry.title }}</a>
+                <a href="{{ entry.url }}" rel="bookmark" title="Permalink til {{ entry.title}}">&#966;</a> <a href="{{ entry.link }}" rel="bookmark" title="Eksternt Link">{{ entry.title }}</a>
             {% else %}
                 <a href="{{ entry.url }}" rel="bookmark" title="Permalink til {{ entry.title}}">{{ entry.title }}</a>
             {% endif %}
