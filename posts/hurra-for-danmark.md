@@ -1,5 +1,5 @@
 Hurra for Danmark
-05-03-2017
+28-02-2017
 https://heimdalsecurity.com/blog/security-alert-new-torrentlocker-targets-denmark-ransomware/
 
 ![Heimdal Security banner](https://farm3.staticflickr.com/2895/33132999241_0340d13b12_o_d.png)
