@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<rss version="2.0"><channel><title>krestens log</title><link>http://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Sun, 05 Mar 2017 13:13:48 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hurra for Danmark
+<rss version="2.0"><channel><title>krestens log</title><link>http://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Sun, 05 Mar 2017 13:27:08 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hurra for Danmark
 </title><link>http://log.logiskhave.dk/2017/hurra-for-danmark.html</link><description>&lt;p&gt;&lt;img alt="Heimdal Security banner" src="https://farm3.staticflickr.com/2895/33132999241_0340d13b12_o_d.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Danmark prominent placeret på Heimdal Security's blog ...&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Two large spam waves swept across Denmark in the past 5 days. Both carry the notorious TorrentLocker ransomware and feature a few new tricks.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;... men vi ville nok helst have være foruden.&lt;/p&gt;</description><author>Kresten Jacobsen</author><guid isPermaLink="true">http://log.logiskhave.dk/2017/hurra-for-danmark.html</guid><pubDate>Sun, 05 Mar 2017 00:00:00 GMT</pubDate></item><item><title>Intro til Homebrew
+&lt;p&gt;... men vi ville nok helst have være foruden.&lt;/p&gt;</description><author>Kresten Jacobsen</author><guid isPermaLink="true">http://log.logiskhave.dk/2017/hurra-for-danmark.html</guid><pubDate>Tue, 28 Feb 2017 00:00:00 GMT</pubDate></item><item><title>Intro til Homebrew
 </title><link>http://log.logiskhave.dk/2016/intro-til-brew.html</link><description>&lt;p&gt;&lt;img alt="mas-cli logo" src="http://static.logiskhave.dk/20161029_mas-cli.png" /&gt;&lt;/p&gt;
 &lt;h1&gt;'brew'&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://brew.sh"&gt;Homebrew&lt;/a&gt; er kernen i vores setup og er et værktøj til at at installere andre værktøjer med. Nogen vil genkende lignende systemer fra Linux (eks. &lt;a href="https://wiki.debian.org/Apt"&gt;apt&lt;/a&gt;, &lt;a href="http://yum.baseurl.org"&gt;yum&lt;/a&gt; eller &lt;a href="https://wiki.archlinux.org/index.php/pacman"&gt;pacman&lt;/a&gt;). For at komme i gang med brew, skal man et smut forbi deres &lt;a href="http://brew.sh"&gt;hjemmeside&lt;/a&gt; hvor de fortæller os hvad vi skal gøre for at installere. For nuværende er den nemmeste metode til at installere, at køre følgende kommando I terminalen:&lt;/p&gt;
