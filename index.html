@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title> logiskhave</title>
+ <meta name="description" content="Log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="http://static.logiskhave.dk/favicon.ico">
+ <link rel="apple-touch-icon" href="http://static.logiskhave.dk/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
+        </div><!-- /header --><div class="post">
+        <p class="date">28. Februar, 2017</p>
+        <h2>
+            
+                <a href="2017/hurra-for-danmark.html" rel="bookmark" title="Permalink til Hurra for Danmark ...
+">&#966;</a> <a href="https://heimdalsecurity.com/blog/security-alert-new-torrentlocker-targets-denmark-ransomware/
+" rel="bookmark" title="Eksternt Link">Hurra for Danmark ...
+</a>
+            
+        </h2>
+        <!--<h2><a href="2017/hurra-for-danmark.html">Hurra for Danmark ...
+</a></h2>-->
+	    <p><img alt="Heimdal Security logo" src="https://farm3.staticflickr.com/2895/33132999241_0340d13b12_o_d.png" /></p>
+<p>Danmark prominent placeret på Heimdal Security's blog ...</p>
+<blockquote>
+<p>Two large spam waves swept across Denmark in the past 5 days. Both carry the notorious TorrentLocker ransomware and feature a few new tricks.</p>
+</blockquote>
+<p>... men vi ville nok helst have være foruden.</p>
+    </div><div class="post">
+        <p class="date">29. Oktober, 2016</p>
+        <h2>
+            
+                <a href="2016/intro-til-brew.html" rel="bookmark" title="Permalink til Intro til Homebrew
+">Intro til Homebrew
+</a>
+            
+        </h2>
+        <!--<h2><a href="2016/intro-til-brew.html">Intro til Homebrew
+</a></h2>-->
+	    <p><strong><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a></strong> -- en appetitvækker til Homebrew for folk, der ikke <em>nødvendigvis</em> er hjemmevante i <a href="https://web.archive.org/web/20130510222144/http://www.apple.com/osx/apps/all.html#terminal">Terminal</a>, men som omvendt heller ikke er bange for at fyre et par kommandoer af i ny og næ. Programmerne der bliver brugt er <a href="http://brew.sh">Homebrew</a>, <a href="https://caskroom.github.io">Caskroom</a> og <a href="https://github.com/mas-cli/mas">mas-cli</a>.</p>
+<p><img alt="mas-cli logo" src="http://static.logiskhave.dk/20161029_mas-cli.png" /></p>
+<h1>'brew'</h1>
+<p><a href="http://brew.sh">Homebrew</a> er kernen i vores setup og er et værktøj til at at installere andre værktøjer med. Nogen vil genkende lignende systemer fra Linux (eks. <a href="https://wiki.debian.org/Apt">apt</a>, <a href="http://yum.baseurl.org">yum</a> eller <a href="https://wiki.archlinux.org/index.php/pacman">pacman</a>). For at komme i gang med brew, skal man et smut forbi deres <a href="http://brew.sh">hjemmeside</a> hvor de fortæller os hvad vi skal gøre for at installere. For nuværende er den nemmeste metode til at installere, at køre følgende kommando I terminalen:</p>
+<pre class="codehilite"><code>'/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;'</code></pre>
+
+
+<p>Det der sker, når man afvikler den kommando er at den downloader installationsprogrammet og kører det i terminalen med det samme. Når brew er installeret er man klar til at installere yderligere termialprogrammer.</p>
+<h3>Installering, søgning og opdatering af programmer</h3>
+<p>Installer med <code>brew install app-navn</code>. Eks. <code>brew install youtube-dl</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>.</p>
+<p>Søg i alle de programmer du kan installere med <code>brew search del-af-app-navn</code>. Eks. <code>brew search youtu</code>, som bl.a. vil finde youtube-dl.</p>
+<p>Opdater med <code>brew upgrade app-navn</code>. Eks. <code>brew upgrade youtube-dl</code>. Opdater alle programmer installeret med brew med <code>brew upgrade</code>.</p>
+<h3>Husholdning</h3>
+<p>Med Homebrew følger dog en lille smule "husholdning", for ligesom værktøjerne fra Linux, skal selve pakkehåndteringssystemet vedligeholdes. Og med Homebrew gøres dette nemmest med <code>brew update; brew cleanup</code>, som først opdaterer brew og dernæst renser ud i cache ol.</p>
+<hr />
+<h1>'cask'</h1>
+<p><a href="https://caskroom.github.io">Caskroom</a> er en udvidelse til Homebrew, hvorfra man kan hente og installer over 3000 af de apps, du normalt skal ud på en internettet for at finde.For at komme i gang med caskroom, skal man køre følgende cask-kommando:</p>
+<pre class="codehilite"><code>'brew tap caskroom/cask'</code></pre>
+
+
+<p>Dette åbner ret beset bare op for et ekstra repositorie man kan hente apps fra (caskroom). Når der er åbnet for cask's tap<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> er man klar til at installere løs.</p>
+<h3>Installering, søgning og opdatering af programmer</h3>
+<p>Installer med <code>brew cask install app-navn</code>. Eks. <code>brew cask install wireshark</code>.</p>
+<p>Søg blandt casks med <code>brew cask search del-af-app-navn</code>. Eks. <code>brew cask search wireshark</code>.</p>
+<p>Apps installeret med Caskroom bruger typisk den opdateringsfunktion, der er indbygget i den enkelt app. Har app'en ikke en opdateringsfunktion selv, kan man afinstallere og efterfølgende installere en ny version fra Caskroom. Eks. <code>brew cask uninstall --force wireshark &amp;&amp; brew cask install wireshark</code>.</p>
+<hr />
+<h1>'mas'</h1>
+<p><a href="https://github.com/mas-cli/mas">Mas-cli</a><sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> er tredje og sidste ben i vores mål om terminal-app-installerings-nirvana. Mas-cli fjerner nemlig behovet for at åbne Mac App Store for at installere og opdatere dine apps derfra. Desværre skal du have hentet programmet tidligere<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>, men det behøver du trods alt kun gøre een gang.</p>
+<h3>Installering, søgning og opdatering af programmer</h3>
+<p>Installering og opdatering med mas er lidt mere omstændigt, derfor er rækkefølgen også lidt omvendt her. Tricket er nemlig at man bruger et unikt tal til at installere med - og det tal stammer fra en søgning. Derfor søger man typisk først efter en app, kopierer tallet ud for app'en man vil installere og der efter installerer. Så derfor:</p>
+<p>Søg i <em>hele</em> Mac App Store med <code>mas search del-af-app-navn</code>. Eks. <code>mas search Number</code>. Noter herfra tallet.</p>
+<p>Installer med <code>mas install tal-fra-før</code>. Eks. <code>mas install 409203825</code> (for at installere Numbers).</p>
+<p>Opdater en enkelt app med <code>mas upgrade 409203825</code> og opdater alle med <code>mas upgrade</code>. (Pro tip: Se alle apps, med updates klar, med <code>mas outdated</code>.)</p>
+<hr />
+<h1>Bonus</h1>
+<p>Selvom vi med ovenstående kan installere programmer til kommandolinien, fra internettet og fra Mac App Store, slipper vi endnu ikke helt for grafiske installere. Opdatering af macOS kan nemlig ikke ske via ovenstående. Men det er der heldigvis råd for, for der kommer Apple os rent faktisk til undsætning. Så med nedenstående kommando, kan du også køre en opdatering af macOS fra terminalen med <code>sudo softwareupdate -i -a</code>.</p>
+<p>Så med den lille krølle, kan man lave en fuld softwareopdatering med blot én linie i terminalen:</p>
+<pre class="codehilite"><code>sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; mas upgrade</code></pre>
+
+
+<p>God fornøjelse! :)</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>youtube-dl er et program til at downloade videoer fra YouTube, hvis man bare har url'en. Ret praktisk.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>'Brew' betyder bryg og en 'tap' er en hane eller en kilde om man vil.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Kort for "Mac App Store - Command Line Interface".&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Ikke nødvendigvis på samme computer - programmet skal bare figurere i listen over tidligere køb i Mac App Store.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div><div class="post">
+        <p class="date">02. September, 2016</p>
+        <h2>
+            
+                <a href="2016/barbar.html" rel="bookmark" title="Permalink til BARBAR!
+">BARBAR!
+</a>
+            
+        </h2>
+        <!--<h2><a href="2016/barbar.html">BARBAR!
+</a></h2>-->
+	    <p><img alt="Emil og Barbar" src="http://static.logiskhave.dk/20160902_barbar_og_emil.png" /></p>
+<p>Emil gik her til morgen rundt med et billede af sine bedsteforældre, sagde "barbar!" mens han pegede på sin farfar og kyssede på ham. &lt;3</p>
+    </div><div class="post">
+        <p class="date">04. August, 2016</p>
+        <h2>
+            
+                <a href="2016/partitesten.html" rel="bookmark" title="Permalink til Partitesten
+">Partitesten
+</a>
+            
+        </h2>
+        <!--<h2><a href="2016/partitesten.html">Partitesten
+</a></h2>-->
+	    <p><strong><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a></strong> -- Jeg foreslår en ny "kandidattest", baseret på data fra <a href="ft.dk">Folketinget</a>, der holder politikerne op på det de rent faktisk stemmer.</p>
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/c/ca/Den_danske_Vitruvius_1_tab022_-_Prospect_af_det_Kongl_Slott_Christiansborg_imod_Hoved_Indgangen.jpg"><img alt="Christiansborg" src="http://static.logiskhave.dk/20160804_christiansborg.jpg" /></a></p>
+<p>Man burde gøre noget! Danmark taler om politikerlede og ingen synes at politikerne gør det efter valget, som de sagde de ville før valget. Men hvad skal man stille op? Der er jo kun de politikere der stiller op og hvis vi ikke stoler på dem, hvordan skal vi så finde ud af hvem vi skal stemme på?</p>
+<p>En del journalistike medier synes - valg efter valg - at den smarteste måde at håndtere det problem på, er at lave KANDIDATTESTEN. En test hvor en journalist (-praktikant) bliver sat ved en telefon og så ringer rundt og stiller de samme tyve spørgsmål til politikerne. Spørgsmålene er typisk valgt ud fra de emner, der er i valgkampen og bliver man meget overrasket over deres svar, følger man nok dårligt med i debatten generelt. Min påstand er faktisk at almindeligt informerede voksne mennesker ville kunne svare for alle partier lige godt. Vi ved hvad de vil sige - vi har hørt det før.</p>
+<p>Det jeg vil foreslå man gør i stedet er, at man, i stedet for at spørge politikerne hvad de synes om dette eller hint, kigger på hvad de RENT FAKTISK har stemt i salen i Folketinget i den forgange periode. Ja, ja - det kan være at nogle stemte som de gjorde, som en del af et kompromis. Og man tilgodeser selvfølgelig også dem, der er inde i varmen (de andre kan vi jo af gode grunde ikke få data på).</p>
+<p>Med en sådan metode fanger man dem, der lyver, når de siger, at de vil gøre dette eller hint, når de bliver valgt ind. Man kan ikke lyve om data. Men man kan lyve om intentioner.</p>
+<p>Kritikere vil sikkert hævde, at man i politik nogle gange er nødt til at stemme mod sin overbevisning for at indgå et godt kompromis - og et er nok rigtig nok, men derfor skal man stadig stå på mål for det man har stemt!</p>
+<hr />
+<p>Heldigvis er det så smart, at Folketinget, på <a href="http://www.ft.dk/aabnedata.aspx">ft.dk</a>, offentliggør data fra alle afstemninger. Så kræver det bare at nogen laver en test baseret på data derfra i stedet for tomme løfter.</p>
+<p>Problemet er selvfølgelig, at man på den måde ikke nødvendigvis lige rammer ind i alle emner fra en aktuel valgkamp. Men det bør kunne løses ved at kategorisere alle afstemninger og så lade brugeren vælge emner ud, der er relevante for dem og primært matche op mod dem i testen.</p>
+    </div><div class="post">
+        <p class="date">04. Juli, 2016</p>
+        <h2>
+            
+                <a href="2016/server-fail2ban.html" rel="bookmark" title="Permalink til 'Server hardening' - Bloker u&oslash;nsket trafik med fail2ban
+">'Server hardening' - Bloker u&oslash;nsket trafik med fail2ban
+</a>
+            
+        </h2>
+        <!--<h2><a href="2016/server-fail2ban.html">'Server hardening' - Bloker u&oslash;nsket trafik med fail2ban
+</a></h2>-->
+	    <p><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a> - Jeg har et par servere snurrende rundt om i verdenen og ser derfor tydeligt, hvor ofte de bliver udsat for angreb. Her er mine noter til opsætning af fail2ban på en Ubuntu/Debian-box<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>.</p>
+<p><img alt="Serving" src="http://static.logiskhave.dk/20160126_server.jpg" title="Live to serve..." /></p>
+<p>Fail2ban er en service, som holde øje med din servers logfiler og ændrer firewallregler baseret på, hvad fail2ban tror er uvedkomne forsøg på at tilgå maskinen. Som sådan er det uhyre effektivt til at blokere for forsøg på at få adgang til serveren via 'brute force'.</p>
+<p>Før vi begynder at installere noget som helst på en Linux-maskine (via distroens repositories ihvertfald), bør man opdatere kildefilerne, så man sikrer at man får de nyeste pakker ned. Dette gøres med:</p>
+<pre class="codehilite"><code>sudo apt-get update</code></pre>
+
+
+<p>Hvorefter man gan installere fail2ban med:</p>
+<pre class="codehilite"><code>sudo apt-get install fail2ban</code></pre>
+
+
+<p>Den primære konfigurationsfil for fail2ban er <code>/etc/fail2ban/jail.conf</code>, men hvis vi retter i den rissikerer vi at en fremtidig opdatering af fail2ban ødelægger vores konfiguration. Derfor kopieres filen til en lokal fil, som vi bruger i stedet. Dette gøres med:</p>
+<pre class="codehilite"><code>sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local</code></pre>
+
+
+<p>Og herefter kan den lokale fil redigeres, så den holder øje med nginx<sup id="fnref:nginx"><a class="footnote-ref" href="#fn:nginx" rel="footnote">2</a></sup>:</p>
+<pre class="codehilite"><code>sudo nano /etc/fail2ban/jail.local</code></pre>
+
+
+<p>Under direktivet <code>[nginx-http-auth]</code> sættes - ikke overraskende - <code>enabled = true</code>, for at aktivere den indbyggede nginx beskyttelse. Desværre har fail2ban ikke supermeget beskyttelse på nginx fronten og jeg foretrækker også at aktivere beskyttelse for ondsindet afvikling af scripts og onde robotter ved at indsætte nedenstående direktiver umiddelbart under <code>[nginx-http-auth]</code> direktivet:</p>
+<pre class="codehilite"><code>[nginx-noscript]
+
+enabled  = true
+port     = http,https
+filter   = nginx-noscript
+logpath  = /var/log/nginx/access.log
+maxretry = 6
+
+[nginx-badbots]
+
+enabled  = true
+port     = http,https
+filter   = nginx-badbots
+logpath  = /var/log/nginx/access.log
+maxretry = 2</code></pre>
+
+
+<p>I de direktiver vi lige har sat op, er der referencer til nogle filtre. Disse skal vi naturligvis også have sat op. Gem derfor <code>/etc/fail2ban/jail.local</code> og skift til kataloget med filtrene:</p>
+<pre class="codehilite"><code>cd /etc/fail2ban/filter.d</code></pre>
+
+
+<p>I første omgang skal vi lige ændre et enkelt parameter i filtret til den medfølgende <code>[nginx-http-auth]</code> direktiv. Rediger derfor filen <code>nginx-http-auth.conf</code> med:</p>
+<pre class="codehilite"><code>sudo nano nginx-http-auth.conf</code></pre>
+
+
+<p>Indsæt regex'en <code>^ \[error\] \d+#\d+: \*\d+ no user/password was provided for basic authentication, client: &lt;HOST&gt;, server: \S+, request: "\S+ \S+ HTTP/\d+\.\d+", host: "\S+"\s*$</code> under den anden, gem og luk.</p>
+<p>Herefter stjæler vi apache-direktivets badbot-filter, da det er ganske glimrende som det står, således:</p>
+<pre class="codehilite"><code>sudo cp apache-badbots.conf nginx-badbots.conf</code></pre>
+
+
+<p>Og endelig laver vi et filter til vores <code>[nginx-noscript]</code> direktiv:</p>
+<pre class="codehilite"><code>sudo nano nginx-noscript.conf</code></pre>
+
+
+<p>Og klippe-klisterer nedenstående ind i den tomme fil:</p>
+<pre class="codehilite"><code>[Definition]
+
+failregex = ^&lt;HOST&gt; -.*GET.*(\.php|\.asp|\.exe|\.pl|\.cgi|\.scgi)
+
+ignoreregex =</code></pre>
+
+
+<p>Og gemmer. Det er i øvrigt helt lovligt at sætte yderligere filendelser ind, men pas på du ikke blokerer for noget du skal bruge...</p>
+<p>Til sidst skal det hele naturligvis (gen-)startes for at den nye konfiguration læses og aktiveres:</p>
+<pre class="codehilite"><code>sudo service fail2ban restart</code></pre>
+
+
+<p>Og endelig - efter det hele er gjort - kan man tjekke status på fail2ban med:</p>
+<pre class="codehilite"><code>sudo fail2ban-client status</code></pre>
+
+
+<p>Gør man som mig, finder man så lige ud af at man havde glemt et eller andet undervejs og kan begynde fejlsøgningen. :)</p>
+<p><em>BONUS</em>: Vil man følge lidt med i hvad der bliver bannet, kan man bruge nedenstående kommandoer til at se, hvad der aktuelt er sat i skammekrogen.<sup id="fnref:skammekrog"><a class="footnote-ref" href="#fn:skammekrog" rel="footnote">3</a></sup></p>
+<pre class="codehilite"><code>sudo fail2ban-client status nginx-http-auth
+sudo fail2ban-client status nginx-noscript
+sudo fail2ban-client status nginx-badbots
+sudo fail2ban-client status ssh</code></pre>
+
+
+<hr />
+<p><em>Posts om server hardening:</em></p>
+<ul>
+<li><a href="/2016/server-opdater.html">Automatiske opdateringer</a></li>
+<li><a href="/2016/server-ssh.html">Sikring af SSH</a></li>
+<li><a href="/2016/server-firewall.html">Skærm af med en firewall</a></li>
+<li><em>Kommer</em>: <a href="">Login med private keys</a></li>
+<li><a href="/2016/server-fail2ban.html">Bloker uønsket trafik med fail2ban</a></li>
+<li><em>Kommer</em>: ???</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Herefter bare Ubuntu; men det meste vil også gælde på Debian.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:nginx">
+<p>Jeg bruger nginx, men hvis det er en anden service, der skal beskyttes, må du lige google den. SSH beskyttelse er sat op per default.&#160;<a class="footnote-backref" href="#fnref:nginx" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:skammekrog">
+<p>Eller man kan sætte emailrapportering op. Men det må vente til en anden post.&#160;<a class="footnote-backref" href="#fnref:skammekrog" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+  <div class="navleft">
+  	<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp;Til arkivet</a>
+  </div>
+
+        <div id="footer">
+            <p>Kresten Jacobsen @ logiskhave</p><p>Udgivet under <a href="http://static.logiskhave.dk/solipsistisk_licens.html">Solipsistisk Offentlig Licens</a></p>
+        </div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>

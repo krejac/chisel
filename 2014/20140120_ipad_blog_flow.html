@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>Krestens log - iPad blog flow
+</title>
+ <meta name="description" content="Personlig log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="http://static.logiskhave.dk/favicon.ico">
+ <link rel="apple-touch-icon" href="http://static.logiskhave.dk/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+ <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er min</span> <a title="Log" href="/">personlige log.</a></h1>
+        </div><!-- /header --><div class="post">
+		<p class="date">20. januar, 2014</p>
+    	<h2><a href="2014/20140120_ipad_blog_flow.html">iPad blog flow
+</a></h2>
+       	<p><strong>TL</strong>;<strong>DR</strong> - I&#8217;ve implemented a workflow for my Chisel log using a combination of Pythonista scripts and x-callback-urls enabling me to write, uploading and inserting images in posts and publishing all of it on a tiny Linux box. </p>
+<p><img alt=" Image name " src="http://static.logiskhave.dk/20140120_call_byword.png" /></p>
+<p><em>This post is written in english because of the limited interest such a subject would have among a danish audience.</em></p>
+<p>It is no secret that I have an affection of the simplicity of static blog generators; I have actually been using a few on this domain in the past.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> The simplicity of a system that I understand and can hack myself is worth so much for me as a hobby techie. Furthermore this setup is portable (can easily be moved to a new host or system) and secure (no active components - apart from the webserver, that is - to be maintained). </p>
+<h3>The flow</h3>
+<p>The goal is to be able to create and publish full length post - including images - using only my iPad. To do that I need to identify each step in my logging flow and support each step in a way that not only make it technically possible but also easy to use - well as easy as it can with the setup I have chosen anyway. </p>
+<p>The steps in my workflow is as follows:</p>
+<ul>
+<li><strong>Creating a well formed draft</strong>: The <a href="https://github.com/krestenjacobsen/chisel">system I use</a> relies on markdown documents with a certain naming convention and some meta data at the beginning of the file. <em>Candidate for automation.</em></li>
+<li><strong>Writing / researching</strong>: Personal posts is typically written from memory or notes written on my iPhone. Technical posts (like this), is mostly researched in a webbrowser and some form of note taking app; often right within the draft itself. <em>Manual action.</em></li>
+<li><strong>Inserting images</strong>: This is not stritcly necessary, but posts with images <em>does</em> look better and in som cases it adds to the understanding of the contents. It is something that I really wanted to be able to do from my iPad. <em>Candidate for automation.</em></li>
+<li><strong>Proofreading</strong>: I write in markdown. Markdown is - even though it is a markup format - highly legible so a good plain text editor is all I really need. <em>Manual action.</em></li>
+<li><strong>Promoting from &#8216;draft&#8217; to &#8216;post&#8217;</strong>: My markdown files resides in two different folders; a drafts folder af a posts folder. The folder a given file is in determines its fate when the site is being generated. <em>Candidate for automation.</em></li>
+<li><strong>Generating site</strong>: Since I use a static site generator that produce a hierarchy of html files, I need to generate the site anew every time I publish a post. Within a minute of a regeneration of the site changes are live. <em>Candidate for automation.</em></li>
+</ul>
+<p>So the workflow ends up looking like this (note the gears that indicate an action that is being automated): </p>
+<p><img alt=" workflow " src="http://static.logiskhave.dk/20140120_workflow.png" /></p>
+<h3>The scripts</h3>
+<p><em>All the scripts are subject to changes and improvements which is why I don&#8217;t post them here, but link to them instead.</em></p>
+<ul>
+<li><strong><a href="https://github.com/krestenjacobsen/pythonista_scripts/blob/master/new_post.py">New post</a></strong> takes a post title as input and outputs a new well formed post in <a href="http://bywordapp.com/">Byword</a> via an x-callback-url.</li>
+<li><strong><a href="https://github.com/krestenjacobsen/pythonista_scripts/blob/master/insert_image.py">Insert image</a></strong> lets you choose an image from the camera roll on your iOS device, scales it to fit the width of my log, uploads it to an ftp and returns a markdown formatted image link.</li>
+<li><strong><a href="https://github.com/krestenjacobsen/pythonista_scripts/blob/master/promote_drafts.py">Promote drafts</a></strong> simply logs on to my linux server and copies all drafts to posts.</li>
+<li><strong><a href="https://github.com/krestenjacobsen/pythonista_scripts/blob/master/generate_log.py">Generate log</a></strong> logs on on to the aforementioned server and generates the site with Chisel.</li>
+</ul>
+<p>Each of these scripts is written and run in <a href="http://omz-software.com/pythonista/">Pythonista</a> on an iPad or even on the iPhone or iPod.</p>
+<h3>Round-up</h3>
+<p>The setup does exactly what I set out to acheive. It enables me to write effortlessly from my iPad. I actually have no need to pull out my MacBook Pro anymore - only if I have to edit the posts after they have gone online.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> After I bought an iPad mini (retina) and a bluetooth keyboard / stand I find myself using the Mac less and less.</p>
+<p><strong>Ease of use</strong> - Medium. This must be evaluated against other iOS-publishing methods, and while there certainly are easier ways to get content online; I have yet to see an easier - or perhaps more transparent - setup for a self hosted site build with a static site generator. Each step in my flow is under my control; right from the server that hosts my content over the tool I use to generate the site to the scripts I use to control this setup with. But that wont make it easy to understand for any non techie. When set up it is pretty straight forward to use - especially if you execute the scripts via x-callback-urls with an app like <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>.</p>
+<p><strong>Geek factor</strong> - High. Generating static html from the commandline, managing your own server and scripting (or adapting scrips to) your setup is definitely not for everybody. You have to want to tinker. For everybody else there is loads of online services that does the job of getting your content online faster and easier. </p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Git repository of logiskhave on <a href="https://github.com/krestenjacobsen/logiskhave_jekyll">Jekyll</a> and <a href="https://github.com/krestenjacobsen/logiskhave_octopress">Octopress</a>. &#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Which is a consequense of my choice of the drafts / posts setup. This setup allows me to regenerate the site for whatever reason without incidently publishing a post I&#8217;m working on. &#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+
+        <div id="footer"><p><a href="http://static.logiskhave.dk/solipsistisk_licens.txt">Kresten Jacobsen @ logiskhave</a></p><p><img alt="logiskhave logo" style="border-width:0" src="http://static.logiskhave.dk/logo_footer@2x.png" width="50" height="50"></a></p></div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>Dotfiles
+ | logiskhave</title>
+ <meta name="description" content="Log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="http://static.logiskhave.dk/favicon.ico">
+ <link rel="apple-touch-icon" href="http://static.logiskhave.dk/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
+        </div><!-- /header --><div class="post">
+		<p class="date">02. December, 2015</p>
+    	<h2>
+            
+                Dotfiles
+
+            
+        </h2>
+       	<p><strong><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a></strong> -- Dotfiler er (næsten) uundværlige i opsætningen af Mac - eller Linux - hvis man vil lidt ud over hvad der lige rummes i Systemindstillinger. Det her er mine dotfiler.</p>
+<p><img alt="MacBook Pro" src="http://static.logiskhave.dk/20151202_macbook-pro.jpg" /></p>
+<h3>Om dotfiler generelt</h3>
+<p>Hvis man en gang i mellem reinstallerer sin computer eller har flere maskiner, som man veksler i mellem og godt kan lide at den opfører sig på (nogenlunde) samme måde uanset hvilken man sidder ved eller om man lige har reinstalleret, så er dotfiles smarte.</p>
+<p>Kort beskrevet, så er dotfiles en måde at beskrive hvordan en computer skal sættes op på i et meget robust format<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>.</p>
+<p>Filerne bliver læst på forskellige tidspunkter alt efter hvilken fil der er tale om, og jeg har endnu ikke fundet en bedre beskrivelse af det end denne på "<a href="https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/">The Lumber Room</a>"<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>.</p>
+<p>Problemet med at beskrive hvornår hvad læses er, at Bash trækker på forskellige filer alt efter hvilken slags shell den mener den kører i. Eks.: for en "interaktiv ikke-login-shell", læses .bashrc, men for en "interaktiv login-shell" læser den udelukkende fra den første af .bash_profile, .bash_login og .profile. Der er ingen fornuftig grund til, at det er sådan, sådan er det bare...</p>
+<p>Bash læser dotfilerne således (læs nedad i den relevante kolonne. Først udføres A, så B, så C osv. B1, B2, B3 betyder at bash kun udfører den første af disse filer, den støder på):</p>
+<pre class="codehilite"><code>+----------------+-----------+-----------+-------+
+|                |Interactive|Interactive|Script*|
+|                |login      |non-login  |       |
++----------------+-----------+-----------+-------+
+|/etc/profile    |   A       |           |       |
++----------------+-----------+-----------+-------+
+|/etc/bash.bashrc|           |    A      |       |
++----------------+-----------+-----------+-------+
+|~/.bashrc       |           |    B      |       |
++----------------+-----------+-----------+-------+
+|~/.bash_profile |   B1      |           |       |
++----------------+-----------+-----------+-------+
+|~/.bash_login   |   B2      |           |       |
++----------------+-----------+-----------+-------+
+|~/.profile      |   B3      |           |       |
++----------------+-----------+-----------+-------+
+|BASH_ENV        |           |           |  A    |
++----------------+-----------+-----------+-------+
+|                |           |           |       |
++----------------+-----------+-----------+-------+
+|                |           |           |       |
++----------------+-----------+-----------+-------+
+|~/.bash_logout  |    C      |           |       |
++----------------+-----------+-----------+-------+
+
+* Or non-interactive non-login.</code></pre>
+
+
+<p>På en Mac afvikles en ny terminal et interaktivt login; på en linux-boks som et interaktivt non-login. Hvorfor det er sådan må Apple kunne svare på<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>. Det betyder også at på min Mac, bliver først ~/.bash_profile kørt og ved logud (altså, når Terminalen lukkes) bliver så ~/.bash_logout eksekveret af systemet, resten af filerne (.bash_aliases, .bash_prompt og .osx) bliver så sourcet fra disse eller kørt manuelt.</p>
+<h3>Filerne</h3>
+<p>~/.bash_profile - køres af køres af operativsystemet</p>
+<script src="https://gist.github.com/krestenjacobsen/f388a5a23aa9c597d2a2.js"></script>
+
+<p><br><br></p>
+<p>~/.bash_aliases - køres fra ~/.bash_profile</p>
+<script src="https://gist.github.com/krestenjacobsen/3a092c6f423930ba13f8.js"></script>
+
+<p><br><br></p>
+<p>~/.bash_prompt - køres fra ~/.bash_profile</p>
+<script src="https://gist.github.com/krestenjacobsen/762b08bd1fa81be3ca70.js"></script>
+
+<p><br><br></p>
+<p>~/.bash_logout - køres af køres af operativsystemet</p>
+<script src="https://gist.github.com/krestenjacobsen/f8a6a91eff83a9f3c22f.js"></script>
+
+<p><br><br></p>
+<p>~/.osx - håndkøres ved opsætning af ny Mac</p>
+<script src="https://gist.github.com/krestenjacobsen/3342e6a8849db8fe6290.js"></script>
+
+<p><br><br></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Ren tekst, som kan læses på en hvilken som helst computer lavet siden 70'erne. I øvrigt samme format, som denne blog bliver skrevet i.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Hvorfra nedenstående tabel da også er tyvstjålet.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Da det - som sædvanen byder - er dem, der afviger fra standarden. <em>suk</em>&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+
+        <div id="footer">
+            <p>Kresten Jacobsen @ logiskhave</p><p>Udgivet under <a href="http://static.logiskhave.dk/solipsistisk_licens.html">Solipsistisk Offentlig Licens</a></p>
+        </div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>

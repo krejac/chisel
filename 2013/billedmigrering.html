@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>Migrering af billeder
+ | logiskhave</title>
+ <meta name="description" content="Log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="http://static.logiskhave.dk/favicon.ico">
+ <link rel="apple-touch-icon" href="http://static.logiskhave.dk/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
+        </div><!-- /header --><div class="post">
+		<p class="date">06. Oktober, 2013</p>
+    	<h2>
+            
+                Migrering af billeder
+
+            
+        </h2>
+       	<p><img alt="find + sed" src="http://static.logiskhave.dk/20131006_migrering.png" /></p>
+<p>For at lette arbejdsgangen for publicering af posts her på loggen, har jeg i dag flyttet alle billeder fra at ligge i en mediefolder under "www/" til sit helt eget subdomæne. Det tog ca. 10 minutter fra start til slut; for da alle posts er skrevet i ren tekst (og formateret med <a href="http://daringfireball.net/projects/markdown/">Markdown</a>) kunne jeg nemlig bare fyre nedenstående af via terminalen.</p>
+<pre class="codehilite"><code>find . -name &quot;*.md&quot; -exec sed -i '' &quot;s/\/media\//http\:\/\/static\.logiskhave\.dk\//g&quot; '{}' \;</code></pre>
+
+
+<p>Det substituerer alle referencer til "/media/" med referencer til "http://static.logiskhave.dk/" i <em>alle</em> mine posts. Herefter var det bare at uploade billederne til static.logiskhave.dk. Simpelt og nemt fordi det hele ligger som flade filer.</p>
+<p>Det betyder så, at jeg nu slipper for at flytte alle de tunge mediefiler hver gang jeg laver en ny post. Dejligt!</p>
+    </div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+
+        <div id="footer">
+            <p>Kresten Jacobsen @ logiskhave</p><p>Udgivet under <a href="http://static.logiskhave.dk/solipsistisk_licens.html">Solipsistisk Offentlig Licens</a></p>
+        </div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>

@@ -1,0 +1,258 @@
+/*
+For ckunte.net log by Chyetanya Kunte. 
+Edited for logiskhave.dk by Kresten Jacobsen.
+*/
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic,700);
+sup {
+font:11px/11px Lato, Helvetica
+}
+.credits {
+    font:11px/11px Lato, Helvetica;
+    margin-top:3px
+}
+del {
+    color:#aaa;
+}
+b, strong, th {
+/*    text-transform:lowercase; 
+    font-variant:small-caps;
+    font-size:120%; 
+    letter-spacing:1px; */
+    font-weight: bold;
+}
+a {
+    text-decoration:none;
+    color:#000;
+}
+body {
+    color:#000;  
+    background-color: #e5e5e5;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+#container {
+    width:640px;
+    margin:0 auto;
+    padding:35px 0;
+}
+#header {
+    margin:0 auto;
+    padding: 35px 0;
+    width:640px;
+}
+#footer {
+    margin: 0 auto;
+    padding: 0 0 25px 0;
+}
+h1, #footer p {
+    text-align:center;
+    font-size: 11px;
+    font-weight:600;
+    font-family:Lato, 'Helvetica Neue', Helvetica, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+.post p.date {
+    text-align:center;
+    font-size: 70%;
+    font-weight:400;
+    /*
+    font-family:Lato, 'Helvetica Neue', Helvetica, sans-serif;
+    */
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#000;
+    margin-bottom:0px;
+    padding-left: 4px;
+    color:#999;
+}
+h1 span, #footer p {
+    font-weight:400;
+}
+.post h2 {
+	font-family: 'Merriweather Sans', sans-serif;
+    font-size:32px;
+    text-transform:uppercase;
+    text-align:center;
+    margin:0 70px;
+    color:#333;
+}
+.post {
+    margin:0 0 50px 0;
+    padding: 35px 0 45px 0;
+    width:640px;
+    background-color:#fff;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px; 
+}
+td, th, .post p, .post ul, .post ol, .post pre, /*.post h3,*/ .post > .date /*, .post blockquote */{
+    margin:15px 70px;
+    font-family:Merriweather Sans, 'Helvetica Neue', Helvetica;
+}
+.post blockquote {
+    margin:15px 70px;
+    font-family:Merriweather Sans, 'Helvetica Neue', Helvetica;
+}
+.post img {
+    min-width:640px;
+    max-width:640px;
+    display: block;
+    margin:25px -70px;
+}
+.post img.screen {
+    margin:0;
+    min-width: 500px;
+    max-width: 500px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+/*
+	-o-box-shadow:rgba(0,0,0,0.4) 0 1px 3px;
+	-webkit-box-shadow:rgba(0,0,0,0.4) 0 1px 3px;
+	-moz-box-shadow:rgba(0,0,0,0.4) 0 1px 3px;
+	box-shadow:rgba(0,0,0,0.4) 0 1px 3px;
+*/
+}
+.post pre {
+    background-color:#eee;
+    font:normal 14px monospace;
+    overflow:auto;
+    border-radius:3px;
+    padding:10px;
+}
+.post p code, blockquote p code, .post li code {
+    vertical-align:middle;
+    background-color:#eee;
+    font:normal 14px monospace;
+    border-radius:2px;
+    overflow:auto;
+    padding:3px;
+}
+.post p,.post li,.post blockquote, td {
+    font-size:15px;
+    line-height:24px
+}
+.post li {margin-bottom:6px;}
+.post a {
+    font-weight:400;
+    /* color:#00f; */
+    border-bottom: 1px #ccc solid;
+}
+.post a:hover {
+    border-bottom: 1px #73B6E5 solid;
+}
+.post blockquote {
+    border-left:1px solid #ccc;
+    margin-left:75px;
+}
+.post blockquote p {
+    margin-left:18px;
+    margin-right:18px; 
+}
+.post p.social {
+    color:#73B6E5;
+	text-align: right;
+	font-size: xx-large;
+}
+hr,.footnote hr {
+    width:210px;
+    border-color:#ccc;
+    border-style:solid;
+    border-width:1px 0 0;
+}
+hr {
+    margin:20px auto;
+    }
+.footnote hr {
+    margin:20px 0 0 70px;
+    }
+.footnote, small {
+    font:12.5px/18px Merriweather Sans,Geneva,'Lucida Grande',sans-serif;
+    }
+.footnote code {
+    font-size:11.5px;
+    }
+.footnote li {
+    margin-bottom:9px;
+}
+.footnote ol li, .footnote p {
+    font-size:13px!important;
+    line-height: 150%;
+}
+.footnote ol li > p, .post ol li > p {
+    margin:0;
+    padding:0;
+}
+.post ol li > pre {
+    margin:10px 0;
+    padding:10px;
+}
+p.list {
+    line-height: 100%;
+}
+.post h2 a {
+    text-decoration:none;
+    color:#333;
+    font-weight:700;
+    border: 0;
+}
+.post h2 a:hover {
+    border:0;
+}
+.navleft {
+    text-align:left;
+    font-size: 11px;
+    font-weight:600;
+    font-family:Lato, 'Helvetica Neue', Helvetica, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin: -15px 0 35px 0;
+}
+.post h3 {
+	font-family: 'Merriweather Sans', sans-serif;
+    margin:15px 70px;
+    margin-bottom:-6px;
+    font-weight: normal;
+}
+span.credits {
+    font-size: 13px;
+    text-align: right;
+}
+small {
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight: normal;
+    font-size: 75%;
+    color:#999;
+}
+ul {
+    list-style-type: square;
+}
+ul.archive {
+    padding-left:15px;
+    padding-right: 0;
+}
+ul.archive > li {
+    list-style-type: none;
+}
+textarea {
+    margin:15px 70px;
+    width:500px;
+    border:1px solid #ddd;
+    font:normal 12px monospace;
+}
+.output {background:#efefef; border:1px dashed #ddd;}
+th    {padding:10px; vertical-align:top;}
+td    {text-align:left; vertical-align:top; padding:10px;}
+table {width:100%;margin:15px 70px;border-spacing:0;text-align:left;border-collapse:collapse;}
+table,th, td {border-top: 1px solid #eee;border-bottom: 1px solid #eee;}
+tr:nth-child(odd) {background-color:#f3f3f3;}
+tr:nth-child(even) {background-color:#fff;}
+::selection {
+background-color: #73B6E5;
+color: #FFF;
+}

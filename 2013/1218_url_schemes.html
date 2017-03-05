@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>URL Schemes
+ | krestens log</title>
+ <meta name="description" content="Personlig log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="http://static.logiskhave.dk/favicon.ico">
+ <link rel="apple-touch-icon" href="http://static.logiskhave.dk/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+ <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/">min log.</a></h1>
+        </div><!-- /header --><div class="post">
+		<p class="date">18. december, 2013</p>
+    	<h2><a href="/2013/1218_url_schemes.html">URL Schemes
+</a></h2>
+       	<p><strong>tl</strong>;<strong>dr</strong> - Jeg roder for tiden med <a href="http://x-callback-url.com">x-callback-urls</a> og <a href="https://developer.apple.com/library/ios/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html">URL skemaer</a> på mine iOS enheder og har her skrevet en kort gennemgang af hvad dét er for noget og hvad det kan bruges til.</p>
+<p><img alt="Actions" src="http://static.logiskhave.dk/20131218_x-callback-url.png" /></p>
+<h3>Hvad er URL Schemes?</h3>
+<p>URL Schemes, eller URL skemaer på dansk, er en metode til at lave inter-app kald på iOS enheder. Det vil groft sige, at man kan kalde en app, der har et URL skema, fra en anden app. Det er i sig selv smart nok, da man på denne måde kan spare et par tastetryk, når man skifter fra en app til en anden. Men der hvor det bliver rigtig smart er, når man sender data og instruktioner, i form af en tekststreng, med. URL&#8217;en skal være på en form, som den modtagende app forstår - altså følge app&#8217;ens URL skema - og kan så udføre en prædefineret handling på noget prædefineret data<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>. </p>
+<p>Et eksempel på et x-callback-url kald, som den type URL&#8217;er, der anvendes her hedder kunne være dette, som virker i app&#8217;en Clean Links. </p>
+<pre><code> clean-links://x-callback-url/clean?url=[clipboard]
+</code></pre>
+<p>Denne x-callback-url kalder Clean Links app&#8217;en og beder den rense<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> det link, man har liggende i clipboard&#8217;et og kopierer det rensede link til clipboard, så eks. linket fra Youtubes mobilside her:</p>
+<pre><code>http://m.youtube.com/watch?v=dQw4w9WgXcQ
+</code></pre>
+<p>Ville blive til: </p>
+<pre><code> http://www.youtube.com/watch?v=dQw4w9WgXcQ
+</code></pre>
+<p>Hvilket jeg indrømmer er et lidt sjovt eksempel, da det rigtige link faktisk er længere end mobilsidens, men ikke desto mindre peger på den rigtige side - uden redirects ol.</p>
+<h3>Hvad bruger jeg så URL Schemes til?</h3>
+<p>Ovenstående eksempel er selvfølgelig ikke helt grebet ud af den blå luft, for det er faktisk en del af en handling, som jeg har defineret på min telefon og som jeg bruger ret ofte<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>. Jeg læser nemlig en del artikler på min mobil og bliver der ofte præsenteret for en mobiludgave eller en URL med en masse - for mig - overflødig information i. Jeg vil derfor gerne have renset mine URL&#8217;er, så de er mere retvisende inden jeg gemmer dem. Det gør jeg med følgende x-callback-url:</p>
+<pre><code> clean-links://x-callback-url/clean?url=[clipboard]&amp;x-success={{pinswift://add?url=&lt;URL&gt;}}
+</code></pre>
+<p>Den krabat kalder jeg så fra en app, der kan eksekvere den slags hjemmelavede URL&#8217;er; nemlig <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>.</p>
+<p>Så det eneste jeg skal gøre nu er, at åbne Launch Center og vælge den definerede handling, så får jeg renset linket (via Clean Links) og bogmærket det rette link til min bogmærketjeneste, <a href="https://pinboard.in/">Pinboard</a> (via <a href="http://pinswiftapp.com/index.html">Pinswift</a>).  Nemt og hurtigt. </p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Data sendes i form af ren tekst, så det er ikke muligt at sende filer mellem apps. Man bryder med andre ord ikke Apples sandboxing.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Rense i den forstand at Clean Links finder det tilsvarende link på den rigtige, ikke-mobil&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Jeg har andre handlinger også, men de er lidt mere komplicerede&#8230;&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+		<p class="social"><a href="https://twitter.com/intent/tweet?text=[Tweet%20her]&url=http://log.logiskhave.dk/2013/1218_url_schemes.html" style="border: none;" target="_blank"><i class="fa fa-twitter-square"></i></a>&nbsp;
+		<a href="https://www.facebook.com/sharer/sharer.php?u=http://log.logiskhave.dk/2013/1218_url_schemes.html" style="border: none;" target="_blank"><i class="fa fa-facebook-square"></i></a>
+	</div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+
+        <div id="footer"><p><a href="http://static.logiskhave.dk/solipsistisk_licens.txt">Kresten Jacobsen @ logiskhave</a></p><p><a href="/"><img alt="logiskhave logo" style="border-width:0" src="http://static.logiskhave.dk/logo_footer@2x.png" width="50" height="50"></a></p></div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>
