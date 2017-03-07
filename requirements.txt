@@ -1,7 +1,9 @@
 appdirs==1.4.2
+ghp-import==0.5.5
 Jinja2==2.9.5
 Markdown==2.6.8
 MarkupSafe==0.23
+mdx-video==0.1.8
 packaging==16.8
 pyparsing==2.1.10
 PyRSS2Gen==1.1
