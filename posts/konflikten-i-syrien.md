@@ -1,5 +1,5 @@
 Konfikten i Syrien
-06-03-2017
+30-10-2015
 
 
 **[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** -- For at kunne svare på spørgsmålet "hvad flygter de fra?" har jeg læst lidt op på baggrunden for konflikten i Syrien. Ikke overraskende, er der flere ting der gør sig gældende, men lidt overraskende - for mig ihvertfald - er menneskeskabte klimaforandringer formodentligt een af de helt store katalysatorer (hvilket nedenstående - ellers rigtig fine - video udelader).
