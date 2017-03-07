@@ -39,12 +39,12 @@ Mulighed nr. 2 er heller ikke nødvendigvis rar for alle og vil *måske* betyde 
 
 Alternativet er, at vi gør noget ved roden til problemet - og den globale opvarmning *er* vores skyld. Vi bliver nødt til at tage ansvar og sørge for at udviklingen vender. Kun på den måde kan vi bremse problemet. Men det kræver, at vi handler. Jeg siger åbn grænserne for flytgningene og sæt klimaambitionerne op. Meget op.
 
-Kilder:
+_Kilder:_
 
-- [Years of Living Dangerously ](http://yearsoflivingdangerously.tumblr.com/post/86898140738/this-comic-was-produced-in-partnership-by-years-of)
-- [New York Times - Researchers Link Syrian Conflict to a Drought Made Worse by Climate Change](http://www.nytimes.com/2015/03/03/science/earth/study-links-syria-conflict-to-drought-caused-by-climate-change.html)
-- [Proceedings og the National Academy of Sciences - Climate change in the Fertile Crescent and implications of the recent Syrian drought](http://www.pnas.org/content/112/11/3241.abstract)
-- [Wikipedia - Syrian Civil War](https://en.wikipedia.org/wiki/Syrian_Civil_War)
-- [EUROSTAT - Population structure and ageing](http://ec.europa.eu/eurostat/statistics-explained/index.php/Population_structure_and_ageing)
+- _[Years of Living Dangerously ](http://yearsoflivingdangerously.tumblr.com/post/86898140738/this-comic-was-produced-in-partnership-by-years-of)_
+- _[New York Times - Researchers Link Syrian Conflict to a Drought Made Worse by Climate Change](http://www.nytimes.com/2015/03/03/science/earth/study-links-syria-conflict-to-drought-caused-by-climate-change.html)_
+- _[Proceedings og the National Academy of Sciences - Climate change in the Fertile Crescent and implications of the recent Syrian drought](http://www.pnas.org/content/112/11/3241.abstract)_
+- _[Wikipedia - Syrian Civil War](https://en.wikipedia.org/wiki/Syrian_Civil_War)_
+- _[EUROSTAT - Population structure and ageing](http://ec.europa.eu/eurostat/statistics-explained/index.php/Population_structure_and_ageing)_
 
 [^2]: [Noget tyder dog på](http://www.reuters.com/article/2014/12/01/us-europe-demographics-idUSKCN0JF1KA20141201) at EU får svært ved at klare sig uden tilførsel af arbejdskraft udefra, så det er måske egentligt meget godt - for EU og Danmark, altså)
