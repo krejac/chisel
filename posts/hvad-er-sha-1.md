@@ -1,5 +1,5 @@
 Hvad er SHA-1 (og hvorfor er det vigtigt)?
-06-03-2017
+04-03-2017
 https://www.keycdn.com/support/sha1-vs-sha256/
 
 ![SHATTERED](http://static.logiskhave.dk.s3-website.eu-central-1.amazonaws.com/20170306_shattered.png)
