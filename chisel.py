@@ -57,7 +57,7 @@ TIME_FORMAT = "%d. %B, %Y"
 ENTRY_TIME_FORMAT = "%d-%m-%Y"
 #FORMAT should be a callable that takes in text
 #and returns formatted text
-FORMAT = lambda text: markdown.markdown(text, ['footnotes', 'codehilite'])
+FORMAT = lambda text: markdown.markdown(text, ['footnotes', 'codehilite', 'video'])
 # default URLEXT = ""
 # set URLEXT = "" if server recognizes .html URLs and can be linked-to without the extension part.
 URLEXT = ".html"
