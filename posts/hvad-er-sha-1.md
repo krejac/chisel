@@ -1,4 +1,4 @@
-Hvad er SHA-1
+Hvad er SHA-1 (og hvorfor er det vigtigt)?
 06-03-2017
 https://www.keycdn.com/support/sha1-vs-sha256/
 
