@@ -93,39 +93,22 @@ def get_tree(source):
             date = time.strptime(f.readline().strip(), ENTRY_TIME_FORMAT)
             year, month, day = date[:3]
             link = f.readline()
-            # The following if / else clause is a temporary workaround, that needs cleanup.
-            if link == "\n":
-                files.append({
-                    'title': title,
-                    'epoch': time.mktime(date),
-                    'content': FORMAT(''.join(f.readlines()[1:]).decode('UTF-8')),
-                    #'url': '/'.join([str(year), "%.2d" % month, "%.2d" % day, os.path.splitext(name)[0] + ".html"]),
-                    # Uncheck the following line if you have no rewrite (URLs end with .html).
-                    'url': '/'.join([str(year), os.path.splitext(name)[0] + URLEXT]),
-                    'pretty_date': time.strftime(TIME_FORMAT, date),
-                    'date': date,
-                    'year': year,
-                    'month': month,
-                    'day': day,
-                    'filename': name,
-                })
-            else:
-                files.append({
-                    'title': title,
-                    'epoch': time.mktime(date),
-                    'link': link,
-                    'content': FORMAT(''.join(f.readlines()[1:]).decode('UTF-8')),
-                    #'url': '/'.join([str(year), "%.2d" % month, "%.2d" % day, os.path.splitext(name)[0] + ".html"]),
-                    # Uncheck the following line if you have no rewrite (URLs end with .html).
-                    'url': '/'.join([str(year), os.path.splitext(name)[0] + URLEXT]),
-                    'pretty_date': time.strftime(TIME_FORMAT, date),
-                    'date': date,
-                    'year': year,
-                    'month': month,
-                    'day': day,
-                    'filename': name,
-                })
-            f.close()
+            files.append({
+                'title': title,
+                'epoch': time.mktime(date),
+                'link': link,
+                'content': FORMAT(''.join(f.readlines()[1:]).decode('UTF-8')),
+                #'url': '/'.join([str(year), "%.2d" % month, "%.2d" % day, os.path.splitext(name)[0] + ".html"]),
+                # Uncheck the following line if you have no rewrite (URLs end with .html).
+                'url': '/'.join([str(year), os.path.splitext(name)[0] + URLEXT]),
+                'pretty_date': time.strftime(TIME_FORMAT, date),
+                'date': date,
+                'year': year,
+                'month': month,
+                'day': day,
+                'filename': name,
+            })
+        f.close()
     return files
 
 def compare_entries(x, y):
