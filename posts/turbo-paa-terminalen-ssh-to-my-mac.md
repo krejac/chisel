@@ -10,6 +10,16 @@ Nogle gange har jeg brug for at kunne forbinde til min hjemme-mac og har hidtil 
 
 Herefter skrev jeg mit eget lille script, som håndterer det tunge arbejde med at identificere iCloud-id'et og forbinde korrekt.
 
+Kør det sådan her:
+
+    ./sshtomymac.sh [navn-på-mac]
+
+eller bare:
+
+    ./sshtomymac.sh
+
 ---
+
+Scriptet:
 
 <script src="https://gist.github.com/krestenjacobsen/6db8f8a9a9a48482a85c1b08ffdccbed.js"></script>
