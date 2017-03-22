@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<rss version="2.0"><channel><title>krestens log</title><link>http://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Wed, 22 Mar 2017 14:12:08 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Turbo p&amp;aring; Terminalen - ssh To My Mac
+<rss version="2.0"><channel><title>krestens log</title><link>http://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Wed, 22 Mar 2017 14:20:08 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Turbo p&amp;aring; Terminalen - ssh To My Mac
 </title><link>http://log.logiskhave.dk/2017/turbo-paa-terminalen-ssh-to-my-mac.html</link><description>&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read"&gt;TL;DR&lt;/a&gt; - Jeg har lavet et lille &lt;a href=""&gt;script&lt;/a&gt;, der tillader at man ssh'er tilbage til sin Mac uden at rode med routere, portforwarding ol. Alt det kræver er at Back To My Mac er aktiveret på begge maskiner.&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://static.logiskhave.dk.s3-website.eu-central-1.amazonaws.com/20170322-icloud-icon-ssh.png" alt="iCloud+SSH" style="width: 200px;"&gt;&lt;/p&gt;
 &lt;p&gt;Nogle gange har jeg brug for at kunne forbinde til min hjemme-mac og har hidtil gjort det via 'screen sharing' via 'Back To My Mac'. Det virker egentligt også fint, men som oftest har jeg slet ikke brug for den grafiske brugergrænseflade som skærmdeling giver mig. Jeg har bare brug for en terminal-adgang. Derfor ville jeg faktisl helst ssh'e mig ind til min maskine. Men jeg gider ikke rigtig rode med 'port forwarding' og åbne (mere) op til mit hjemmenetværk i min router. Så jeg kom til at tænke på, om man mon ikke kunne udnytte Back To My Mac-forbindelsen til dette formål. Og jo, efter 10 sekunder på &lt;a href="https://duckduckgo.com/?q=Remote+SSH+using+Back+To+My+Mac"&gt;duckduckgo&lt;/a&gt; fandt jeg &lt;a href="http://onethingwell.org/post/27835796928/remote-ssh-bact-to-my-mac"&gt;svaret&lt;/a&gt;. :)&lt;/p&gt;
 &lt;p&gt;Herefter skrev jeg mit eget lille script, som håndterer det tunge arbejde med at identificere iCloud-id'et og forbinde korrekt.&lt;/p&gt;
+&lt;p&gt;Kør det sådan her:&lt;/p&gt;
+&lt;pre class="codehilite"&gt;&lt;code&gt;./sshtomymac.sh [navn-på-mac]&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;eller bare:&lt;/p&gt;
+&lt;pre class="codehilite"&gt;&lt;code&gt;./sshtomymac.sh&lt;/code&gt;&lt;/pre&gt;
+
+
 &lt;hr /&gt;
+&lt;p&gt;Scriptet:&lt;/p&gt;
 &lt;script src="https://gist.github.com/krestenjacobsen/6db8f8a9a9a48482a85c1b08ffdccbed.js"&gt;&lt;/script&gt;</description><author>Kresten Jacobsen</author><guid isPermaLink="true">http://log.logiskhave.dk/2017/turbo-paa-terminalen-ssh-to-my-mac.html</guid><pubDate>Wed, 22 Mar 2017 00:00:00 GMT</pubDate></item><item><title>Hvad er SHA-1 (og hvorfor er det vigtigt)?
 </title><link>http://log.logiskhave.dk/2017/hvad-er-sha-1.html</link><description>&lt;p&gt;&lt;img alt="SHATTERED" src="http://static.logiskhave.dk.s3-website.eu-central-1.amazonaws.com/20170306_shattered.png" /&gt;&lt;/p&gt;
 &lt;blockquote&gt;

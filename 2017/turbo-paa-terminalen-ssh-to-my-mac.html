@@ -27,7 +27,16 @@
 <p><img src="http://static.logiskhave.dk.s3-website.eu-central-1.amazonaws.com/20170322-icloud-icon-ssh.png" alt="iCloud+SSH" style="width: 200px;"></p>
 <p>Nogle gange har jeg brug for at kunne forbinde til min hjemme-mac og har hidtil gjort det via 'screen sharing' via 'Back To My Mac'. Det virker egentligt også fint, men som oftest har jeg slet ikke brug for den grafiske brugergrænseflade som skærmdeling giver mig. Jeg har bare brug for en terminal-adgang. Derfor ville jeg faktisl helst ssh'e mig ind til min maskine. Men jeg gider ikke rigtig rode med 'port forwarding' og åbne (mere) op til mit hjemmenetværk i min router. Så jeg kom til at tænke på, om man mon ikke kunne udnytte Back To My Mac-forbindelsen til dette formål. Og jo, efter 10 sekunder på <a href="https://duckduckgo.com/?q=Remote+SSH+using+Back+To+My+Mac">duckduckgo</a> fandt jeg <a href="http://onethingwell.org/post/27835796928/remote-ssh-bact-to-my-mac">svaret</a>. :)</p>
 <p>Herefter skrev jeg mit eget lille script, som håndterer det tunge arbejde med at identificere iCloud-id'et og forbinde korrekt.</p>
+<p>Kør det sådan her:</p>
+<pre class="codehilite"><code>./sshtomymac.sh [navn-på-mac]</code></pre>
+
+
+<p>eller bare:</p>
+<pre class="codehilite"><code>./sshtomymac.sh</code></pre>
+
+
 <hr />
+<p>Scriptet:</p>
 <script src="https://gist.github.com/krestenjacobsen/6db8f8a9a9a48482a85c1b08ffdccbed.js"></script>
     </div>
 	<div class="navleft">
