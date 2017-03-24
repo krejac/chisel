@@ -13,8 +13,8 @@
 # Updates and enhancements added/included by krestenjacobsen:
 # 27.09.2013:
 # - Localization of dates using pythons "locale"
-# 02.03.2017
-#- Linked list functionality added (including the theme)
+# 02.03.2017:
+# - Linked list functionality added (including the theme)
 #
 # Requires:
 # jinja2, markdown, PyRSS2Gen
