@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<rss version="2.0"><channel><title>krestens log</title><link>http://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Tue, 09 May 2017 12:01:01 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Intel Hijacking fejl
+<rss version="2.0"><channel><title>krestens log</title><link>http://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Tue, 09 May 2017 12:02:18 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Intel Hijacking fejl
 </title><link>http://log.logiskhave.dk/2017/intel-hijacking-fejl.html</link><description>&lt;p&gt;&lt;img alt="Chip" src="http://static.logiskhave.dk/20170509_chip.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Udemærket intro til det store gabende hul i Intels professionelle chips af David Bisson:&lt;/p&gt;
-&lt;pre class="codehilite"&gt;&lt;code&gt;[...] by exploiting this vulnerability, an unauthenticated network attacker could gain system privileges to the AMT or ISM technology. From there, they could abuse their privileges to reboot the system and examine drive contents.
-
-That's not even the worst part. Linux kernel expert Matthew Garrett elaborates:
-
-    &amp;quot;AMT supports providing an ISO remotely. In older versions of AMT (before 11.0) this was in the form of an emulated IDE controller. In 11.0 and later, this takes the form of an emulated USB device. The nice thing about the latter is that any image provided that way will probably be automounted if there's a logged in user, which probably means it's possible to use a malformed filesystem to get arbitrary code execution in the kernel. Fun!&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-
-
+&lt;blockquote&gt;
+&lt;p&gt;[...] by exploiting this vulnerability, an unauthenticated network attacker could gain system privileges to the AMT or ISM technology. From there, they could abuse their privileges to reboot the system and examine drive contents.&lt;/p&gt;
+&lt;p&gt;That's not even the worst part. Linux kernel expert Matthew Garrett elaborates:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"AMT supports providing an ISO remotely. In older versions of AMT (before 11.0) this was in the form of an emulated IDE controller. In 11.0 and later, this takes the form of an emulated USB device. The nice thing about the latter is that any image provided that way will probably be automounted if there's a logged in user, which probably means it's possible to use a malformed filesystem to get arbitrary code execution in the kernel. Fun!"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Min arbejdsmaskine &lt;em&gt;havde&lt;/em&gt; AMT slået til. Måske jeg lige skal tjekke en kollegas. Remote...&lt;/p&gt;</description><author>Kresten Jacobsen</author><guid isPermaLink="true">http://log.logiskhave.dk/2017/intel-hijacking-fejl.html</guid><pubDate>Tue, 09 May 2017 00:00:00 GMT</pubDate></item><item><title>Turbo p&amp;aring; Terminalen - ssh To My Mac
 </title><link>http://log.logiskhave.dk/2017/turbo-paa-terminalen-ssh-to-my-mac.html</link><description>&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read"&gt;TL;DR&lt;/a&gt; - Jeg har lavet et lille &lt;a href=""&gt;script&lt;/a&gt;, der tillader at man ssh'er tilbage til sin Mac uden at rode med routere, portforwarding ol. Alt det kræver er at Back To My Mac er aktiveret på begge maskiner.&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://static.logiskhave.dk.s3-website.eu-central-1.amazonaws.com/20170322-icloud-icon-ssh.png" alt="iCloud+SSH" style="width: 200px;"&gt;&lt;/p&gt;
