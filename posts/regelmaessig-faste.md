@@ -10,6 +10,6 @@ Indtil videre er det gået meget godt. Min trang til småmåltider er mindsket o
 [^1]: [CMAJ: Intermittent fasting: the next big weight loss fad](http://www.cmaj.ca/content/185/8/E321.full)
 [^2]: [CMAJ: Intermittent fasting: the science of going without](http://www.cmaj.ca/content/185/9/E363.full)
 [^3]: [CMAJ: Intermittent fasting: five quick questions with fasting expert Brad Pilon](http://www.cmaj.ca/content/185/9/E362.full)
-[^4]: [Sygeforsikring Danmark](https://www.sygeforsikring.dk/er-det-sundt-faste)
+[^4]: [Sygeforsikring Danmark: Er det sundt at faste?](https://www.sygeforsikring.dk/er-det-sundt-faste)
 [^5]: [TV2: Se eksperternes favorit: Her er vinderkuren](http://livsstil.tv2.dk/2014-02-11-se-eksperternes-favorit-her-er-vinderkuren)
 [^6]: [Alt for Damerne: Sådan bliver du slank og sund med 16:8-kuren](http://www.alt.dk/sundhed/slank-og-stark-med-168-kuren)
