@@ -15,6 +15,41 @@
         <div id="header">
             <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
         </div><!-- /header --><div class="post">
+        <p class="date">03. Juli, 2017</p>
+        <h2>
+            
+                <a href="2017/regelmaessig-faste.html" rel="bookmark" title="Permalink til Regelm&aelig;ssig Faste
+">Regelm&aelig;ssig Faste
+</a>
+            
+        </h2>
+        <!--<h2><a href="2017/regelmaessig-faste.html">Regelm&aelig;ssig Faste
+</a></h2>-->
+	    <p>Indtil videre er det gået meget godt. Min trang til småmåltider er mindsket og jeg er tilbage under 70kg, som jeg bør være med min højde. Tricket er nok stadig ikke at spise for meget, når man så endelig "får lov". Det kan jeg stadig blive bedre til...</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="http://www.cmaj.ca/content/185/8/E321.full">CMAJ: Intermittent fasting: the next big weight loss fad</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="http://www.cmaj.ca/content/185/9/E363.full">CMAJ: Intermittent fasting: the science of going without</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="http://www.cmaj.ca/content/185/9/E362.full">CMAJ: Intermittent fasting: five quick questions with fasting expert Brad Pilon</a>&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://www.sygeforsikring.dk/er-det-sundt-faste">Sygeforsikring Danmark</a>&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="http://livsstil.tv2.dk/2014-02-11-se-eksperternes-favorit-her-er-vinderkuren">TV2: Se eksperternes favorit: Her er vinderkuren</a>&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p><a href="http://www.alt.dk/sundhed/slank-og-stark-med-168-kuren">Alt for Damerne: Sådan bliver du slank og sund med 16:8-kuren</a>&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div><div class="post">
         <p class="date">09. Maj, 2017</p>
         <h2>
             
@@ -106,74 +141,6 @@
 <p>Two large spam waves swept across Denmark in the past 5 days. Both carry the notorious TorrentLocker ransomware and feature a few new tricks.</p>
 </blockquote>
 <p>... men vi ville nok helst have være foruden.</p>
-    </div><div class="post">
-        <p class="date">29. Oktober, 2016</p>
-        <h2>
-            
-                <a href="2016/intro-til-brew.html" rel="bookmark" title="Permalink til Intro til Homebrew
-">Intro til Homebrew
-</a>
-            
-        </h2>
-        <!--<h2><a href="2016/intro-til-brew.html">Intro til Homebrew
-</a></h2>-->
-	    <p><img alt="mas-cli logo" src="http://static.logiskhave.dk/20161029_mas-cli.png" /></p>
-<h1>'brew'</h1>
-<p><a href="http://brew.sh">Homebrew</a> er kernen i vores setup og er et værktøj til at at installere andre værktøjer med. Nogen vil genkende lignende systemer fra Linux (eks. <a href="https://wiki.debian.org/Apt">apt</a>, <a href="http://yum.baseurl.org">yum</a> eller <a href="https://wiki.archlinux.org/index.php/pacman">pacman</a>). For at komme i gang med brew, skal man et smut forbi deres <a href="http://brew.sh">hjemmeside</a> hvor de fortæller os hvad vi skal gøre for at installere. For nuværende er den nemmeste metode til at installere, at køre følgende kommando I terminalen:</p>
-<pre class="codehilite"><code>'/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;'</code></pre>
-
-
-<p>Det der sker, når man afvikler den kommando er at den downloader installationsprogrammet og kører det i terminalen med det samme. Når brew er installeret er man klar til at installere yderligere termialprogrammer.</p>
-<h3>Installering, søgning og opdatering af programmer</h3>
-<p>Installer med <code>brew install app-navn</code>. Eks. <code>brew install youtube-dl</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>.</p>
-<p>Søg i alle de programmer du kan installere med <code>brew search del-af-app-navn</code>. Eks. <code>brew search youtu</code>, som bl.a. vil finde youtube-dl.</p>
-<p>Opdater med <code>brew upgrade app-navn</code>. Eks. <code>brew upgrade youtube-dl</code>. Opdater alle programmer installeret med brew med <code>brew upgrade</code>.</p>
-<h3>Husholdning</h3>
-<p>Med Homebrew følger dog en lille smule "husholdning", for ligesom værktøjerne fra Linux, skal selve pakkehåndteringssystemet vedligeholdes. Og med Homebrew gøres dette nemmest med <code>brew update; brew cleanup</code>, som først opdaterer brew og dernæst renser ud i cache ol.</p>
-<hr />
-<h1>'cask'</h1>
-<p><a href="https://caskroom.github.io">Caskroom</a> er en udvidelse til Homebrew, hvorfra man kan hente og installer over 3000 af de apps, du normalt skal ud på en internettet for at finde.For at komme i gang med caskroom, skal man køre følgende cask-kommando:</p>
-<pre class="codehilite"><code>'brew tap caskroom/cask'</code></pre>
-
-
-<p>Dette åbner ret beset bare op for et ekstra repositorie man kan hente apps fra (caskroom). Når der er åbnet for cask's tap<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> er man klar til at installere løs.</p>
-<h3>Installering, søgning og opdatering af programmer</h3>
-<p>Installer med <code>brew cask install app-navn</code>. Eks. <code>brew cask install wireshark</code>.</p>
-<p>Søg blandt casks med <code>brew cask search del-af-app-navn</code>. Eks. <code>brew cask search wireshark</code>.</p>
-<p>Apps installeret med Caskroom bruger typisk den opdateringsfunktion, der er indbygget i den enkelt app. Har app'en ikke en opdateringsfunktion selv, kan man afinstallere og efterfølgende installere en ny version fra Caskroom. Eks. <code>brew cask uninstall --force wireshark &amp;&amp; brew cask install wireshark</code>.</p>
-<hr />
-<h1>'mas'</h1>
-<p><a href="https://github.com/mas-cli/mas">Mas-cli</a><sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> er tredje og sidste ben i vores mål om terminal-app-installerings-nirvana. Mas-cli fjerner nemlig behovet for at åbne Mac App Store for at installere og opdatere dine apps derfra. Desværre skal du have hentet programmet tidligere<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>, men det behøver du trods alt kun gøre een gang.</p>
-<h3>Installering, søgning og opdatering af programmer</h3>
-<p>Installering og opdatering med mas er lidt mere omstændigt, derfor er rækkefølgen også lidt omvendt her. Tricket er nemlig at man bruger et unikt tal til at installere med - og det tal stammer fra en søgning. Derfor søger man typisk først efter en app, kopierer tallet ud for app'en man vil installere og der efter installerer. Så derfor:</p>
-<p>Søg i <em>hele</em> Mac App Store med <code>mas search del-af-app-navn</code>. Eks. <code>mas search Number</code>. Noter herfra tallet.</p>
-<p>Installer med <code>mas install tal-fra-før</code>. Eks. <code>mas install 409203825</code> (for at installere Numbers).</p>
-<p>Opdater en enkelt app med <code>mas upgrade 409203825</code> og opdater alle med <code>mas upgrade</code>. (Pro tip: Se alle apps, med updates klar, med <code>mas outdated</code>.)</p>
-<hr />
-<h1>Bonus</h1>
-<p>Selvom vi med ovenstående kan installere programmer til kommandolinien, fra internettet og fra Mac App Store, slipper vi endnu ikke helt for grafiske installere. Opdatering af macOS kan nemlig ikke ske via ovenstående. Men det er der heldigvis råd for, for der kommer Apple os rent faktisk til undsætning. Så med nedenstående kommando, kan du også køre en opdatering af macOS fra terminalen med <code>sudo softwareupdate -i -a</code>.</p>
-<p>Så med den lille krølle, kan man lave en fuld softwareopdatering med blot én linie i terminalen:</p>
-<pre class="codehilite"><code>sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; mas upgrade</code></pre>
-
-
-<p>God fornøjelse! :)</p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>youtube-dl er et program til at downloade videoer fra YouTube, hvis man bare har url'en. Ret praktisk.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<p>'Brew' betyder bryg og en 'tap' er en hane eller en kilde om man vil.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:3">
-<p>Kort for "Mac App Store - Command Line Interface".&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-<li id="fn:4">
-<p>Ikke nødvendigvis på samme computer - programmet skal bare figurere i listen over tidligere køb i Mac App Store.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
     </div>
   <div class="navleft">
   	<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp;Til arkivet</a>
