@@ -3,6 +3,7 @@ Regelm&aelig;ssig Faste
 
 
 ![Faste](http://static.logiskhave.dk/20170815_faste.png)
+
 Efter at have læst en artikelserie i Canadian Medical Association Journal[^1] [^2] [^3] og lidt flere populærvidenskabelige artikler[^4] [^5] [^6] om de sundhedsfremmende effekter ved faste har jeg nu i en god måneds tid undladt at indtage kalorier i 16-18 timer i døgnet.
 
 Indtil videre er det gået meget godt. Min trang til småmåltider er mindsket og jeg er tilbage under 70kg, som jeg bør være med min højde. Tricket er så ikke at spise for meget, når man så endelig "får lov". Det kan jeg stadig blive bedre til...
