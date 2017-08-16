@@ -2,7 +2,6 @@
 
 echo ""
 echo "Activating Python environment"
-echo ""
 source ./venv/bin/activate
 
 echo ""
