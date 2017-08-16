@@ -23,6 +23,13 @@ python chisel.py
 echo ""
 echo "**************************"
 echo ""
+echo "Copying static files ..."
+echo ""
+cp -r ./static/ ./www/static/
+
+echo ""
+echo "**************************"
+echo ""
 echo "Updating gh-pages ..."
 echo ""
 ghp-import -n -c "log.logiskhave.dk" -m "Site updated :rocket:" -p ./www/
