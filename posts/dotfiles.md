@@ -3,7 +3,7 @@ Dotfiles
 
 **[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** -- Dotfiler er (næsten) uundværlige i opsætningen af Mac - eller Linux - hvis man vil lidt ud over hvad der lige rummes i Systemindstillinger. Det her er mine dotfiler.
 
-![MacBook Pro](https://logiskhave.dk/static/20151202_macbook-pro.jpg)
+![MacBook Pro](https://log.logiskhave.dk/static/20151202_macbook-pro.jpg)
 
 ### Om dotfiler generelt
 

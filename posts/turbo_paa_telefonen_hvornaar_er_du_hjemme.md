@@ -3,13 +3,13 @@ Turbo p&aring telefonen - "hvorn&aringr er du hjemme?"
 
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Jeg har lavet en arbejdsgang, så jeg hurtigt kan svare min kone på hvornår jeg er hjemme ved hjælp af [Launch Center Pro](http://contrast.co/launch-center-pro/) og især [Pythonista](http://omz-software.com/pythonista/index.html).
 
-![iPhone](https://logiskhave.dk/static/20150311_iphone5s.jpg "iPhone")
+![iPhone](https://log.logiskhave.dk/static/20150311_iphone5s.jpg "iPhone")
 
 Hver dag på vej hjem i toget spørger min bedre halvdel mig om hvornår jeg mon er hjemme. Og hver dag skal jeg kigge på oversigten, tælle stationerne, regne en ca. tid ud og skrive en SMS. Men ikke mere. For nu har jeg lavet et lille pythonscript, som ved hjælp af Pythonistas `location` metode finder mine aktuelle GPS-koordinater og sammenholder dem med S-togsstationernes ditto, finder den nærmeste station og ud fra det danner en sms med nærmeste station og forventet rejsetid (antallet af stationer * 2 minutter + 10 minutters cykeltid). Meget simpel idé, men det gav mig da lidt hovedbrud undervejs.[^1]
 
 Resultatet er en proces, hvor jeg 1) vælger en handling fra appen [Launch Center Pro](http://contrast.co/launch-center-pro/), som 2) trigger et pythonscript i [Pythonista](http://omz-software.com/pythonista/index.html) og 3) returnerer til Launch Center Pro, med en færdig SMS.
 
-![Arbejdsgang](https://logiskhave.dk/static/20150311_workflow.jpg "Handling, script, SMS")
+![Arbejdsgang](https://log.logiskhave.dk/static/20150311_workflow.jpg "Handling, script, SMS")
 
 Triggeren i Launch Center Pro ser således ud:
 

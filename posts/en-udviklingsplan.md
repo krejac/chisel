@@ -3,7 +3,7 @@ En udviklingsplan?
 
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Jeg gad godt lære at programmere, men kan jeg finde tid til det?
 
-![Code...](https://logiskhave.dk/static/20141023_code.jpg "Code...")
+![Code...](https://log.logiskhave.dk/static/20141023_code.jpg "Code...")
 
 I mit daglige arbejde sidder jeg i høj grad og leder of fordeler arbejde mellem en række teknikere og fagfolk, som driver og udvikler it-systemer. Jeg har samtidigt kontakt med leverandører og kunder som stiller krav til vores organisation og som vi tillige stiller krav til. Det er altså et job med godt gang i, i spæningsfeltet mellem kunder, leverandører, teknikere og vores organisations egne ledere. Det er et job som på papiret tiltaler mange akademikere, der ofte arbejder som "blæksprutter" mellem andre mennesker. Men jeg mangler noget. Jeg mangler at lave noget mere konkret end at lede og fordele. Jeg mangler at skabe noget; at se det konkrete resultat af mit arbejde og ikke blot at stå efterfølgende og rose andre for deres flotte indsats. 
 

@@ -7,19 +7,19 @@ Kimmie er i bad og imens får jeg mig en kop kaffe. Selvom det er Kimmie der fas
 
 Nu skal vi snart ind på hospitalet.
 
-![Smuk morgen](https://logiskhave.dk/static/20121019_morgen.png "Smuk morgen - Foto: Line Hermansen")
+![Smuk morgen](https://log.logiskhave.dk/static/20121019_morgen.png "Smuk morgen - Foto: Line Hermansen")
 
 Så kom vi ind på Riget. Kimmie har skiftet til det tøj hun skal have på under operationen. Vi venter på opvågningsstuen. Tiden går langsomt.
 
 Nårh. Så kom du ud. Hvor er du dejlig. Alt gik som det skulle, og Kimmie fik dig op på brystet med det samme, som vi havde håbet på.
 
-![Dejlige Esther](https://logiskhave.dk/static/20121019_aabne_oejne.png "Første gang du kigger på verdenen")
+![Dejlige Esther](https://log.logiskhave.dk/static/20121019_aabne_oejne.png "Første gang du kigger på verdenen")
 
 Oppe på opvågning er der travlt. Mange kejsersnit i dag og nede på barselsgangen er der ikke plads. Alle har det fint, men det ville være rart med ro og privatliv.
 
 Nede på barselsgangen er der endelig blevet plads til os. På en 4 mandsstue. Så meget for privatliv.
 
-![Lille Esther](https://logiskhave.dk/static/20121019_lille_esther.png "Første gang du ammer")
+![Lille Esther](https://log.logiskhave.dk/static/20121019_lille_esther.png "Første gang du ammer")
 
 Vi hygger og Kimmie kan mærke såret. Ind med nogle ’ganer og morfin og op og gå.
 
@@ -29,7 +29,7 @@ Kimmie prøver at være social, men må erkende, at det ikke dur. Ind i seng ige
 
 Farmor og farfar får lov til at hygge lidt om Esther, mens jeg ser lidt til Kimmie. Endelig henter jeg Esther og lægger hende ind til Kimmie igen. Det ser de begge ud til at kunne lide. :)
 
-![Smuk aften](https://logiskhave.dk/static/20121019_aften.png "Smuk aften - Foto: Line Hermansen")
+![Smuk aften](https://log.logiskhave.dk/static/20121019_aften.png "Smuk aften - Foto: Line Hermansen")
 
 Familien siger farvel og vi bruger resten af aftenen på at amme, pusle, synge - uden de andre på stuen hører det - og holde i hånd.
 

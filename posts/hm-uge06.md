@@ -7,7 +7,7 @@ Denne post er en del af [en række](/halfmarathon2014.html), hvor jeg skriver om
 
 Kun én af ugens tre løbeture blev løbet på den planlagte dag. 
 
-![Vinter i Hareskoven](https://logiskhave.dk/static/20140217_hareskov.png)
+![Vinter i Hareskoven](https://log.logiskhave.dk/static/20140217_hareskov.png)
 
 Mandag løb jeg sidste uges søndagstur og tirsdag var pakke- / rejse-hjem-fra-Bornholm-dag, så der fik jeg ikke løbet. Onsdag blev Esther syg og jeg havde lovet at passe hende, så Kimmie kunne arbejde og om aftenen kunne jeg ikke tage mig sammen. Men torsdag og fredag løb jeg to udemærkede ture. Det er helt enormt så meget rarere det er at løbe i dagslys end i mørket efter en lang arbejdsdag, aftensmad og putning; jeg glæder mig enormt til at lyset for alvor vender tilbage til vores breddegrader.
 

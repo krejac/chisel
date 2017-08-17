@@ -3,7 +3,7 @@ Opf&oslash;lgning
 
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - At skrive ønsker og mål ned hjælper mig med at fastholde fokus i en travl hverdag. 
 
-![Skriv...](https://logiskhave.dk/static/20150307_write.jpg "Skriv...")
+![Skriv...](https://log.logiskhave.dk/static/20150307_write.jpg "Skriv...")
 
 Dette er en kort opfølgning på de sidste to indlæg her på siden, hvor jeg hhv. ønskede at komme til at [læse lidt mere](http://log.logiskhave.dk/2014/foundation-trilogien.html) og udvikle mig fagligt ved at (gen-)[lære at programmere](http://log.logiskhave.dk/2014/en-udviklingsplan.html). Den slags er rigtig svært at få tid til i en travl hverdag med familie, arbejde, venner og alt de andre dejlige ting, der skal nås. Og jeg fik ikke rigtig *mere* tid ved at få barn nr. 2 i starten af året.
 

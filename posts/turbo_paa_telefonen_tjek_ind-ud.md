@@ -3,7 +3,7 @@ Turbo p&aring; telefonen - tjek ind / ud
 
 **TL**;**DR** - Jeg har lavet en arbejdsgang, der minder mig om at tjekke ind / ud vha. en automatiseret proces, når jeg ankommer eller forlader arbejdet.
 
-![If This Then That](https://logiskhave.dk/static/20140806_ifttt@2x.jpg)
+![If This Then That](https://log.logiskhave.dk/static/20140806_ifttt@2x.jpg)
 
 Hver dag, når jeg ankommer på arbejde logger jeg min ankomsttid i et [Google Spreadsheet][]. Her laver jeg en række med en tjek ind tid og så gør jeg det samme, når jeg går. På den måde kan jeg holde øje med om jeg arbejder for meget eller for lidt. Relativt simpelt, men også ret besværligt, hvis jeg skal ind og "håndskrive" det hver gang. Så derfor har jeg lavet en automatiseret løsning med lidt fiks sammenblanding af appen [Launch Center Pro][] (LCP) og tjenesten [If This Then That][IFTTT] (IFTTT). 
 
@@ -25,7 +25,7 @@ Det der sker, når de bliver startet er, at de åbner regnearket navngivet som a
 
 Når begge dele af af de to arbejdsgange er på plads *og* har jeg sat LCP op til at minde mig om at tjekke ind, når jeg ankommer til arbejde og når jeg går fra arbejdet ser det så således ud, når jeg ankommer på arbejdet (billedet til venstre herunder) og med et swipe på  påmindelsen, startes tjek ind handlingen (billedet til højre)[^2]. 
 
-![Screenshot af arbejdsgang](https://logiskhave.dk/static/20140806_iphone_screenshot@2x.png)
+![Screenshot af arbejdsgang](https://log.logiskhave.dk/static/20140806_iphone_screenshot@2x.png)
 
 Et voila! Du har nu tjekket ind på arbejde.
 

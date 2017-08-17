@@ -2,7 +2,7 @@ Regelm&aelig;ssig Faste
 15-08-2017
 
 
-![Faste](https://logiskhave.dk/static/20170815_faste.png)
+![Faste](https://log.logiskhave.dk/static/20170815_faste.png)
 
 Efter at have læst en artikelserie i Canadian Medical Association Journal[^1] [^2] [^3] og lidt flere populærvidenskabelige artikler[^4] [^5] [^6] om de sundhedsfremmende effekter ved faste har jeg nu i en god måneds tid undladt at indtage kalorier i 16-18 timer i døgnet.
 

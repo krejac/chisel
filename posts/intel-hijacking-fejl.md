@@ -2,7 +2,7 @@ Intel Hijacking fejl
 09-05-2017
 https://www.grahamcluley.com/intel-patches-remote-hijack-bug-hid-chips-seven-years/
 
-![Chip](https://logiskhave.dk/static/20170509_chip.jpg)
+![Chip](https://log.logiskhave.dk/static/20170509_chip.jpg)
 
 Udemærket intro til det store gabende hul i Intels professionelle chips af David Bisson:
 

@@ -3,7 +3,7 @@
 
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Jeg har et par servere snurrende rundt om i verdenen og ser derfor, hvor ofte de bliver udsat for angreb. Her er mine noter til at lukke ssh af for uvedkomne på en Ubuntu/Debian-box[^1].
 
-![Serving](https://logiskhave.dk/static/20160126_server.jpg "Live to serve...")
+![Serving](https://log.logiskhave.dk/static/20160126_server.jpg "Live to serve...")
 
 SSH er et vigtigt redskab til drift og administration af servere og kan sjældent helt undværes. Derfor har mange servere åben for SSH-adgang, og det er et af de første steder du bliver forsøgt hacket. Derfor er det også vigtigt at sikre adgangen hertil hurtigt.
 
