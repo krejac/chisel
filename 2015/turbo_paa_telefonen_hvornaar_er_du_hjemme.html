@@ -23,10 +23,10 @@
 
             
         </h2>
-       	<p><img alt="iPhone" src="http://static.logiskhave.dk/20150311_iphone5s.jpg" title="iPhone" /></p>
+       	<p><img alt="iPhone" src="https://logiskhave.dk/static/20150311_iphone5s.jpg" title="iPhone" /></p>
 <p>Hver dag på vej hjem i toget spørger min bedre halvdel mig om hvornår jeg mon er hjemme. Og hver dag skal jeg kigge på oversigten, tælle stationerne, regne en ca. tid ud og skrive en SMS. Men ikke mere. For nu har jeg lavet et lille pythonscript, som ved hjælp af Pythonistas <code>location</code> metode finder mine aktuelle GPS-koordinater og sammenholder dem med S-togsstationernes ditto, finder den nærmeste station og ud fra det danner en sms med nærmeste station og forventet rejsetid (antallet af stationer * 2 minutter + 10 minutters cykeltid). Meget simpel idé, men det gav mig da lidt hovedbrud undervejs.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
 <p>Resultatet er en proces, hvor jeg 1) vælger en handling fra appen <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>, som 2) trigger et pythonscript i <a href="http://omz-software.com/pythonista/index.html">Pythonista</a> og 3) returnerer til Launch Center Pro, med en færdig SMS.</p>
-<p><img alt="Arbejdsgang" src="http://static.logiskhave.dk/20150311_workflow.jpg" title="Handling, script, SMS" /></p>
+<p><img alt="Arbejdsgang" src="https://logiskhave.dk/static/20150311_workflow.jpg" title="Handling, script, SMS" /></p>
 <p>Triggeren i Launch Center Pro ser således ud:</p>
 <pre class="codehilite"><code>pythonista://home_in.py?action=run</code></pre>
 
