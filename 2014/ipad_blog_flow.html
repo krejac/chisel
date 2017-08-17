@@ -23,11 +23,12 @@
 
             
         </h2>
-       	<p><img alt=" Image name " src="https://log.logiskhave.dk/static/20140120_call_byword.png" /></p>
+       	<p><strong>TL</strong>;<strong>DR</strong> - I've implemented a workflow for my Chisel log using a combination of Pythonista scripts and x-callback-urls enabling me to write, uploading and inserting images in posts and publishing all of it on a tiny Linux box. </p>
+<p><img alt=" Image name " src="https://log.logiskhave.dk/static/20140120_call_byword.png" /></p>
 <p><em>This post is written in english because of the limited interest such a subject would have among a danish audience.</em></p>
-<p>It is no secret that I have an affection of the simplicity of static blog generators; I have actually been using a few on this domain in the past.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> The simplicity of a system that I understand and can hack myself is worth so much for me as a hobby techie. Furthermore this setup is portable (can easily be moved to a new host or system) and secure (no active components - apart from the webserver, that is - to be maintained). </p>
+<p>It is no secret that I have an affection of the simplicity of static blog generators; I have actually been using a few on this domain in the past.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> The simplicity of a system that I understand and can hack myself is worth so much for me as a hobby techie. Furthermore this setup is portable (can easily be moved to a new host or system) and secure (no active components - apart from the webserver, that is - to be maintained).</p>
 <h3>The flow</h3>
-<p>The goal is to be able to create and publish full length post - including images - using only my iPad. To do that I need to identify each step in my logging flow and support each step in a way that not only make it technically possible but also easy to use - well as easy as it can with the setup I have chosen anyway. </p>
+<p>The goal is to be able to create and publish full length post - including images - using only my iPad. To do that I need to identify each step in my logging flow and support each step in a way that not only make it technically possible but also easy to use - well as easy as it can with the setup I have chosen anyway.</p>
 <p>The steps in my workflow is as follows:</p>
 <ul>
 <li><strong>Creating a well formed draft</strong>: The <a href="https://github.com/krestenjacobsen/chisel">system I use</a> relies on markdown documents with a certain naming convention and some meta data at the beginning of the file. <em>Candidate for automation.</em></li>
@@ -37,7 +38,7 @@
 <li><strong>Promoting from 'draft' to 'post'</strong>: My markdown files resides in two different folders; a drafts folder af a posts folder. The folder a given file is in determines its fate when the site is being generated. <em>Candidate for automation.</em></li>
 <li><strong>Generating site</strong>: Since I use a static site generator that produce a hierarchy of html files, I need to generate the site anew every time I publish a post. Within a minute of a regeneration of the site changes are live. <em>Candidate for automation.</em></li>
 </ul>
-<p>So the workflow ends up looking like this (note the gears that indicate an action that is being automated): </p>
+<p>So the workflow ends up looking like this (note the gears that indicate an action that is being automated):</p>
 <p><img alt=" workflow " src="https://log.logiskhave.dk/static/20140120_workflow.png" /></p>
 <h3>The scripts</h3>
 <p><em>All the scripts are subject to changes and improvements which is why I don't post them here, but link to them instead.</em></p>
@@ -51,15 +52,15 @@
 <h3>Round-up</h3>
 <p>The setup does exactly what I set out to acheive. It enables me to write effortlessly from my iPad. I actually have no need to pull out my MacBook Pro anymore - only if I have to edit the posts after they have gone online.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> After I bought an iPad mini (retina) and a bluetooth keyboard / stand I find myself using the Mac less and less.</p>
 <p><strong>Ease of use</strong> - Medium. This must be evaluated against other iOS-publishing methods, and while there certainly are easier ways to get content online; I have yet to see an easier - or perhaps more transparent - setup for a self hosted site build with a static site generator. Each step in my flow is under my control; right from the server that hosts my content over the tool I use to generate the site to the scripts I use to control this setup with. But that wont make it easy to understand for any non techie. When set up it is pretty straight forward to use - especially if you execute the scripts via x-callback-urls with an app like <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>.</p>
-<p><strong>Geek factor</strong> - High. Generating static html from the commandline, managing your own server and scripting (or adapting scrips to) your setup is definitely not for everybody. You have to want to tinker. For everybody else there is loads of online services that does the job of getting your content online faster and easier. </p>
+<p><strong>Geek factor</strong> - High. Generating static html from the commandline, managing your own server and scripting (or adapting scrips to) your setup is definitely not for everybody. You have to want to tinker. For everybody else there is loads of online services that does the job of getting your content online faster and easier.</p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Git repository of logiskhave on <a href="https://github.com/krestenjacobsen/logiskhave_jekyll">Jekyll</a> and <a href="https://github.com/krestenjacobsen/logiskhave_octopress">Octopress</a>. &#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Git repository of logiskhave on <a href="https://github.com/krestenjacobsen/logiskhave_jekyll">Jekyll</a> and <a href="https://github.com/krestenjacobsen/logiskhave_octopress">Octopress</a>.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Which is a consequense of my choice of the drafts / posts setup. This setup allows me to regenerate the site for whatever reason without incidently publishing a post I'm working on. &#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Which is a consequense of my choice of the drafts / posts setup. This setup allows me to regenerate the site for whatever reason without incidently publishing a post I'm working on.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

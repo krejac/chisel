@@ -23,11 +23,12 @@
 
             
         </h2>
-       	<hr />
-<p>Jeg vil gerne have skygge på de billeder, der ikke fylder hele sidens bredde her på loggen for lige som at ramme dem lidt ind. Men jeg vil meget nødigt købe et dyrt billedbehandlingsprogram til kun det. I den forbindelse var jeg derfor i stedet forbi gratis og opensource software, men fælles for dem alle er, at de ikke kun løser mit problem, men installerer et fuldt billedbehandlingsprogram, hvilket er en anelse overkill lige her. </p>
-<p>I stedet faldt jeg i min søgen over ImageMagick, som jeg egentligt kun har tænkt på som serversoftware til at beskære og ændre størrelse på billeder automatisk. Men netop muligheden for at automatisere handlinger er genial - og da jeg så også fik googlet mig frem til hvordan jeg kunne bruge det til at lægge skygger på med passede det jo som fod i hose. </p>
+       	<p><strong>tl</strong>;<strong>dr</strong> - Jeg bruger ImageMagick via kommandolinien til at lægge skygger på mine billeder i stedet for et dyrt billedbehandlingsprogram.</p>
+<hr />
+<p>Jeg vil gerne have skygge på de billeder, der ikke fylder hele sidens bredde her på loggen for lige som at ramme dem lidt ind. Men jeg vil meget nødigt købe et dyrt billedbehandlingsprogram til kun det. I den forbindelse var jeg derfor i stedet forbi gratis og opensource software, men fælles for dem alle er, at de ikke kun løser mit problem, men installerer et fuldt billedbehandlingsprogram, hvilket er en anelse overkill lige her.</p>
+<p>I stedet faldt jeg i min søgen over ImageMagick, som jeg egentligt kun har tænkt på som serversoftware til at beskære og ændre størrelse på billeder automatisk. Men netop muligheden for at automatisere handlinger er genial - og da jeg så også fik googlet mig frem til hvordan jeg kunne bruge det til at lægge skygger på med passede det jo som fod i hose.</p>
 <h3>Installation</h3>
-<p>ImageMagick kan godt virke forvirrende. Og det er det. Installationen kan dog gøres nem ved at hente en installationspakke fra <a href="http://cactuslab.com/imagemagick/">Cactuslab</a> eller hvis man har Mac Ports installeret </p>
+<p>ImageMagick kan godt virke forvirrende. Og det er det. Installationen kan dog gøres nem ved at hente en installationspakke fra <a href="http://cactuslab.com/imagemagick/">Cactuslab</a> eller hvis man har Mac Ports installeret</p>
 <pre class="codehilite"><code>sudo port install ImageMagick</code></pre>
 
 
@@ -42,11 +43,11 @@
 
 
 <h3>Alternativ</h3>
-<p>Vil man bare undgå skygger på sine screenshots kan man slå dem fra ved at fyre følgende af i teminal: </p>
+<p>Vil man bare undgå skygger på sine screenshots kan man slå dem fra ved at fyre følgende af i teminal:</p>
 <pre class="codehilite"><code>defaults write com.apple.screencapture disable-shadow -bool true</code></pre>
 
 
-<p>Og derefter: </p>
+<p>Og derefter:</p>
 <pre class="codehilite"><code>killall SystemUIServer</code></pre>
     </div>
 	<div class="navleft">

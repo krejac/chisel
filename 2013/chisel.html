@@ -23,7 +23,8 @@
 
             
         </h2>
-       	<p><img alt="Screenshot af Terminal.app" src="https://log.logiskhave.dk/static/20130927_screenshot.png" title="Terminal.app afvikler Chisel" /></p>
+       	<p><strong>tl</strong>;<strong>dr</strong> - Jeg har skiftet det underliggende system, jeg bygger denne side med, ud fra Octopress til Chisel og er glad for det.</p>
+<p><img alt="Screenshot af Terminal.app" src="https://log.logiskhave.dk/static/20130927_screenshot.png" title="Terminal.app afvikler Chisel" /></p>
 <p>I min søgen efter det ultimative blogsetup, er jeg nu faldet over <a href="https://github.com/dz/chisel">Chisel</a>, som er endnu en "static site generator" lige som mine tidligere sider .</p>
 <p>Der var et par ting, der tiltalte mig ved Chisel og især følgende betyder meget for valget om at gå væk fra <a href="http://octopress.org">Octopress</a>. Chisel er nemlig:</p>
 <ul>
@@ -32,8 +33,8 @@
 <li>Har et minimum afhængigheder, hvilket gør Chisel mobil<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>.</li>
 <li>Parser markdown, som jeg elsker at skrive i.</li>
 </ul>
-<p>Siden her er dog ikke en "bare bones" chisel, men <a href="https://github.com/ckunte/chisel/blob/master/chisel.py">Chyetanya Kuntés udvidelse</a> på 169 linier python-kode. Det er der nogle fornuftige tilføjelser, som jeg synes var værd at tage med<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> - og derudover havde han lavet et fint layout, som jeg kunne arbejde ud fra. </p>
-<p>For at få det til at spille har jeg dog inden go-live måtte kigge på det evigt frygtede datoformat -- for jeg gider ikke lave en fin side blot for ikke at kunne generere danske datoer.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> </p>
+<p>Siden her er dog ikke en "bare bones" chisel, men <a href="https://github.com/ckunte/chisel/blob/master/chisel.py">Chyetanya Kuntés udvidelse</a> på 169 linier python-kode. Det er der nogle fornuftige tilføjelser, som jeg synes var værd at tage med<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> - og derudover havde han lavet et fint layout, som jeg kunne arbejde ud fra.</p>
+<p>For at få det til at spille har jeg dog inden go-live måtte kigge på det evigt frygtede datoformat -- for jeg gider ikke lave en fin side blot for ikke at kunne generere danske datoer.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup></p>
 <h3>Danske datoer</h3>
 <p>For at få danske datoer til at virke, måtte jeg dels lave denne rettelse i chisel.py:</p>
 <pre class="codehilite"><code>TIME_FORMAT = &quot;%B %d, %Y&quot;</code></pre>
@@ -52,7 +53,7 @@ locale.setlocale(locale.LC_TIME, &quot;da_DK.UTF-8&quot;)</code></pre>
 <p><em>Dansk format og dansk sprog (eks. 22. maj, 2013)</em></p>
 <p>Hvis man som jeg blot skrev "da_DK" i sproget virker det fint på Mac, men giver en fejl på Linux. Linux (Debian i mit tilfælde) er noget mere kræsent og skal have den præcise angivelse; altså med den korrekte ".UTF-8" endelse på. Det krævede lidt grå hår, før jeg fandt <a href="http://stackoverflow.com/questions/1259971/os-locale-support-for-use-in-python">en tråd på Stack Overflow</a>, som bragte mig i den rigtige retning -- jeg er som bekendt ikke programmør. ;-)</p>
 <h3>Update</h3>
-<p>D. 28/9-2013 - <a href="http://www.mathjax.org">MathJax</a> er fjernet for at gøre siden hurtigere; jeg skriver ikke matematiske formler, så det tjener ingen funktion. </p>
+<p>D. 28/9-2013 - <a href="http://www.mathjax.org">MathJax</a> er fjernet for at gøre siden hurtigere; jeg skriver ikke matematiske formler, så det tjener ingen funktion.</p>
 <div class="footnote">
 <hr />
 <ol>
