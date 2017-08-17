@@ -32,7 +32,7 @@ import jinja2, markdown, PyRSS2Gen # install with pip
 #     /www (the generated html site from post files)
 # the locations are used thus:
 #
-BASEURL = "http://log.logiskhave.dk/" #end with slash
+BASEURL = "https://log.logiskhave.dk/" #end with slash
 # The following tells chisel where to look for native posts:
 SOURCE = "./posts/" #end with slash
 #  The following tells chisel where to generate site:
