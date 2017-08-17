@@ -1,9 +1,10 @@
 S&oslash;vn og tr&aelig;ning
 24-03-2012
 
+
 Politiken publiserede for et par dage siden et sæt artikler om søvns indvirken på evnen til at træne godt.
 
-Den første (med sensationsheadlinen) *[Forskere: Du kan komme sovende til topformen][forskning]*, beskriver søvn som en forudsætning for ordentlig restitution og dermed god træning. Søren Berg, associeret professor, dr. med.: 
+Den første (med sensationsheadlinen) *[Forskere: Du kan komme sovende til topformen][forskning]*, beskriver søvn som en forudsætning for ordentlig restitution og dermed god træning. Søren Berg, associeret professor, dr. med.:
 
 > Vi tror, at man ved at hjælpe folk med at få styr på søvnvanerne virkelig kan rykke på resultaterne. Der er masser af belæg for, at manglende søvn underminerer din præstation. Spørgsmålet er, hvordan vi kan optimere sportsfolk og seriøse motionisters søvn.
 

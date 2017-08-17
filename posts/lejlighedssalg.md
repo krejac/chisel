@@ -1,6 +1,7 @@
 Vi s&aelig;lger vores dejlige lejlighed
 06-06-2012
 
+
 Vi har været utroligt glade for vores 98kvm i hjertet af Nørrebro. Men du vil nok hellere se billeder end høre mig prise den. Så beskrivelsen og tallene finder du i bunden af siden. :)
 
 Tryk på de enkelte billeder for at se dem store eller gå direkte til et [slideshow](http://www.dropbox.com/gallery/117828/1/Lejlighed?h=c142ac).
@@ -12,7 +13,7 @@ Tryk på de enkelte billeder for at se dem store eller gå direkte til et [slide
 **Andelsprisen er 1.215.043,90** og **boligafgiften er *kun* 2.449,97**. Derudover er der et nyt køkken, som har kostet i omegnen af 70.000, som man får med billigt.
 
 ###Lejligheden
-Når man træder ind lejligheden bliver man mødt af en lang fordelingsentré med døre til alle rum samt pulterkammer. På venstre hånd finder man den store spisestue, som har dobbeltdør ind til den lige så store sofastue. Begge stuer er vestvendte, så man har lyset, om eftermiddagen og aftenen. 
+Når man træder ind lejligheden bliver man mødt af en lang fordelingsentré med døre til alle rum samt pulterkammer. På venstre hånd finder man den store spisestue, som har dobbeltdør ind til den lige så store sofastue. Begge stuer er vestvendte, så man har lyset, om eftermiddagen og aftenen.
 
 På den anden side af gangen ligger det nye køkken, som har *masser* af opbevaringsplads. Efter det findes kontoret, som vi ville lave til børneværelse og endelig finder man på samme side toilettet, som er sjovt opbygget, men fungerer rigtig godt (ikke noget med at bade oven på WC'et).
 
@@ -25,7 +26,7 @@ Andelen ligger på *[Borgmestervangen 4A, 5.tv.](https://maps.google.dk/maps?q=B
 
 I den store gård, som man går igennem, når man skal ind ad hoveddøren er der græsplæne, lejeplads, grill og borde / bænke.
 
-Baggården, som man kommer ned i fra bagtrappen, er mere praktisk lagt an med tørrestativer og storskrald ol. 
+Baggården, som man kommer ned i fra bagtrappen, er mere praktisk lagt an med tørrestativer og storskrald ol.
 
 Har man tænkt sig at blive boende i længere tid, kan man også se frem til Metroen, som forventes færdig herude i 2018.
 

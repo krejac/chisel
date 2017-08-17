@@ -1,6 +1,7 @@
 Turbo p&aring; telefonen - sms'er
 31-03-2014
 
+
 Min telefon er min livsnerve, mit fotoalbum og min kommunikationscentral på godt og ondt. Jeg bruger den flere gange i timen alle mine vågne timer. Jeg ser billeder af min datter, læser nyheder, følger med på div. netværk, mail, skriver på bloggen og alt muligt andet. Men en del af det jeg bruger den til er også rutineoperationer, som jeg gentager med mindre variationer dag efter dag; lige den slags der kandiderer til lidt automatisering.
 
 Eksempelvis sender jeg en sms til min hustru om hvordan afleveringen af vores datter forløb hver dag, når jeg har afleveret hende i vuggestuen. Sådan en besked indeholder info om hvorvidt aflevering er gået godt eller mindre godt og hvem af de fire voksne på stuen der tog imod. Det er til at arbejde med. :)

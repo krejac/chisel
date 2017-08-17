@@ -1,6 +1,7 @@
 Uge 10 - Ny bundskraber
 08-04-2012
 
+
 *Dette blogindlæg er en del af en [række indlæg](/marathon.html), som omhandler træningen til mit første maraton - Copenhagen Marathon 2012.*
 
 Denne uge var vi i New York, og jeg havde glædet mig til at løbe i nye omgivelser.[^1] Men efter sidste uges [26 kilometer i Central Park](http://connect.garmin.com/activity/164249547) og et kæmpe gå-pensum (NYC er ret stor, skulle jeg hilse og sige), var der ikke overskud til løb. Så det blev desværre kun til en enkelt tur et [par gange rundt om Jacqueline Kennedy Onassis Reservoir](http://connect.garmin.com/activity/165402604) (ud over den lange tur i sidste uge, altså).

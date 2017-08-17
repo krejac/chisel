@@ -1,6 +1,7 @@
 Turbo p&aring telefonen - "hvorn&aringr er du hjemme?"
 11-03-2015
 
+
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Jeg har lavet en arbejdsgang, så jeg hurtigt kan svare min kone på hvornår jeg er hjemme ved hjælp af [Launch Center Pro](http://contrast.co/launch-center-pro/) og især [Pythonista](http://omz-software.com/pythonista/index.html).
 
 ![iPhone](https://log.logiskhave.dk/static/20150311_iphone5s.jpg "iPhone")

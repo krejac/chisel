@@ -1,6 +1,7 @@
 Opvarmning
 29-01-2012
 
+
 Før jeg i morgen tager hul på den målrettede træning frem til [Copenhagen Marathon][cphmarathon], har jeg "varmet op" til at gennemføre et - for mig - hårdt træningsprogram. I den forbindelse satte jeg mig som mål at løbe 100K i januar - hvilket jeg har gjort - og jeg tror, jeg er klar til den rigtige maraton-træning nu.
 
 Mine mål for [Copenhagen Marathon][cphmarathon] er:

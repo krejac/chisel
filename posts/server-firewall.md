@@ -1,6 +1,7 @@
 'Server hardening' - Ops&aelig;tning af firewall
 29-01-2016
 
+
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Jeg har et par servere snurrende rundt om i verdenen og ser derfor tydeligt, hvor ofte de bliver udsat for angreb. Her er mine noter til opsætning af en firewall Ubuntu/Debian-box[^1].
 
 ![Serving](https://log.logiskhave.dk/static/20160126_server.jpg "Live to serve...")

@@ -1,16 +1,17 @@
 iPad blog flow
 20-01-2014
 
+
 **TL**;**DR** - I've implemented a workflow for my Chisel log using a combination of Pythonista scripts and x-callback-urls enabling me to write, uploading and inserting images in posts and publishing all of it on a tiny Linux box. 
 
 ![ Image name ](https://log.logiskhave.dk/static/20140120_call_byword.png)
 
 *This post is written in english because of the limited interest such a subject would have among a danish audience.*
 
-It is no secret that I have an affection of the simplicity of static blog generators; I have actually been using a few on this domain in the past.[^1] The simplicity of a system that I understand and can hack myself is worth so much for me as a hobby techie. Furthermore this setup is portable (can easily be moved to a new host or system) and secure (no active components - apart from the webserver, that is - to be maintained). 
+It is no secret that I have an affection of the simplicity of static blog generators; I have actually been using a few on this domain in the past.[^1] The simplicity of a system that I understand and can hack myself is worth so much for me as a hobby techie. Furthermore this setup is portable (can easily be moved to a new host or system) and secure (no active components - apart from the webserver, that is - to be maintained).
 
 ### The flow
-The goal is to be able to create and publish full length post - including images - using only my iPad. To do that I need to identify each step in my logging flow and support each step in a way that not only make it technically possible but also easy to use - well as easy as it can with the setup I have chosen anyway. 
+The goal is to be able to create and publish full length post - including images - using only my iPad. To do that I need to identify each step in my logging flow and support each step in a way that not only make it technically possible but also easy to use - well as easy as it can with the setup I have chosen anyway.
 
 The steps in my workflow is as follows:
 
@@ -20,8 +21,8 @@ The steps in my workflow is as follows:
 - **Proofreading**: I write in markdown. Markdown is - even though it is a markup format - highly legible so a good plain text editor is all I really need. *Manual action.*
 - **Promoting from 'draft' to 'post'**: My markdown files resides in two different folders; a drafts folder af a posts folder. The folder a given file is in determines its fate when the site is being generated. *Candidate for automation.*
 - **Generating site**: Since I use a static site generator that produce a hierarchy of html files, I need to generate the site anew every time I publish a post. Within a minute of a regeneration of the site changes are live. *Candidate for automation.*
- 
-So the workflow ends up looking like this (note the gears that indicate an action that is being automated): 
+
+So the workflow ends up looking like this (note the gears that indicate an action that is being automated):
 
 ![ workflow ](https://log.logiskhave.dk/static/20140120_workflow.png)
 
@@ -40,10 +41,10 @@ The setup does exactly what I set out to acheive. It enables me to write effortl
 
 **Ease of use** - Medium. This must be evaluated against other iOS-publishing methods, and while there certainly are easier ways to get content online; I have yet to see an easier - or perhaps more transparent - setup for a self hosted site build with a static site generator. Each step in my flow is under my control; right from the server that hosts my content over the tool I use to generate the site to the scripts I use to control this setup with. But that wont make it easy to understand for any non techie. When set up it is pretty straight forward to use - especially if you execute the scripts via x-callback-urls with an app like [Launch Center Pro][LCP].
 
-**Geek factor** - High. Generating static html from the commandline, managing your own server and scripting (or adapting scrips to) your setup is definitely not for everybody. You have to want to tinker. For everybody else there is loads of online services that does the job of getting your content online faster and easier. 
+**Geek factor** - High. Generating static html from the commandline, managing your own server and scripting (or adapting scrips to) your setup is definitely not for everybody. You have to want to tinker. For everybody else there is loads of online services that does the job of getting your content online faster and easier.
 
-[^1]: Git repository of logiskhave on [Jekyll](https://github.com/krestenjacobsen/logiskhave_jekyll) and [Octopress](https://github.com/krestenjacobsen/logiskhave_octopress). 
-[^2]: Which is a consequense of my choice of the drafts / posts setup. This setup allows me to regenerate the site for whatever reason without incidently publishing a post I'm working on. 
+[^1]: Git repository of logiskhave on [Jekyll](https://github.com/krestenjacobsen/logiskhave_jekyll) and [Octopress](https://github.com/krestenjacobsen/logiskhave_octopress).
+[^2]: Which is a consequense of my choice of the drafts / posts setup. This setup allows me to regenerate the site for whatever reason without incidently publishing a post I'm working on.
 
 [chisel_kj]: https://github.com/krestenjacobsen/chisel
 [LCP]: http://contrast.co/launch-center-pro/

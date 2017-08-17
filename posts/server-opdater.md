@@ -1,6 +1,7 @@
 'Server hardening' - Automatiske opdateringer
 26-01-2016
 
+
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Jeg har et par servere snurrende rundt om i verdenen og ser derfor, hvor ofte de bliver udsat for angreb. Her er mine noter til at holde en Ubuntu/Debian-box[^1] opdateret - også når man ikke har tid.
 
 ![Serving](https://log.logiskhave.dk/static/20160126_server.jpg "Live to serve...")

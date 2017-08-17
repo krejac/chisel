@@ -1,6 +1,7 @@
 Esthers f&oslash;dselsdag
 19-10-2012
 
+
 Idag er det Esthers fødselsdag. Hverken Kimmie eller jeg er klar, men vi kan ikke rigtigt trække den længere og vi glæder os begge helt vildt til at se hende.
 
 Kimmie er i bad og imens får jeg mig en kop kaffe. Selvom det er Kimmie der faster, kan jeg ikke spise noget. Jeg ved ikke om det skyldes spændingen eller bare det, at mormor serverede gryderet med kartoffelmos i går...

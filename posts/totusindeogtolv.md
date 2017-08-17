@@ -1,15 +1,16 @@
 To-tusinde-og-tolv
 31-12-2012
 
+
 2012 var på flere måder et skelsættende år i mit liv. Et år hvor kun småtingene var planlagte og de store ting ligesom bare skete. 
 
 ## Maratontræning ##
-Året startede med et fortsæt om, at løbe Copenhagen Marathon - og den første (rigtige) tur i den forbindelse var i en helt fortryllende Utterslev Mose. Her et år (og [mange kilometer][km]) senere står denne tur stadig som den flotteste. Det var en helt klar dag, hvor temperaturen hurtigt var faldet til et godt stykke under frysepunktet og mosen derfor dampede og dannede et tæt tåge. Tågen frøs til is på alt hvad den kom i kontakt med, så græs, grene og blade var kridhvide. Samtidigt blev tågen så lyst op af solen som skinnede oppe over. Alt var hvidt. En smuk start på et fantastisk år. 
+Året startede med et fortsæt om, at løbe Copenhagen Marathon - og den første (rigtige) tur i den forbindelse var i en helt fortryllende Utterslev Mose. Her et år (og [mange kilometer][km]) senere står denne tur stadig som den flotteste. Det var en helt klar dag, hvor temperaturen hurtigt var faldet til et godt stykke under frysepunktet og mosen derfor dampede og dannede et tæt tåge. Tågen frøs til is på alt hvad den kom i kontakt med, så græs, grene og blade var kridhvide. Samtidigt blev tågen så lyst op af solen som skinnede oppe over. Alt var hvidt. En smuk start på et fantastisk år.
 
 Fast forward til februar.
 
 ## Gran Canaria ##
-Esther og Michael inviterede os og de andre unger[^1] en tur ned til solen på Gran Canaria. Det var en dejlig tur, som gav et velfortjent afbræk fra hverdagen og bød på sol, [løbeture][gc], godt selskab og en lille overraskelse, der først skulle vise sig 9 måneder senere. 
+Esther og Michael inviterede os og de andre unger[^1] en tur ned til solen på Gran Canaria. Det var en dejlig tur, som gav et velfortjent afbræk fra hverdagen og bød på sol, [løbeture][gc], godt selskab og en lille overraskelse, der først skulle vise sig 9 måneder senere.
 
 Hjem til danmark og over atlanten.
 
@@ -19,7 +20,7 @@ Turen til New York var booket inden Kimmie var blevet gravid, så den lå ikke p
 Tilbage igen, så kommer foråret.
 
 ## Maraton ##
-I slutningen af maj løb jeg så [Copenhagen Marathon][cm]. Det var en væsentligt varmere dag end nogen af de andre dage op til maraton, hvilket betød at mange løbere måtte udgå pga. ildebefindende - faktisk så mange at samaritterne løb tør for væskedrop til de nødlidende. Jeg var dog ikke SÅ mærket af varmen og klarede mit mål med at komme under 4 timer og var endda 9 sekunder hurtigere end mit eget estimat på 3:50. Det er jeg både glad for og stolt over. 
+I slutningen af maj løb jeg så [Copenhagen Marathon][cm]. Det var en væsentligt varmere dag end nogen af de andre dage op til maraton, hvilket betød at mange løbere måtte udgå pga. ildebefindende - faktisk så mange at samaritterne løb tør for væskedrop til de nødlidende. Jeg var dog ikke SÅ mærket af varmen og klarede mit mål med at komme under 4 timer og var endda 9 sekunder hurtigere end mit eget estimat på 3:50. Det er jeg både glad for og stolt over.
 
 Først forår, så sommer.
 
@@ -44,17 +45,17 @@ Hen over sommeren var Kimmie vokset til noget der efterhånden mindede om højgr
 Og så var hun her bare.
 
 ## Indflytning ##
-Til indflytningen i Sømosen havde vi engangeret vores familier og især Søren, Lise, Esther, Michael og Sonnich skal have kæmpe tak for at være så uhyre effektive. Jeres arbejde gjorde, at vi kunne male huset og flytte ind på rekordtid. Det var super fedt at komme herud og igang med selve indretningen uden at skulle pendle mellem vores midlertidige toværelses i NV med lille baby-Esther bare to uger efter fødslen. 
+Til indflytningen i Sømosen havde vi engangeret vores familier og især Søren, Lise, Esther, Michael og Sonnich skal have kæmpe tak for at være så uhyre effektive. Jeres arbejde gjorde, at vi kunne male huset og flytte ind på rekordtid. Det var super fedt at komme herud og igang med selve indretningen uden at skulle pendle mellem vores midlertidige toværelses i NV med lille baby-Esther bare to uger efter fødslen.
 
 Så nu er vi endt som forstadsfamilie.
 
 ## Livet i mosen ##
 Nu er vi så kommet godt på plads herude og både Kimmie og jeg er super glade for det. Jeg er (endnu) ikke træt af at pendle - faktisk arbejder jeg fint i toget. Esther har vist sig at være en utroligt sød baby, som indtil videre er meget flink mod sine forældre. Vi kan dog godt se at det ikke nødvendigvis holder ved[^3]. Huset og omgivelserne er helt som forventet; men selvom vi nyder det nu, glæder vi os umådeligt til sommeren, hvor det kan nydes i endnu højere grad.
 
-Fed, fed lykke! 
+Fed, fed lykke!
 
 [^1]: Sonnich, Nichlas, Karina og Ea.
-[^2]: Vi har boet sammen andre steder; men Penthouse, var det første sted som rigtigt var *vores*. 
+[^2]: Vi har boet sammen andre steder; men Penthouse, var det første sted som rigtigt var *vores*.
 [^3]: Antydninger af at Esther ændrer sig har ulmet de seneste dage. Men måske er der blot tale om et skift i [udviklingstrin][]. Hvem ved?
 
 [km]: http://log.logiskhave.dk/2012/20120520_uge16.html   

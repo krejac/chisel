@@ -1,11 +1,12 @@
 Foto backup workflow
 24-09-2014
 
-[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) -- Jeg har konstrueret et automatisk workflow, som sikrer husstandens mange billeder og videoer taget med iPhones - samtidigt med, at de ikke behøver fylde på telefonen.
+
+**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** -- Jeg har konstrueret et automatisk workflow, som sikrer husstandens mange billeder og videoer taget med iPhones - samtidigt med, at de ikke behøver fylde på telefonen.
 
 ![iPhone i jord](https://log.logiskhave.dk/static/20140912_iphone-i-jord@2x.jpg)
 
-Jeg har længe eksperimenteret med - og betalt til - diverse billedbackuptjenester, som kunne frigøre plads på vores iPhones, fandt egentligt en god en som desværre gik rabundus. Så nu har jeg bygget mit eget ret robuste og relativt simple setup, som sikrer vores billeder, selvom iPhones'ne ryger ud af lommen i haven eller vores Macs diske dør. Det giver en vis tryghed at vide, at vores højt skattede billeder er sikre i skyen. 
+Jeg har længe eksperimenteret med - og betalt til - diverse billedbackuptjenester, som kunne frigøre plads på vores iPhones, fandt egentligt en god en som desværre gik rabundus. Så nu har jeg bygget mit eget ret robuste og relativt simple setup, som sikrer vores billeder, selvom iPhones'ne ryger ud af lommen i haven eller vores Macs diske dør. Det giver en vis tryghed at vide, at vores højt skattede billeder er sikre i skyen.
 
 De *ingredienser* der skal bruges i opskriften er:   
 - En eller flere smartphones[^0] med kamera og Dropbox-app'en installeret.   
@@ -48,7 +49,7 @@ Når man så vælger "date created", trykker man på <i class="fa fa-caret-down"
 >If ```[all]``` of the following conditions are met    
 >```[Kind]``` ```[is]``` ```[Movie]```    
 >```[Kind]``` ```[is not]``` ```[Folder]```    
-   
+
 >Do the following to the matched file or folder:    
 >```[Move]``` to folder: ```[STI TIL MAPPE UDEN FOR DROPBOX]```   
 >```[Sort into subfolder]``` with pattern: ```[date created]```    
@@ -60,9 +61,9 @@ Og det var så Hazel-delen. Når du tager et billede med din iPhone, vil Dropbox
 *Jeg* slutter så det hele af med at tage backup af folderen med alle mine billeder med Backblaze - og vil på *det kraftigste* anbefale dig at gøre det samme fordi [HARDDISKE DØR](http://log.logiskhave.dk/2014/0908_back-nu-op-mand.html)!
 
 [^0]: Der behøver ikke partout være tale om iPhones; andre telefoner med en Dropbox app, der kan uploade billeder automatisk vil virke.
-[^1]: Betalingsversionen kan også bruges, men giver ikke bedre resultater til dette formål. 
-[^2]: Hazel er min Macs mest brugte, aldrig åbnede, app. 
-[^3]: Køber du via dette link, for både du og jeg en gratis måned. 
+[^1]: Betalingsversionen kan også bruges, men giver ikke bedre resultater til dette formål.
+[^2]: Hazel er min Macs mest brugte, aldrig åbnede, app.
+[^3]: Køber du via dette link, for både du og jeg en gratis måned.
 [^4]: Det første trin er vel egentligt at oprette en Dropbox-konto og downloade deres app på hhv. Mac og iPhone, men det går altså ud over denne gennemgang.
 [^5]: Hvis du ikke ønsker at uploade alle dine billeder til Dropbox - hvis du som mig tager billeder på arbejdet eller lignende - kan du løse dette ved at installere en anden foto app til den slags billeder. Jeg bruger selv Camera+, som er en ganske god foto app (bedre end Apples egen).
 [^6]: Men inden du går i gang med at slette derudaf, så tjek lige at Dropbox-app'en ER færdig, ikke?

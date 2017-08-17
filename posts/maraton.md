@@ -1,6 +1,7 @@
 MARATON
 21-05-2012
 
+
 *Dette blogindlæg er en del af en [række indlæg](/marathon.html), som omhandler træningen til mit første maraton - Copenhagen Marathon 2012.*
 
 Så kom dagen for Copenhagen Marathon 2012 endelig.

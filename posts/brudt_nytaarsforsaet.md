@@ -1,6 +1,7 @@
 Brudt Nyt&aring;rsfors&aelig;t
 03-01-2014
 
+
 ![Brudt løfte](https://log.logiskhave.dk/static/20140103_bokeh_broken.jpg)
 Den pressede hverdag, som meldte sig, da jeg kom tilbage på arbejde, betød desværre at jeg i år ikke overholdt mit nytårsforsæt om 100 løbeture i 2013 (jeg nåede nogen-og-halvtreds inden hverdagen meldte sin ankomst). Det er super ærgeligt, for jeg er egentligt rigtig glad for at løbe, men overskudet har bare ikke været der - og ja, jeg ved godt at man først får overskuddet, når man motionerer. Men det gjorde jeg så ikke...
 

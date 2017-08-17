@@ -1,6 +1,7 @@
 Python: Send mail
 24-11-2015
 
+
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Det er lige gået op for mig, *hvor* nemt det egentligt er at sende en gmail med Python. Det må jeg lige få noteret...
 
 ![Code...](https://log.logiskhave.dk/static/20141023_code.jpg "Code...")
@@ -9,11 +10,11 @@ Nedenstående eksempel sender en email til 'user2@example.org' med en påmindels
 
 	:::python
 	import smtplib
-	
+
 	# Credentials
 	GMAIL_USERNAME = 'user1@example.org'
 	GMAIL_PASSWORD = 'xyz123!'
-	
+
 	# Contents (body_of_email can be either plaintext or html)
 	email_subject = 'Email subject goes here'
 	recipient = 'user2@example.org'
@@ -25,18 +26,18 @@ Nedenstående eksempel sender en email til 'user2@example.org' med en påmindels
 	Sincerly,<br>
 	UNIVAC
 	"""
-	
+
 	# Establish secure connection, verify identity (you may have to create an app specific password if you - like me - have two factor authentification enabled).
 	session = smtplib.SMTP('smtp.gmail.com', 587)
 	session.starttls()
 	session.login(GMAIL_USERNAME, GMAIL_PASSWORD)
-	
+
 	headers = "\r\n".join(["from: " + GMAIL_USERNAME,
                 	       "subject: " + email_subject,
             	           "to: " + recipient,
         	               "mime-version: 1.0",
     	                   "content-type: text/html"])
-	
+
 	content = headers + "\r\n\r\n" + body_of_email
 	session.sendmail(GMAIL_USERNAME, recipient, content)
 

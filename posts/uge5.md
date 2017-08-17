@@ -1,17 +1,18 @@
 Uge 5 - Tung start, god slutning
 04-03-2012
 
+
 *Dette blogindlæg er en del af en [række indlæg](/marathon.html), som omhandler træningen til mit første maraton - Copenhagen Marathon 2012.*
 
 Nu er vi over en fjerdedel inde i programmet og der vil over de kommende uger komme en del længere ture. Mandag var dog ikke en af dem. Tværtimod stod den slet ikke på løb, men derimod krydstræning.
 
 [Tirsdag](http://connect.garmin.com/activity/153424128) var fartleg, men der var ikke meget leg over det. Det virkede en smule forceret, men jeg fik da spurtet og varieret mit tempo over de tre kvarter, der var påkrævet. Om aftenen kunne jeg godt mærke en smule ømhed i baglåret, men om det var fra samme dag eller de forgående dage er svært at sige.
 
-[Onsdag](http://connect.garmin.com/activity/153605075) havde jeg tunge ben. Tirsdagens løb lå om eftermiddagen og onsdagens om morgenen hvilket - for mig (på nuværende tidspunkt) - er for tæt. Så altså tunge ben på en 6,5K. Men ellers ikke noget usædvanligt. 
+[Onsdag](http://connect.garmin.com/activity/153605075) havde jeg tunge ben. Tirsdagens løb lå om eftermiddagen og onsdagens om morgenen hvilket - for mig (på nuværende tidspunkt) - er for tæt. Så altså tunge ben på en 6,5K. Men ellers ikke noget usædvanligt.
 
-Med denne tur blev februar afsluttet og totalen lyder på hele 166K. Det er jeg godt tilfreds med.[^2] 
+Med denne tur blev februar afsluttet og totalen lyder på hele 166K. Det er jeg godt tilfreds med.[^2]
 
-Puha. [45 minutter bakker](http://connect.garmin.com/activity/153978031). Det var hårdt. Det var som sædvanligt svært at tage sig sammen efter arbejde og benene er stadig tunge. Det kan godt være, at jeg skal tage i mod den næste frivillige hviledag. 
+Puha. [45 minutter bakker](http://connect.garmin.com/activity/153978031). Det var hårdt. Det var som sædvanligt svært at tage sig sammen efter arbejde og benene er stadig tunge. Det kan godt være, at jeg skal tage i mod den næste frivillige hviledag.
 
 Fredag havde jeg en del forskellige ting på tapetet og besluttede mig aftenen i forvejen at jeg ville stå op kl. 6.00 og løbe, så jeg ikke skulle ud efter arbejde. Men på det tidspunkt af døgnet sætter man ingen verdensrekorder. Eller jeg gør ihvertfald ikke. Men de 6,5 kilometer blev da tilbagelagt uden større problemer[^3].
 

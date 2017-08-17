@@ -1,5 +1,6 @@
-Opf&oslash;lgning 
+Opf&oslash;lgning
 06-03-2015
+
 
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - At skrive ønsker og mål ned hjælper mig med at fastholde fokus i en travl hverdag. 
 
@@ -11,7 +12,7 @@ Til min store begejstring fandt jeg dog ud af, at jeg kunne lytte til bøger i t
 
 I kategorien "personlig udvikling" skrev jeg at jeg gerne ville lære at programmere (igen) og prøvede egentligt at få det puttet ind om aftenen, hvor jeg har bedst tid til at sidde - forholdsvis - uforstyrret foran computeren. Det gik ikke. Om aftenen er jeg for træt og samværet med kone nr. 1 og barn nr. 2 skal også prioriteres.[^1] Men så fik jeg den geniale idé at argumentere for, at mit arbejde på Københavns Universitets skulle tillade, at jeg brugte en dag om ugen på et mindre uddannelsesforløb i programmering på trods af at jeg ikke programmerer i mit nuværende job. Og min chef sagde sgu ja! Så nu har jeg fået lov til at bruge tid på nogle af de kurser, som jeg havde kigget på. Yay!
 
-Men hvorfor skriver jeg så det her. Jo, det gør jeg fordi, jeg skal minde mig selv om, at det hjælper at sætte sig ned og tænke over hvad man egentligt gerne vil bruge sin tid på - og i mit tilfælde at fastholde det ved at skrive det ned. 
+Men hvorfor skriver jeg så det her. Jo, det gør jeg fordi, jeg skal minde mig selv om, at det hjælper at sætte sig ned og tænke over hvad man egentligt gerne vil bruge sin tid på - og i mit tilfælde at fastholde det ved at skrive det ned.
 
 [^2]: Jeg ville ønske de andre bøger i serien også var tilgængelige på Audible, men det er de desværre ikke.
 [^1]: Deruover er sæson 3 af House of Cards kommet på gaden, så er vi friske, ser vi den. :)

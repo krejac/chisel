@@ -1,6 +1,7 @@
 Partitesten
 04-08-2016
 
+
 **[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** -- Jeg foreslår en ny "kandidattest", baseret på data fra [Folketinget](ft.dk), der holder politikerne op på det de rent faktisk stemmer.
 
 [![Christiansborg](https://log.logiskhave.dk/static/20160804_christiansborg.jpg)](https://upload.wikimedia.org/wikipedia/commons/c/ca/Den_danske_Vitruvius_1_tab022_-_Prospect_af_det_Kongl_Slott_Christiansborg_imod_Hoved_Indgangen.jpg)

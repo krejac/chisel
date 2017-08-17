@@ -1,13 +1,14 @@
 Guide til kodeord p&aring; nettet
 13-08-2014
 
+
 **[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** -- På internettet er kodeord din bedste mulighed for at beskytte din online identiteter, derfor skal du bruge dem med omhu. Nedenstående er en guide til hvordan du let beskytter dig mod identitetstyveri.
 
 ![Sikkerhed](https://log.logiskhave.dk/static/20140813_kodeord@2x.jpg)
 
 For at sikre sig på nettet, skal man vide lidt om hvordan identitetstyveri oftest foregår. Indentitetstyve kan overordnet deles op i to kategorier 1) dem der gætter dit kodeord (*hacking*) og 2) dem der lister dit kodeord ud af dig (*phising*). Jo mere kompliceret et kodeord er desto sværere er det at gætte sig til for hackeren. Tilgengæld er phisheren ligeglad med styrken af dit kodeord, for han snyder dig til at give ham det.
 
-Så vi står altså med to problemer: 1) simple kodeord kan gættes og 2) kodeord kan man franarres. 
+Så vi står altså med to problemer: 1) simple kodeord kan gættes og 2) kodeord kan man franarres.
 
 > *Tre leveregler til kodeord på nettet:*    
 >
@@ -22,12 +23,12 @@ Computere derimod kan gætte på alt mellem himmel og jord, og kan gøre det meg
 
 Et eksempel på et godt kodeord, som er nemt at huske, kunne være at lave en remse selv eller at låne en, for at huske sit kodeord. Eksempelvis Halfdan Rasmussens remse "Hundrede høns i hønsegården, kom op at slås en søndagsmorgen", som kunne blive til 100hihkoas1s[^1]. Det er en rimelig stærk kode, som er til at huske, men ikke umiddelbart til at gætte.
 
-At ændre sit kodeord ofte øger i sig selv ikke sikkerheden særligt meget. Tilgengæld gør det det væsentligt sværer at huske sine kodeord. 
+At ændre sit kodeord ofte øger i sig selv ikke sikkerheden særligt meget. Tilgengæld gør det det væsentligt sværer at huske sine kodeord.
 
-Men bliver du gjort opmærksom på en sikkerhedsbrist hos eks. din email udbyder *skal* den tages seriøst. Sørg dog for at være sikker på at der ikke er tale om et phishing-forsøg. 
+Men bliver du gjort opmærksom på en sikkerhedsbrist hos eks. din email udbyder *skal* den tages seriøst. Sørg dog for at være sikker på at der ikke er tale om et phishing-forsøg.
 
 ###Sikkerhedsniveauer
-Det måske allervigtigste for din sikkerhed online er din email. Denne putter vi i "sikkerhedsniveau 1". Hvis en identitetstyv får adgang til din email, kan han nemlig nulstille kodeordet til næsten alle andre online tjenester og få tilsendt et nyt kodeord (gælder dog heldigvis ikke NemID-tjenester). Derfor bør din email have et helt særligt stærkt kodeord, som du ikke bruger andre steder. På denne måde er der mindre sansynlighed for at den bliver hacket. Derudover bør du aldrig skrive kodeordet til din email nogen andre steder end kodeordsfeltet under login til din email. Selv hvis du får en henvendelse fra din emailudbyder, bør du afvise at oplyse dit kodeord. 
+Det måske allervigtigste for din sikkerhed online er din email. Denne putter vi i "sikkerhedsniveau 1". Hvis en identitetstyv får adgang til din email, kan han nemlig nulstille kodeordet til næsten alle andre online tjenester og få tilsendt et nyt kodeord (gælder dog heldigvis ikke NemID-tjenester). Derfor bør din email have et helt særligt stærkt kodeord, som du ikke bruger andre steder. På denne måde er der mindre sansynlighed for at den bliver hacket. Derudover bør du aldrig skrive kodeordet til din email nogen andre steder end kodeordsfeltet under login til din email. Selv hvis du får en henvendelse fra din emailudbyder, bør du afvise at oplyse dit kodeord.
 
 Udover din email, har du ganske givet en række konti til tjenester, hvor dine betalingskort er registreret. Disse er i næste sikkeherhedsniveau; "sikkerhedsniveau 2" og bør også have forskellige kodeord, så en identitetstyv, der har knækket koden et sted ikke også kan bruge den et andet.
 

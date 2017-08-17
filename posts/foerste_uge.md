@@ -1,9 +1,10 @@
 F&oslash;rste uge med Esther
 25-10-2012
 
-Nuich, det er hårdt at være far. Der er så utroligt mange bekymringer. 
 
-![Foto: Far og datter](https://log.logiskhave.dk/static/20121026_far_og_esther.jpeg Far og datter)
+Nuich, det er hårdt at være far. Der er så utroligt mange bekymringer.
+
+![Far og datter](https://log.logiskhave.dk/static/20121026_far_og_esther.jpeg)
 
 Siden mit [sidste indlæg][fodselsdag] er Kimmie og Esther blevet udskrevet og er kommet hjem. Det er rigtigt dejligt at være sammen med de to tøser døgnet rundt, men det var for tidligt de blev sendt hjem. Vi havde ikke styr på amningen endnu og Esther havde tabt en del vægt.<!-- more -->
 
@@ -13,7 +14,7 @@ Dagen efter pigerne var kommet hjem, var vi på barselsambulatoriet. Her blev Es
 
 Den følgende dag havde hun igen tabt sig og vi fik at vide, at vi ikke blot skulle håndholde supplementet, men give hende den fulde dosis via sprøjten, som vist på det tidspunkt var 37ml hver tredje time. Havde vi så sultet vores stakkels datter de foregående dage? Vi var fortvivlede.
 
-På tredjedagen var vi så tilbage på barselsambulatoriet; hun havde taget 60 gram på. Endelig var vægtkurven knækket! Vi var lykkelige. Vores stopfodring havde virket. Men så kom endnu en jordemoder og serverede sin holdning: det var slet ikke nødvendigt at håndholde mælken på den måde. Vi skulle 'bare give amningen tid'. WHUT?!? Vi var rent ud sagt pisse sure. 
+På tredjedagen var vi så tilbage på barselsambulatoriet; hun havde taget 60 gram på. Endelig var vægtkurven knækket! Vi var lykkelige. Vores stopfodring havde virket. Men så kom endnu en jordemoder og serverede sin holdning: det var slet ikke nødvendigt at håndholde mælken på den måde. Vi skulle 'bare give amningen tid'. WHUT?!? Vi var rent ud sagt pisse sure.
 
 Kimmie bad jordemoderen om at tale med sine kolleger, så vi kunne få én udmelding om hvad vi skulle gøre i stedet for en ny hver gang vi talte med en ny person. Vi blev i første omgang ikke mødt af meget forståelse. Men efter et stykke tid virkede hun som om hun forstod situationen og forsøgte at hjælpe os videre. Uanset hvad vidste vi nu at vi havde et ekstra trick i ærmet i form af bryspumpe + sprøjte.
 
@@ -23,5 +24,5 @@ Men ugen har slet ikke været lutter frustrationer. Vi har nu også haft det dej
 
 [fodselsdag]: /2012/20121020_foedselsdag.html
 [^3]: Hvilket vi fik at vide *kunne* være en udstikker af, at hun var lidt mere [gul](http://www.sundhedsplejersken.dk/Find-svar/Find-alle-svar-demo/Born/Gulsot/) end godt var, efter fødslen.
-[^1]: Vi valgte sprøjten, da den sviner mindre og ikke kræver at hun er vågen før vi starter, hvilket ofte er et problem med lille Esther. 
+[^1]: Vi valgte sprøjten, da den sviner mindre og ikke kræver at hun er vågen før vi starter, hvilket ofte er et problem med lille Esther.
 [^2]: Hvilket så er dobbelt så meget som jordemødrene siger, nyfødte spiser.   
