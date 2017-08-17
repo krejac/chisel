@@ -26,6 +26,7 @@ echo ""
 echo "Copying static files ..."
 echo ""
 cp -r ./static/ ./www/static/
+mkdir -p ./www/css/ && cp ./theme/theme.css ./www/css/
 
 echo ""
 echo "**************************"
