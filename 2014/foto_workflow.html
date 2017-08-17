@@ -23,7 +23,7 @@
 
             
         </h2>
-       	<p><img alt="iPhone i jord" src="https://logiskhave.dk/static/20140912_iphone-i-jord@2x.jpg" /></p>
+       	<p><img alt="iPhone i jord" src="https://log.logiskhave.dk/static/20140912_iphone-i-jord@2x.jpg" /></p>
 <p>Jeg har længe eksperimenteret med - og betalt til - diverse billedbackuptjenester, som kunne frigøre plads på vores iPhones, fandt egentligt en god en som desværre gik rabundus. Så nu har jeg bygget mit eget ret robuste og relativt simple setup, som sikrer vores billeder, selvom iPhones'ne ryger ud af lommen i haven eller vores Macs diske dør. Det giver en vis tryghed at vide, at vores højt skattede billeder er sikre i skyen. </p>
 <p>De <em>ingredienser</em> der skal bruges i opskriften er: <br />
 - En eller flere smartphones<sup id="fnref:0"><a class="footnote-ref" href="#fn:0" rel="footnote">1</a></sup> med kamera og Dropbox-app'en installeret. <br />
@@ -34,11 +34,11 @@
 <h3>Fremgangsmåde</h3>
 <p>Et billede tages med <strong>telefonen</strong>, uploades med <strong>Dropbox</strong>-app'en, sorteres på <strong>Mac</strong>'en med <strong>Hazel</strong> til en folder, som <strong>Backblaze</strong> tager backup af. Såre simpelt.</p>
 <p>Det første trin i workflowet er at aktivere fotoupload i Dropdox-app'en<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">5</a></sup>. Åbn Dropbox app'en gå til Indstillinger og slå både "Kameraoverførsel" og "Upload i baggrunden" til.</p>
-<p><img alt="Dropbox' Camera Upload" src="https://logiskhave.dk/static/20140908_camera-upload.png" /></p>
+<p><img alt="Dropbox' Camera Upload" src="https://log.logiskhave.dk/static/20140908_camera-upload.png" /></p>
 <p>Dette aktiverer Dropbox' upload funktion og sørger for, at alle dine billeder bliver uploadet til kataloget "Camera Uploads" i roden af din Dropbox mappe.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">6</a></sup></p>
 <p>Herefter skal du over på din Mac. På Mac'en åbnes Hazel fra "Instillinger" og mappen "Camera Uploads" tilføjes til i dine overvågende mapper. I den mappe skal der køre to regler; én til billeder og én til videoer.</p>
 <p><em>Billedsorteringsreglen</em>    </p>
-<p><a href="https://logiskhave.dk/static/20140908_image-sort.png"><img alt="Hazel billedsorteringsregel" src="https://logiskhave.dk/static/20140908_image-sort.png" /></a></p>
+<p><a href="https://log.logiskhave.dk/static/20140908_image-sort.png"><img alt="Hazel billedsorteringsregel" src="https://log.logiskhave.dk/static/20140908_image-sort.png" /></a></p>
 <blockquote>
 <p>If <code>[all]</code> of the following conditions are met  <br />
 <code>[Kind]</code> <code>[is]</code> <code>[Image]</code>  <br />
@@ -50,7 +50,7 @@
 </blockquote>
 <p>Når man så vælger "date created", trykker man på <i class="fa fa-caret-down"></i> og vælger "Edit Date Pattern...". Alt efter hvordan man vil have sorteret sine billeder vælger man så om de skal opdeles i foldere for hver dag, måned eller år. Jeg har valgt måned, hvorfor mit datoformat ser således ud: <code>[1999]</code>-<code>[12]</code>.</p>
 <p><em>Videosorteringsreglen</em>   </p>
-<p><a href="https://logiskhave.dk/static/20140908_video-sort.png"><img alt="Hazel videosorteringsregel" src="https://logiskhave.dk/static/20140908_video-sort.png" /></a></p>
+<p><a href="https://log.logiskhave.dk/static/20140908_video-sort.png"><img alt="Hazel videosorteringsregel" src="https://log.logiskhave.dk/static/20140908_video-sort.png" /></a></p>
 <blockquote>
 <p>If <code>[all]</code> of the following conditions are met  <br />
 <code>[Kind]</code> <code>[is]</code> <code>[Movie]</code>  <br />

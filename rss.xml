@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<rss version="2.0"><channel><title>krestens log</title><link>http://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Thu, 17 Aug 2017 08:59:07 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Regelm&amp;aelig;ssig Faste
-</title><link>http://log.logiskhave.dk/2017/regelmaessig-faste.html</link><description>&lt;p&gt;&lt;img alt="Faste" src="https://logiskhave.dk/static/20170815_faste.png" /&gt;&lt;/p&gt;
+<rss version="2.0"><channel><title>krestens log</title><link>http://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Thu, 17 Aug 2017 09:02:23 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Regelm&amp;aelig;ssig Faste
+</title><link>http://log.logiskhave.dk/2017/regelmaessig-faste.html</link><description>&lt;p&gt;&lt;img alt="Faste" src="https://log.logiskhave.dk/static/20170815_faste.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Efter at have læst en artikelserie i Canadian Medical Association Journal&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt; og lidt flere populærvidenskabelige artikler&lt;sup id="fnref:4"&gt;&lt;a class="footnote-ref" href="#fn:4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:5"&gt;&lt;a class="footnote-ref" href="#fn:5" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:6"&gt;&lt;a class="footnote-ref" href="#fn:6" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt; om de sundhedsfremmende effekter ved faste har jeg nu i en god måneds tid undladt at indtage kalorier i 16-18 timer i døgnet.&lt;/p&gt;
 &lt;p&gt;Indtil videre er det gået meget godt. Min trang til småmåltider er mindsket og jeg er tilbage under 70kg, som jeg bør være med min højde. Tricket er så ikke at spise for meget, når man så endelig må. Det kan jeg stadig blive bedre til...&lt;/p&gt;
 &lt;div class="footnote"&gt;
@@ -26,7 +26,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</description><author>Kresten Jacobsen</author><guid isPermaLink="true">http://log.logiskhave.dk/2017/regelmaessig-faste.html</guid><pubDate>Tue, 15 Aug 2017 00:00:00 GMT</pubDate></item><item><title>Intel Hijacking fejl
-</title><link>http://log.logiskhave.dk/2017/intel-hijacking-fejl.html</link><description>&lt;p&gt;&lt;img alt="Chip" src="https://logiskhave.dk/static/20170509_chip.jpg" /&gt;&lt;/p&gt;
+</title><link>http://log.logiskhave.dk/2017/intel-hijacking-fejl.html</link><description>&lt;p&gt;&lt;img alt="Chip" src="https://log.logiskhave.dk/static/20170509_chip.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Udemærket intro til det store gabende hul i Intels professionelle chips af David Bisson:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;[...] by exploiting this vulnerability, an unauthenticated network attacker could gain system privileges to the AMT or ISM technology. From there, they could abuse their privileges to reboot the system and examine drive contents.&lt;/p&gt;
