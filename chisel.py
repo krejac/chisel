@@ -46,7 +46,6 @@ TEMPLATES = {
     'archive': "archive.html",
     'colophon': "colophon.html",
     'marathon': "marathon.html",
-    'halfmarathon2014': "halfmarathon2014.html",
     'wishlist': "wishlist.html",
     '404': "404.html",
     'cv': "cv.html",
@@ -158,7 +157,7 @@ def generate_colophon(f, e):
 
 @step
 def generate_cv(f, e):
-    """Generate a cv page"""
+    """Generate CV page"""
     template = e.get_template(TEMPLATES['cv'])
     write_file("cv" + URLEXT, template.render(entries=f))
 
