@@ -2,9 +2,7 @@
 For ckunte.net log by Chyetanya Kunte.
 Edited for logiskhave.dk by Kresten Jacobsen.
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,600,900,900italic);
-@import url(https://fonts.googleapis.com/css?family=ABeeZee);
-@import url(https://fonts.googleapis.com/css?family=BenchNine:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,600,900,900italic|ABeeZee|BenchNine:400,700);
 sup {
 font:11px/11px Lato, Helvetica
 }
