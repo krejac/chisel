@@ -16,13 +16,13 @@ Den følgende dag havde hun igen tabt sig og vi fik at vide, at vi ikke blot sku
 
 På tredjedagen var vi så tilbage på barselsambulatoriet; hun havde taget 60 gram på. Endelig var vægtkurven knækket! Vi var lykkelige. Vores stopfodring havde virket. Men så kom endnu en jordemoder og serverede sin holdning: det var slet ikke nødvendigt at håndholde mælken på den måde. Vi skulle 'bare give amningen tid'. WHUT?!? Vi var rent ud sagt pisse sure.
 
-Kimmie bad jordemoderen om at tale med sine kolleger, så vi kunne få én udmelding om hvad vi skulle gøre i stedet for en ny hver gang vi talte med en ny person. Vi blev i første omgang ikke mødt af meget forståelse. Men efter et stykke tid virkede hun som om hun forstod situationen og forsøgte at hjælpe os videre. Uanset hvad vidste vi nu at vi havde et ekstra trick i ærmet i form af bryspumpe + sprøjte.
+Kimmie bad jordemoderen om at tale med sine kolleger, så vi kunne få én udmelding om hvad vi skulle gøre i stedet for en ny hver gang vi talte med en ny person. Vi blev i første omgang ikke mødt af meget forståelse. Men efter et stykke tid virkede hun som om hun forstod situationen og forsøgte at hjælpe os videre. Uanset hvad vidste vi nu at vi havde et ekstra trick i ærmet i form af brystpumpe + sprøjte.
 
-De sidste par dage har vi så hverken vejet Esther eller talt med jordemødre og det har faktisk været ret rart. Amningen kører meget bedre og vi stoler mere på at Esther nok, på hendes egen måde, skal fortælle hvis der er noget galt. Hun vil ikke altid spise hver tredje time, som jordemødrene ellers siger at hun *skal* (det er een af de få ting, de rent faktisk er enige om). Tilgengæld tømmer hun så ofte begge Kimmies ’mælkejunger’[^2] i et måltid. Såe, det går nok.
+De sidste par dage har vi så hverken vejet Esther eller talt med jordemødre og det har faktisk været ret rart. Amningen kører meget bedre og vi stoler mere på at Esther nok, på hendes egen måde, skal fortælle hvis der er noget galt. Hun vil ikke altid spise hver tredje time, som jordemødrene ellers siger at hun *skal* (det er een af de få ting, de rent faktisk er enige om). Til gengæld tømmer hun så ofte begge Kimmies ’mælkejunger’[^2] i et måltid. Såe, det går nok.
 
 Men ugen har slet ikke været lutter frustrationer. Vi har nu også haft det dejligt og nydt at være sammen allesammen - og ind i mellem en stille stund, som den på billedet, hvor jeg sad og så Clement drille Barfod på DR2, med Esther på brystet, mens mor sov. Masser af kærlighed!
 
-[fodselsdag]: /2012/20121020_foedselsdag.html
+[fodselsdag]: /2012/foedselsdag.html
 [^3]: Hvilket vi fik at vide *kunne* være en udstikker af, at hun var lidt mere [gul](http://www.sundhedsplejersken.dk/Find-svar/Find-alle-svar-demo/Born/Gulsot/) end godt var, efter fødslen.
 [^1]: Vi valgte sprøjten, da den sviner mindre og ikke kræver at hun er vågen før vi starter, hvilket ofte er et problem med lille Esther.
 [^2]: Hvilket så er dobbelt så meget som jordemødrene siger, nyfødte spiser.   
