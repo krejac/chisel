@@ -3,7 +3,7 @@ URL Schemes
 
 **tl**;**dr** - Jeg roder for tiden med [x-callback-urls](http://x-callback-url.com) og [URL skemaer](https://developer.apple.com/library/ios/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html) på mine iOS enheder og har her skrevet en kort gennemgang af hvad dét er for noget og hvad det kan bruges til.
 
-![Actions](http://static.logiskhave.dk/20131218_x-callback-url.png)
+![Actions](https://logiskhave.dk/static/20131218_x-callback-url.png)
 
 ### Hvad er URL Schemes?
 URL Schemes, eller URL skemaer på dansk, er en metode til at lave inter-app kald på iOS enheder. Det vil groft sige, at man kan kalde en app, der har et URL skema, fra en anden app. Det er i sig selv smart nok, da man på denne måde kan spare et par tastetryk, når man skifter fra en app til en anden. Men der hvor det bliver rigtig smart er, når man sender data og instruktioner, i form af en tekststreng, med. URL'en skal være på en form, som den modtagende app forstår - altså følge app'ens URL skema - og kan så udføre en prædefineret handling på noget prædefineret data[^1]. 

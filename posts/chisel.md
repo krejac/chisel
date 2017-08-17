@@ -3,7 +3,7 @@ Chisel
 
 **tl**;**dr** - Jeg har skiftet det underliggende system, jeg bygger denne side med, ud fra Octopress til Chisel og er glad for det.
 
-![Screenshot af Terminal.app](http://static.logiskhave.dk/20130927_screenshot.png "Terminal.app afvikler Chisel")
+![Screenshot af Terminal.app](https://logiskhave.dk/static/20130927_screenshot.png "Terminal.app afvikler Chisel")
 
 I min søgen efter det ultimative blogsetup, er jeg nu faldet over [Chisel][], som er endnu en "static site generator" lige som mine tidligere sider .
 

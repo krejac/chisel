@@ -7,7 +7,7 @@ Eksempelvis sender jeg en sms til min hustru om hvordan afleveringen af vores da
 
 Med appen Launch Center Pro har jeg defineret to handlinger; en til en god aflevering og en til en mindre god. Begge handlinger spørger mig efter affyring hvilken voksen Esther er blevet afleveret til og åbner derefter en sms stilet til min kone med en præfabrikeret tekst á la denne:
 
-<img class="screen" src="http://static.logiskhave.dk/20140331_lcp_sms.png" alt="Screenshot af SMS">
+<img class="screen" src="https://logiskhave.dk/static/20140331_lcp_sms.png" alt="Screenshot af SMS">
 
 Nemt og hurtigt (og lidt sjovere end at skulle b o g s t a v e r e sig igennem en sms)!
 

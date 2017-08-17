@@ -3,7 +3,7 @@ Guide til kodeord p&aring; nettet
 
 **[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** -- På internettet er kodeord din bedste mulighed for at beskytte din online identiteter, derfor skal du bruge dem med omhu. Nedenstående er en guide til hvordan du let beskytter dig mod identitetstyveri.
 
-![Sikkerhed](http://static.logiskhave.dk/20140813_kodeord@2x.jpg)
+![Sikkerhed](https://logiskhave.dk/static/20140813_kodeord@2x.jpg)
 
 For at sikre sig på nettet, skal man vide lidt om hvordan identitetstyveri oftest foregår. Indentitetstyve kan overordnet deles op i to kategorier 1) dem der gætter dit kodeord (*hacking*) og 2) dem der lister dit kodeord ud af dig (*phising*). Jo mere kompliceret et kodeord er desto sværere er det at gætte sig til for hackeren. Tilgengæld er phisheren ligeglad med styrken af dit kodeord, for han snyder dig til at give ham det.
 

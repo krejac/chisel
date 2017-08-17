@@ -3,7 +3,7 @@ F&oslash;rste uge med Esther
 
 Nuich, det er hårdt at være far. Der er så utroligt mange bekymringer. 
 
-![Foto: Far og datter](http://static.logiskhave.dk/20121026_far_og_esther.jpeg Far og datter)
+![Foto: Far og datter](https://logiskhave.dk/static/20121026_far_og_esther.jpeg Far og datter)
 
 Siden mit [sidste indlæg][fodselsdag] er Kimmie og Esther blevet udskrevet og er kommet hjem. Det er rigtigt dejligt at være sammen med de to tøser døgnet rundt, men det var for tidligt de blev sendt hjem. Vi havde ikke styr på amningen endnu og Esther havde tabt en del vægt.<!-- more -->
 

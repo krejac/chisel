@@ -3,7 +3,7 @@ Python: Send mail
 
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Det er lige gået op for mig, *hvor* nemt det egentligt er at sende en gmail med Python. Det må jeg lige få noteret...
 
-![Code...](http://static.logiskhave.dk/20141023_code.jpg "Code...")
+![Code...](https://logiskhave.dk/static/20141023_code.jpg "Code...")
 
 Nedenstående eksempel sender en email til 'user2@example.org' med en påmindelse om at medbringe en paraply (det kunne jo være en del af et script, der tjekkede sandsynligheden for regn. Ja, det skal jeg også have lavet...).
 

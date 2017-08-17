@@ -1,7 +1,7 @@
 To-tusinde-og-tretten
 31-12-2013
 
-![Nytår!](http://static.logiskhave.dk/20130120_bokeh.jpg)
+![Nytår!](https://logiskhave.dk/static/20130120_bokeh.jpg)
 Hvor [2012](http://log.logiskhave.dk/2012/20130102_totusindeogtolv.html) var spækfyldt med tydelige skelsættende aktiviteter, har 2013 været et år med fokus på familien, hverdagen og tid til at gro.
 
 Vinteren gik - rent mentalt - enormt hurtigt i år, men når jeg nu sidder og kigger tilbage, jeg faktisk godt se, at det ikke blev forår tidligere end normalt. For i marts blev vi bilejere, med sommerdæk på en snedækket bil i indkørslen. Men den søde Esther fik tiden til at flyve.

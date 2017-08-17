@@ -1,7 +1,7 @@
 Intervall&oslash;b
 11-08-2014
 
-![10-20-30](http://static.logiskhave.dk/20140811_10-20-30@2x.jpg)
+![10-20-30](https://logiskhave.dk/static/20140811_10-20-30@2x.jpg)
 
 For ca. en uge siden prøvede jeg for første gang for alvor kræfter med 10-20-30 løbetræning - og det var fedt. Fedt at være _helt_ gennemtrænet med blot 20 minutters hård træning.[^1] Så dagen efter bestilte jeg et nyt løbeur[^2], som kan programmeres til de ønskede intervaller. 
 

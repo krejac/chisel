@@ -3,7 +3,7 @@ Foundation "trilogien"
 
 Livet som småbørnsfar tillader ikke helt så meget læsning, som jeg kunne ønske. Enten har jeg ikke tid eller også er jeg for træt, når jeg endelig har. Men jeg ville altså gerne læse mere.
 
-![Isaac Asimov](http://static.logiskhave.dk/20141008_isaac-asimov.jpg "Isaac Asimov")
+![Isaac Asimov](https://logiskhave.dk/static/20141008_isaac-asimov.jpg "Isaac Asimov")
 
 Derfor har jeg længe tænkt på, at mine daglige podcasts til og fra arbejde skulle udskiftes med en god bog. Det har jeg prøvet, men må desværre konstatere, at mine øjne bliver tunge af at læse under transport. Så derfor tænkte jeg, at jeg ville finde nogle gode bøger, som jeg kunne få fat på som lydbog; og under læsningen af en artikel om [kulturelle ikoners favoritbøger](http://kottke.org/14/10/50-cultural-icons-and-their-favorite-books), faldt jeg over navnet Isaac Asimov, som af een eller anden grund vækkede min interesse. Og efter en hurtig tur på [Wikipedia](http://en.wikipedia.org/wiki/Isaac_Asimov) fandt jeg ud af, at det var der min læsning skulle begynde. 
 

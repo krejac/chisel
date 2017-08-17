@@ -3,7 +3,7 @@ Uge 13 - Begyndelsen p&aring; enden
 
 *Dette blogindlæg er en del af en [række indlæg](/marathon.html), som omhandler træningen til mit første maraton - Copenhagen Marathon 2012.*
 
-<img class="screen" src="http://static.logiskhave.dk/20120429_30K.jpg" alt="Foto af mig med Erimitageslottet i baggrunden">
+<img class="screen" src="https://logiskhave.dk/static/20120429_30K.jpg" alt="Foto af mig med Erimitageslottet i baggrunden">
 
 Mandag var [scannings](http://log.logiskhave.dk/20120423_vi_skal_vare_foraldre.html)- og hviledag. 
 

@@ -17,7 +17,7 @@ Lørdag var hvile- / hjemrejsedag hvilket må siges at være tiltrængt. Jeg kan
 
 Søndag bestod af [12 kilometer i en meget mudret mose](http://connect.garmin.com/activity/150821460) - og selvom temperaturen ikke var over 5 grader, var det stadig lidt varmt med hue og handsker de sidste 5 kilometer. Men jeg havde garnteret frosset, hvis jeg havde manglet en af delene, mens jeg ventede på at mit GPS-ur fik fat i signalet fra satelitterne.
 
-<img class="screen" src="http://static.logiskhave.dk/201202_muddersko.png" alt="Muddersko">
+<img class="screen" src="https://logiskhave.dk/static/201202_muddersko.png" alt="Muddersko">
 
 Alt i alt en dejlig uge med nogle gode løbeture på Gran Canaria[^1]. Det skal dog bemærkes at jeg så småt er begyndt at kunne mærke en lille gene på ydersiden af min venstre ankel. Det er især de første par kilometer jeg bemærker det og især i skarpe venstresving. Men det kan jeg tage op med min fys, når han kommer hjem fra Burma.
 

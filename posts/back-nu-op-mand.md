@@ -3,7 +3,7 @@ Back nu op, mand!
 
 **[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** -- *Alle* harddiske dør. Du *skal* tage backup. Brug evt. [mit henvisningslink til Backblaze][BB]; så får vi begge en måned gratis. <i class="fa fa-heart"></i>
 
-![Head Crash](http://static.logiskhave.dk/20140908_harddisk_crash@2x.jpg)
+![Head Crash](https://logiskhave.dk/static/20140908_harddisk_crash@2x.jpg)
 
 Datasikkerhed - og it-sikkerhed generelt - har altid ligget mig på sinde. Jeg synes det er frygteligt irriterende at miste arbejde og har siden mit speciale været ivrig bruger af og fortaler for Dropbox. Men efter Esther kom til verdenen er behovet for mere plads og større sikkerhed for billeder og videoer pludseligt blevet enormt tydeligt. Billedet af [Esther, der spiser leverpostej](http://log.logiskhave.dk/2013/1007_leverpostej.html) er desuden langt mere dyrebart for mig end mit speciale nogensinde har været. Så min gratis Dropbox er blevet for lille og det er for dyrt at købe "pro" udgaven til hele husstanden.
 

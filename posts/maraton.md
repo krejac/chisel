@@ -5,7 +5,7 @@ MARATON
 
 Så kom dagen for Copenhagen Marathon 2012 endelig.
 
-![Foto af Tuxen og mig og et af medaljen](http://static.logiskhave.dk/201205_cphmarathon1_full.jpg)
+![Foto af Tuxen og mig og et af medaljen](https://logiskhave.dk/static/201205_cphmarathon1_full.jpg)
 
 ###Optakten
 Selve optakten til maraton startede et par dage før, hvor jeg på opfordring fra en garvet løber drak *meget* vand for at sikre, at jeg havde så meget vand i kroppen, som jeg kunne få. Dagen før drak jeg så bare som sædvanligt (måske lidt mere) og om aftenen gik jeg ud og spiste en 5 retters menu med Kimmie og mine forældre. Inden jeg gik i seng sørgede jeg så lige for, at alt var klart til dagen efter, så jeg ikke skulle bruge morgenen på at huske ting, men bare skulle koncentrere mig om maraton.
@@ -31,7 +31,7 @@ De første 15 kilometer var - løbemæssigt - relativt begivenhedsløse. Kilomet
 
 Fra den 27. kilometer begyndte benene så at være tunge og fra ca. 30 kilometer, gjorde de nas. Kilometertiderne blev dårligere og dårligere, men jeg kan se i iPhone app'en, at jeg faktisk har overhalet allerflest fra den 25. kilometer og frem[^1] - formodentligt fordi jeg ikke var nede og gå på andre tidspunkter end, når jeg skulle drikke ved vandposterne. Så selv om det gjorde ondt, jeg løb mærkeligt (ifølge min lillebror) og tempoet faldt, havde min far - som cyklede med på dette tidspunkt - ret, da han på Østerbrogade bemærkede, at jeg "altså overhalede flere end, der overhalede mig".
 
-![Det officielle dataark](http://static.logiskhave.dk/201205_resultatblad.png)
+![Det officielle dataark](https://logiskhave.dk/static/201205_resultatblad.png)
 
 De sidste fem kilometer ville jeg bare gerne ned og gå. Dem der gik så ud som om de havde det meget bedre end mig. Men jeg forsøgte at sige til mig selv, at nu var jeg nede på en distance, som jeg *skal* kunne løbe - uanset smerteniveau.
 
@@ -42,7 +42,7 @@ Da jeg så krydsede målstregen, var jeg lykkelig over *endelig* ikke at skulle 
 ###Status
 Jeg nåede [begge mine mål](http://log.logiskhave.dk/2012/opvarmning.html), så jeg kan faktisk være ret tilfreds. Jeg ville selvfølgelig gerne have klaret det endnu bedre, men jeg mener faktisk ikke jeg lavede nogen fejl og kunne have forberedt mig meget bedre. Så jeg skal ikke pive (over dét, i hvert fald).
 
-![Foto af Tuxen og mig efter løbet](http://static.logiskhave.dk/201205_cphmarathon2_full.jpg)
+![Foto af Tuxen og mig efter løbet](https://logiskhave.dk/static/201205_cphmarathon2_full.jpg)
 
 Og så er det hele ligepludseligt slut. Eller næsten i hvert fald. Muskelømheden og ankelsmerterne skal lige fortage sig, men SÅ er det også slut.
 

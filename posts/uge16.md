@@ -11,7 +11,7 @@ Med denne sidste tur fik jeg rundet 700 kilometer siden juleaftensdag, hvor jeg,
 
 Under træningen har jeg både lavet [bakketræning på Gran Canaria](http://log.logiskhave.dk/20120219_uge3.html), [pligttræning på Bornholm](http://connect.garmin.com/activity/140346329), løbet [mere end et halvmaraton i Central Park](/2012-04/uge-10.html) og selvfølgelig lagt masser af kilometer bag mig i Utterslev Mose.
 
-![Træningsmængde](http://static.logiskhave.dk/201205_maraton_traening.png)
+![Træningsmængde](https://logiskhave.dk/static/201205_maraton_traening.png)
 
 Diagrammet herover viser de enkelte tures længde i søjlerne og stigningen fra 6 til 12 kilometer i min gennemsnitstur er illustreret med linien. 
 

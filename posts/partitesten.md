@@ -3,7 +3,7 @@ Partitesten
 
 **[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** -- Jeg foreslår en ny "kandidattest", baseret på data fra [Folketinget](ft.dk), der holder politikerne op på det de rent faktisk stemmer.
 
-[![Christiansborg](http://static.logiskhave.dk/20160804_christiansborg.jpg)](https://upload.wikimedia.org/wikipedia/commons/c/ca/Den_danske_Vitruvius_1_tab022_-_Prospect_af_det_Kongl_Slott_Christiansborg_imod_Hoved_Indgangen.jpg)
+[![Christiansborg](https://logiskhave.dk/static/20160804_christiansborg.jpg)](https://upload.wikimedia.org/wikipedia/commons/c/ca/Den_danske_Vitruvius_1_tab022_-_Prospect_af_det_Kongl_Slott_Christiansborg_imod_Hoved_Indgangen.jpg)
 
 Man burde gøre noget! Danmark taler om politikerlede og ingen synes at politikerne gør det efter valget, som de sagde de ville før valget. Men hvad skal man stille op? Der er jo kun de politikere der stiller op og hvis vi ikke stoler på dem, hvordan skal vi så finde ud af hvem vi skal stemme på?
 

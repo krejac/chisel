@@ -3,7 +3,7 @@
 
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Jeg har et par servere snurrende rundt om i verdenen og ser derfor tydeligt, hvor ofte de bliver udsat for angreb. Her er mine noter til opsætning af en firewall Ubuntu/Debian-box[^1].
 
-![Serving](http://static.logiskhave.dk/20160126_server.jpg "Live to serve...")
+![Serving](https://logiskhave.dk/static/20160126_server.jpg "Live to serve...")
 
 En firewall er en effektiv måde at blokere ikke-ønsket trafik mod din server. På Ubuntu kan man selv rette i de relativt komplicerede [iptables](http://manpages.ubuntu.com/manpages/trusty/man8/iptables.8.html) eller installere UFW (Uncomplicated FireWall), ved at apt-get'e pakken ufw. ufw er en slags 'front end' til iptables og noget lettere at have med at gøre. Vi snupper den sidste her.
 
