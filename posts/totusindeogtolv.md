@@ -2,7 +2,7 @@ To-tusinde-og-tolv
 31-12-2012
 
 
-2012 var på flere måder et skelsættende år i mit liv. Et år hvor kun småtingene var planlagte og de store ting ligesom bare skete. 
+2012 var på flere måder et skelsættende år i mit liv. Et år hvor kun småtingene var planlagte og de store ting ligesom bare skete.
 
 ## Maratontræning ##
 Året startede med et fortsæt om, at løbe Copenhagen Marathon - og den første (rigtige) tur i den forbindelse var i en helt fortryllende Utterslev Mose. Her et år (og [mange kilometer][km]) senere står denne tur stadig som den flotteste. Det var en helt klar dag, hvor temperaturen hurtigt var faldet til et godt stykke under frysepunktet og mosen derfor dampede og dannede et tæt tåge. Tågen frøs til is på alt hvad den kom i kontakt med, så græs, grene og blade var kridhvide. Samtidigt blev tågen så lyst op af solen som skinnede oppe over. Alt var hvidt. En smuk start på et fantastisk år.
@@ -58,9 +58,9 @@ Fed, fed lykke!
 [^2]: Vi har boet sammen andre steder; men Penthouse, var det første sted som rigtigt var *vores*.
 [^3]: Antydninger af at Esther ændrer sig har ulmet de seneste dage. Men måske er der blot tale om et skift i [udviklingstrin][]. Hvem ved?
 
-[km]: http://log.logiskhave.dk/2012/20120520_uge16.html   
-[gc]: http://log.logiskhave.dk/2012/20120219_uge3.html   
-[cm]: http://log.logiskhave.dk/2012/20120522_maraton.html   
-[lejlighed]: http://log.logiskhave.dk/2012/20120606_lejlighedssalg.html   
-[esthers_fodselsdag]: http://log.logiskhave.dk/2012/20121020_foedselsdag.html   
+[km]: http://log.logiskhave.dk/2012/uge16.html   
+[gc]: http://log.logiskhave.dk/2012/uge3.html   
+[cm]: http://log.logiskhave.dk/2012/maraton.html   
+[lejlighed]: http://log.logiskhave.dk/2012/lejlighedssalg.html   
+[esthers_fodselsdag]: http://log.logiskhave.dk/2012/foedselsdag.html   
 [udviklingstrin]: http://www.vidunderligeuger.dk/om-bogen/hvad-handler-bogen-om   
