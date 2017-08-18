@@ -14,7 +14,8 @@ date = time.strftime(ENTRY_TIME_FORMAT)
 # write filename
 file = 'posts/' + slug + '.md'
 with open(file,'w') as f:
-    f.write(title + '\n' + date + '\n\n\n')
+    f.write(title + '\n' + date + '\n\n\n' +
+    "**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - ")
 
 # open file
 os.system("atom " + file)
