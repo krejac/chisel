@@ -2,7 +2,7 @@ Specialisering
 18-08-2017
 
 
-**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - Min [arbejdsgiver](http://it.ku.dk/ Københavns Universitet) har givet mig lov til at bruge tid på en [diplom i it-sikkerhed](http://www.kea.dk/kompetence/forside/it/it-sikkerhed/). Det er jeg svært begejstret for.
+**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - Min [arbejdsgiver](http://it.ku.dk/ "Københavns Universitet") har givet mig lov til at bruge tid på en [diplom i it-sikkerhed](http://www.kea.dk/kompetence/forside/it/it-sikkerhed/). Det er jeg svært begejstret for.
 
 ![IT-sikkerhed](https://log.logiskhave.dk/static/20170818_it-security.jpg)
 
