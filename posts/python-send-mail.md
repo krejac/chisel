@@ -2,7 +2,7 @@ Python: Send mail
 24-11-2015
 
 
-[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Det er lige gået op for mig, *hvor* nemt det egentligt er at sende en gmail med Python. Det må jeg lige få noteret...
+**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - Det er lige gået op for mig, *hvor* nemt det egentligt er at sende en gmail med Python. Det må jeg lige få noteret...
 
 ![Code...](https://log.logiskhave.dk/static/20141023_code.jpg "Code...")
 
