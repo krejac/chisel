@@ -8,7 +8,7 @@ HTTPS p&aring; loggen
 
 Indtil nu har al trafik mellem de besøgende og siden her været læsbar af tredje part. Det betyder at alle, der kan finde ud af at lytte på trafikken, principielt har haft mulighed for at opsnappe hvad man læser her på siden. Nu har jeg dog langt om længe fået lagt et ekstra lag af sikkerhed på, så det pludselig er langt mere besværligt (men ikke umuligt). Til det formål bruger jeg [Cloudflares Flexible](https://www.cloudflare.com/ssl/) option. Det betyder at kommunikation mellem browseren og Cloudflares datacentre er krypteret, men at forbindelsen fra Cloudflares datacenter til [GitHub](https://github.com/) _ikke_ er.
 
-![Cloudflare Flexible](https://log.logiskhave.dk/static/20170819_cloudflare-flexible-ssl.jpg)
+<img class="screen" src="https://log.logiskhave.dk/static/20170819_cloudflare-flexible-ssl.jpg" alt="Cloudfare Flexible">
 
 Helt konkret, vil det betyde at man skal finde ud af hvilket af Cloudflares datacentre browseren kontakter og lytte med på linien bag ved dét. Før kunne man sidde på lokalnetværket og lytte til - eller værre endnu ændre på data, inden de nåede browseren. Så nu er man altså _langt_ bedre beskyttet mod målrettet overvågning / manipulation. Men man er altså _ikke_ beskyttet mod en modstander, med mulighed for at lytte på trafikken mellem Cloudflare og GitHubs servere. Men selv der, er et ikke trivielt at afgøre _hvem_ der læser siden, da det eneste man ser er at Cloudflare og GitHub taler sammen om siden her.
 
