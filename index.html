@@ -25,7 +25,7 @@
         </h2>
         <!--<h2><a href="2017/https-paa-loggen.html">HTTPS p&aring; loggen
 </a></h2>-->
-	    <p><strong><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a></strong> - Der er kommet hængelås på siden her, men trafikken er kun krypteret mellem browseren og CDN'en. Er det så nok? (Spoiler: Ja, det er det.)</p>
+	    <p><strong><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a></strong> - Der er kommet hængelås på siden her, men trafikken er kun krypteret mellem browseren og <a href="https://en.wikipedia.org/wiki/Content_delivery_network">CDN</a>'en. Er det så nok? (Spoiler: Ja, det er det.)</p>
 <p><img alt="https://" src="https://log.logiskhave.dk/static/20170819_https.jpg" /></p>
 <p>Indtil nu har al trafik mellem de besøgende og siden her været læsbar af tredje part. Det betyder at alle, der kan finde ud af at lytte på trafikken, principielt har haft mulighed for at opsnappe hvad man læser her på siden. Nu har jeg dog langt om længe fået lagt et ekstra lag af sikkerhed på, så det pludselig er langt mere besværligt (men ikke umuligt). Til det formål bruger jeg <a href="https://www.cloudflare.com/ssl/">Cloudflares Flexible</a> option. Det betyder at kommunikation mellem browseren og Cloudflares datacentre er krypteret, men at forbindelsen fra Cloudflares datacenter til <a href="https://github.com/">GitHub</a> <em>ikke</em> er.</p>
 <p><img class="screen" src="https://log.logiskhave.dk/static/20170819_cloudflare-flexible-ssl.jpg" alt="Cloudfare Flexible"></p>
