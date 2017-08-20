@@ -2,7 +2,7 @@ HTTPS p&aring; loggen
 19-08-2017
 
 
-**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - Der er kommet hængelås på siden her, men trafikken er kun krypteret mellem browseren og CDN'en. Er det så nok? (Spoiler: Ja, det er det.)
+**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - Der er kommet hængelås på siden her, men trafikken er kun krypteret mellem browseren og [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)'en. Er det så nok? (Spoiler: Ja, det er det.)
 
 ![https://](https://log.logiskhave.dk/static/20170819_https.jpg)
 
