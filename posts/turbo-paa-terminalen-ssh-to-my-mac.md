@@ -22,4 +22,24 @@ eller bare:
 
 Scriptet:
 
-<script src="https://gist.github.com/krestenjacobsen/6db8f8a9a9a48482a85c1b08ffdccbed.js"></script>
+    :::bash
+    #!/bin/bash
+
+    ACCOUNT=$(echo "show Setup:/Network/BackToMyMac" | scutil | sed -n 's/.* : *\(.*\).$/\1/p')
+
+    if [ ! -n "$1" ]; then
+        echo "ssh to which Mac? "
+        read MAC
+
+        # Uncomment the following two lines if you need to login to the remote host with a different user than the current local user.
+        #echo "As who? "
+        #read USER
+
+        if [[ USER ]]; then
+            ssh $USER"@"$MAC"."$ACCOUNT
+            else
+            ssh $MAC"."$ACCOUNT
+        fi
+    else
+        ssh $1"."$ACCOUNT
+    fi
