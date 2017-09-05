@@ -29,61 +29,63 @@
 <p>Resultatet er en proces, hvor jeg 1) vælger en handling fra appen <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>, som 2) trigger et pythonscript i <a href="http://omz-software.com/pythonista/index.html">Pythonista</a> og 3) returnerer til Launch Center Pro, med en færdig SMS.</p>
 <p><img alt="Arbejdsgang" src="https://log.logiskhave.dk/static/20150311_workflow.jpg" title="Handling, script, SMS" /></p>
 <p>Triggeren i Launch Center Pro ser således ud:</p>
-<pre class="codehilite"><code>pythonista://home_in.py?action=run</code></pre>
+<div class="codehilite"><pre><span></span>pythonista://home_in.py?action=run
+</pre></div>
 
 
 <p>Python koden (som nok er meget lidt elegant) kan ses her:</p>
-<pre class="codehilite"><code class="language-python">#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+<div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
 
-import location, time, webbrowser
-import math
+<span class="kn">import</span> <span class="nn">location</span><span class="o">,</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">webbrowser</span>
+<span class="kn">import</span> <span class="nn">math</span>
 
-# Getting my coordinates and storing them in the variable 'me'
-location.start_updates()
-time.sleep(2)
-loc = location.get_location()
-location.stop_updates()
-me = [loc['latitude'], loc['longitude']]
+<span class="c1"># Getting my coordinates and storing them in the variable &#39;me&#39;</span>
+<span class="n">location</span><span class="o">.</span><span class="n">start_updates</span><span class="p">()</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">loc</span> <span class="o">=</span> <span class="n">location</span><span class="o">.</span><span class="n">get_location</span><span class="p">()</span>
+<span class="n">location</span><span class="o">.</span><span class="n">stop_updates</span><span class="p">()</span>
+<span class="n">me</span> <span class="o">=</span> <span class="p">[</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">],</span> <span class="n">loc</span><span class="p">[</span><span class="s1">&#39;longitude&#39;</span><span class="p">]]</span>
 
-# Stations [longitude, latitude, url encoded stationname]
-skovlunde = [55.723190, 12.400950, 'Skovlunde%20st.']
-herlev = [55.718919, 12.443674, 'Herlev%20st.']
-husum = [55.7117845, 12.4530939, 'Husum%20st.']
-islev = [55.6978563, 12.4683289, 'Islev%20st.']
-jyllingevej = [55.6879452, 12.4735431, 'Jyllingevej%20st.']
-vanlose = [55.6879452, 12.4735431, 'Vanl%C3%B8se%20st.']
-flintholm = [55.685284, 12.4871472, 'Flintholm%20st.']
-peter_bangs_vej = [55.6775657, 12.4975328, 'Peter%20Bangs%20Vej%20st.']
-langgade = [55.6588926, 12.5074033, 'Langgade%20st.']
-valby = [55.660563, 12.5163726, 'Valby%20st.']
-enghave = [55.660563, 12.5163726, 'Enghave%20st.']
-dybbolsbro = [55.6602483, 12.5567988, 'Dybb%C3%B8lsbro%20st.']
-kobenhavn_h = [55.6683331, 12.5670127, 'Hovedbaneg%C3%A5rden%20st.']
-vesterport = [55.6757871, 12.5709609, 'Vesterport%20st.']
-norreport = [55.6810076, 12.5748877, 'N%C3%B8rreport%20st.']
+<span class="c1"># Stations [longitude, latitude, url encoded stationname]</span>
+<span class="n">skovlunde</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.723190</span><span class="p">,</span> <span class="mf">12.400950</span><span class="p">,</span> <span class="s1">&#39;Skovlunde</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">herlev</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.718919</span><span class="p">,</span> <span class="mf">12.443674</span><span class="p">,</span> <span class="s1">&#39;Herlev</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">husum</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.7117845</span><span class="p">,</span> <span class="mf">12.4530939</span><span class="p">,</span> <span class="s1">&#39;Husum</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">islev</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.6978563</span><span class="p">,</span> <span class="mf">12.4683289</span><span class="p">,</span> <span class="s1">&#39;Islev</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">jyllingevej</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.6879452</span><span class="p">,</span> <span class="mf">12.4735431</span><span class="p">,</span> <span class="s1">&#39;Jyllingevej</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">vanlose</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.6879452</span><span class="p">,</span> <span class="mf">12.4735431</span><span class="p">,</span> <span class="s1">&#39;Vanl%C3%B8se</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">flintholm</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.685284</span><span class="p">,</span> <span class="mf">12.4871472</span><span class="p">,</span> <span class="s1">&#39;Flintholm</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">peter_bangs_vej</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.6775657</span><span class="p">,</span> <span class="mf">12.4975328</span><span class="p">,</span> <span class="s1">&#39;Peter%20Bangs%20Vej</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">langgade</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.6588926</span><span class="p">,</span> <span class="mf">12.5074033</span><span class="p">,</span> <span class="s1">&#39;Langgade</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">valby</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.660563</span><span class="p">,</span> <span class="mf">12.5163726</span><span class="p">,</span> <span class="s1">&#39;Valby</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">enghave</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.660563</span><span class="p">,</span> <span class="mf">12.5163726</span><span class="p">,</span> <span class="s1">&#39;Enghave</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">dybbolsbro</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.6602483</span><span class="p">,</span> <span class="mf">12.5567988</span><span class="p">,</span> <span class="s1">&#39;Dybb%C3%B8lsbro</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">kobenhavn_h</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.6683331</span><span class="p">,</span> <span class="mf">12.5670127</span><span class="p">,</span> <span class="s1">&#39;Hovedbaneg%C3%A5rden</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">vesterport</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.6757871</span><span class="p">,</span> <span class="mf">12.5709609</span><span class="p">,</span> <span class="s1">&#39;Vesterport</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
+<span class="n">norreport</span> <span class="o">=</span> <span class="p">[</span><span class="mf">55.6810076</span><span class="p">,</span> <span class="mf">12.5748877</span><span class="p">,</span> <span class="s1">&#39;N%C3%B8rreport</span><span class="si">%20s</span><span class="s1">t.&#39;</span><span class="p">]</span>
 
-# Defining the part of the C line I use on my way home from work
-c_line = [skovlunde, herlev, husum, islev, jyllingevej, vanlose, flintholm, peter_bangs_vej, langgade, valby, enghave, dybbolsbro, kobenhavn_h, vesterport, norreport]
+<span class="c1"># Defining the part of the C line I use on my way home from work</span>
+<span class="n">c_line</span> <span class="o">=</span> <span class="p">[</span><span class="n">skovlunde</span><span class="p">,</span> <span class="n">herlev</span><span class="p">,</span> <span class="n">husum</span><span class="p">,</span> <span class="n">islev</span><span class="p">,</span> <span class="n">jyllingevej</span><span class="p">,</span> <span class="n">vanlose</span><span class="p">,</span> <span class="n">flintholm</span><span class="p">,</span> <span class="n">peter_bangs_vej</span><span class="p">,</span> <span class="n">langgade</span><span class="p">,</span> <span class="n">valby</span><span class="p">,</span> <span class="n">enghave</span><span class="p">,</span> <span class="n">dybbolsbro</span><span class="p">,</span> <span class="n">kobenhavn_h</span><span class="p">,</span> <span class="n">vesterport</span><span class="p">,</span> <span class="n">norreport</span><span class="p">]</span>
 
-list_of_distances = []
+<span class="n">list_of_distances</span> <span class="o">=</span> <span class="p">[]</span>
 
-# GPS coordinate pair math
-def distance_from(my_coordinates, station):
-distance = math.hypot(station[0]-my_coordinates[0], station[1]-my_coordinates[1])
-return distance
+<span class="c1"># GPS coordinate pair math</span>
+<span class="k">def</span> <span class="nf">distance_from</span><span class="p">(</span><span class="n">my_coordinates</span><span class="p">,</span> <span class="n">station</span><span class="p">):</span>
+<span class="n">distance</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">hypot</span><span class="p">(</span><span class="n">station</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">my_coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">station</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">my_coordinates</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">return</span> <span class="n">distance</span>
 
-# Generating a list of distances from which the shortest is found
-for station in c_line:
-list_of_distances.append(distance_from(me, station))
+<span class="c1"># Generating a list of distances from which the shortest is found</span>
+<span class="k">for</span> <span class="n">station</span> <span class="ow">in</span> <span class="n">c_line</span><span class="p">:</span>
+<span class="n">list_of_distances</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">distance_from</span><span class="p">(</span><span class="n">me</span><span class="p">,</span> <span class="n">station</span><span class="p">))</span>
 
-# Variables used in the url derived from list_of_distances
-station = c_line[list_of_distances.index(min(list_of_distances))][2]
-minutes = str(c_line.index(c_line[list_of_distances.index(min(list_of_distances))]) *2+10)
+<span class="c1"># Variables used in the url derived from list_of_distances</span>
+<span class="n">station</span> <span class="o">=</span> <span class="n">c_line</span><span class="p">[</span><span class="n">list_of_distances</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">list_of_distances</span><span class="p">))][</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">minutes</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">c_line</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">c_line</span><span class="p">[</span><span class="n">list_of_distances</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">list_of_distances</span><span class="p">))])</span> <span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span>
 
-# Concatenating url elements and calling the url using Launch Center Pros url-scheme
-sms_url = 'launch://messaging?to=%2B4529725044&amp;body=' + 'Er%20ved%20' + station +  '%20er%20hjemme%20om%20ca.%20' + minutes + '%20minutter...'
-webbrowser.open(sms_url)</code></pre>
+<span class="c1"># Concatenating url elements and calling the url using Launch Center Pros url-scheme</span>
+<span class="n">sms_url</span> <span class="o">=</span> <span class="s1">&#39;launch://messaging?to=%2B4529725044&amp;body=&#39;</span> <span class="o">+</span> <span class="s1">&#39;Er%20ved%20&#39;</span> <span class="o">+</span> <span class="n">station</span> <span class="o">+</span>  <span class="s1">&#39;</span><span class="si">%20e</span><span class="s1">r%20hjemme</span><span class="si">%20o</span><span class="s1">m</span><span class="si">%20c</span><span class="s1">a.%20&#39;</span> <span class="o">+</span> <span class="n">minutes</span> <span class="o">+</span> <span class="s1">&#39;%20minutter...&#39;</span>
+<span class="n">webbrowser</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">sms_url</span><span class="p">)</span>
+</pre></div>
 
 
 <p>I første omgang ville jeg egentligt have brugt et eller andet kort-api. Det havde nok været mere elegant. Men dels så gad jeg ikke rette til, hvis de laver noget om, dels vil det tage længere tid at slå op i et api end selv at beregne og dels er det her bare nemmere. :)</p>

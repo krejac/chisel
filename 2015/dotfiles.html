@@ -31,7 +31,7 @@
 <p>Filerne bliver læst på forskellige tidspunkter alt efter hvilken fil der er tale om, og jeg har endnu ikke fundet en bedre beskrivelse af det end denne på "<a href="https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/">The Lumber Room</a>"<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>.</p>
 <p>Problemet med at beskrive hvornår hvad læses er, at Bash trækker på forskellige filer alt efter hvilken slags shell den mener den kører i. Eks.: for en "interaktiv ikke-login-shell", læses .bashrc, men for en "interaktiv login-shell" læser den udelukkende fra den første af .bash_profile, .bash_login og .profile. Der er ingen fornuftig grund til, at det er sådan, sådan er det bare...</p>
 <p>Bash læser dotfilerne således (læs nedad i den relevante kolonne. Først udføres A, så B, så C osv. B1, B2, B3 betyder at bash kun udfører den første af disse filer, den støder på):</p>
-<pre class="codehilite"><code>+----------------+-----------+-----------+-------+
+<div class="codehilite"><pre><span></span>+----------------+-----------+-----------+-------+
 |                |Interactive|Interactive|Script*|
 |                |login      |non-login  |       |
 +----------------+-----------+-----------+-------+
@@ -56,7 +56,8 @@
 |~/.bash_logout  |    C      |           |       |
 +----------------+-----------+-----------+-------+
 
-* Or non-interactive non-login.</code></pre>
+* Or non-interactive non-login.
+</pre></div>
 
 
 <p>På en Mac afvikles en ny terminal et interaktivt login; på en linux-boks som et interaktivt non-login. Hvorfor det er sådan må Apple kunne svare på<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>. Det betyder også at på min Mac, bliver først ~/.bash_profile kørt og ved logud (altså, når Terminalen lukkes) bliver så ~/.bash_logout eksekveret af systemet, resten af filerne (.bash_aliases, .bash_prompt og .osx) bliver så sourcet fra disse eller kørt manuelt.</p>

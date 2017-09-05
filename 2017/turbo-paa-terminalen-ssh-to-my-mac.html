@@ -28,16 +28,38 @@
 <p>Nogle gange har jeg brug for at kunne forbinde til min hjemme-mac og har hidtil gjort det via 'screen sharing' via 'Back To My Mac'. Det virker egentligt også fint, men som oftest har jeg slet ikke brug for den grafiske brugergrænseflade som skærmdeling giver mig. Jeg har bare brug for en terminal-adgang. Derfor ville jeg faktisl helst ssh'e mig ind til min maskine. Men jeg gider ikke rigtig rode med 'port forwarding' og åbne (mere) op til mit hjemmenetværk i min router. Så jeg kom til at tænke på, om man mon ikke kunne udnytte Back To My Mac-forbindelsen til dette formål. Og jo, efter 10 sekunder på <a href="https://duckduckgo.com/?q=Remote+SSH+using+Back+To+My+Mac">duckduckgo</a> fandt jeg <a href="http://onethingwell.org/post/27835796928/remote-ssh-bact-to-my-mac">svaret</a>. :)</p>
 <p>Herefter skrev jeg mit eget lille script, som håndterer det tunge arbejde med at identificere iCloud-id'et og forbinde korrekt.</p>
 <p>Kør det sådan her:</p>
-<pre class="codehilite"><code>./sshtomymac.sh [navn-på-mac]</code></pre>
+<div class="codehilite"><pre><span></span>./sshtomymac.sh [navn-på-mac]
+</pre></div>
 
 
 <p>eller bare:</p>
-<pre class="codehilite"><code>./sshtomymac.sh</code></pre>
+<div class="codehilite"><pre><span></span>./sshtomymac.sh
+</pre></div>
 
 
 <hr />
 <p>Scriptet:</p>
-<script src="https://gist.github.com/krestenjacobsen/6db8f8a9a9a48482a85c1b08ffdccbed.js"></script>
+<div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="nv">ACCOUNT</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;show Setup:/Network/BackToMyMac&quot;</span> <span class="p">|</span> scutil <span class="p">|</span> sed -n <span class="s1">&#39;s/.* : *\(.*\).$/\1/p&#39;</span><span class="k">)</span>
+
+<span class="k">if</span> <span class="o">[</span> ! -n <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;ssh to which Mac? &quot;</span>
+    <span class="nb">read</span> MAC
+
+    <span class="c1"># Uncomment the following two lines if you need to login to the remote host with a different user than the current local user.</span>
+    <span class="c1">#echo &quot;As who? &quot;</span>
+    <span class="c1">#read USER</span>
+
+    <span class="k">if</span> <span class="o">[[</span> USER <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        ssh <span class="nv">$USER</span><span class="s2">&quot;@&quot;</span><span class="nv">$MAC</span><span class="s2">&quot;.&quot;</span><span class="nv">$ACCOUNT</span>
+        <span class="k">else</span>
+        ssh <span class="nv">$MAC</span><span class="s2">&quot;.&quot;</span><span class="nv">$ACCOUNT</span>
+    <span class="k">fi</span>
+<span class="k">else</span>
+    ssh <span class="nv">$1</span><span class="s2">&quot;.&quot;</span><span class="nv">$ACCOUNT</span>
+<span class="k">fi</span>
+</pre></div>
     </div>
 	<div class="navleft">
 		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>

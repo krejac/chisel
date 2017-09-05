@@ -28,21 +28,25 @@
 <h3>Hvad er URL Schemes?</h3>
 <p>URL Schemes, eller URL skemaer på dansk, er en metode til at lave inter-app kald på iOS enheder. Det vil groft sige, at man kan kalde en app, der har et URL skema, fra en anden app. Det er i sig selv smart nok, da man på denne måde kan spare et par tastetryk, når man skifter fra en app til en anden. Men der hvor det bliver rigtig smart er, når man sender data og instruktioner, i form af en tekststreng, med. URL'en skal være på en form, som den modtagende app forstår - altså følge app'ens URL skema - og kan så udføre en prædefineret handling på noget prædefineret data<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>.</p>
 <p>Et eksempel på et x-callback-url kald, som den type URL'er, der anvendes her hedder kunne være dette, som virker i app'en Clean Links.</p>
-<pre class="codehilite"><code> clean-links://x-callback-url/clean?url=[clipboard]</code></pre>
+<div class="codehilite"><pre><span></span> clean-links://x-callback-url/clean?url=[clipboard]
+</pre></div>
 
 
 <p>Denne x-callback-url kalder Clean Links app'en og beder den rense<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> det link, man har liggende i clipboard'et og kopierer det rensede link til clipboard, så eks. linket fra Youtubes mobilside her:</p>
-<pre class="codehilite"><code>http://m.youtube.com/watch?v=dQw4w9WgXcQ</code></pre>
+<div class="codehilite"><pre><span></span>http://m.youtube.com/watch?v=dQw4w9WgXcQ
+</pre></div>
 
 
 <p>Ville blive til:</p>
-<pre class="codehilite"><code> http://www.youtube.com/watch?v=dQw4w9WgXcQ</code></pre>
+<div class="codehilite"><pre><span></span> http://www.youtube.com/watch?v=dQw4w9WgXcQ
+</pre></div>
 
 
 <p>Hvilket jeg indrømmer er et lidt sjovt eksempel, da det rigtige link faktisk er længere end mobilsidens, men ikke desto mindre peger på den rigtige side - uden redirects ol.</p>
 <h3>Hvad bruger jeg så URL Schemes til?</h3>
 <p>Ovenstående eksempel er selvfølgelig ikke helt grebet ud af den blå luft, for det er faktisk en del af en handling, som jeg har defineret på min telefon og som jeg bruger ret ofte<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>. Jeg læser nemlig en del artikler på min mobil og bliver der ofte præsenteret for en mobiludgave eller en URL med en masse - for mig - overflødig information i. Jeg vil derfor gerne have renset mine URL'er, så de er mere retvisende inden jeg gemmer dem. Det gør jeg med følgende x-callback-url:</p>
-<pre class="codehilite"><code> clean-links://x-callback-url/clean?url=[clipboard]&amp;x-success={{pinswift://add?url=&lt;URL&gt;}}</code></pre>
+<div class="codehilite"><pre><span></span><span class="x"> clean-links://x-callback-url/clean?url=[clipboard]&amp;x-success=</span><span class="cp">{{</span><span class="nv">pinswift</span><span class="o">://</span><span class="nv">add</span><span class="err">?</span><span class="nv">url</span><span class="o">=&lt;</span><span class="nv">URL</span><span class="o">&gt;</span><span class="cp">}}</span><span class="x"></span>
+</pre></div>
 
 
 <p>Den krabat kalder jeg så fra en app, der kan eksekvere den slags hjemmelavede URL'er; nemlig <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>.</p>

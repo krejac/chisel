@@ -26,29 +26,35 @@
        	<p><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a> - Jeg har et par servere snurrende rundt om i verdenen og ser derfor tydeligt, hvor ofte de bliver udsat for angreb. Her er mine noter til opsætning af en firewall Ubuntu/Debian-box<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>.</p>
 <p><img alt="Serving" src="https://log.logiskhave.dk/static/20160126_server.jpg" title="Live to serve..." /></p>
 <p>En firewall er en effektiv måde at blokere ikke-ønsket trafik mod din server. På Ubuntu kan man selv rette i de relativt komplicerede <a href="http://manpages.ubuntu.com/manpages/trusty/man8/iptables.8.html">iptables</a> eller installere UFW (Uncomplicated FireWall), ved at apt-get'e pakken ufw. ufw er en slags 'front end' til iptables og noget lettere at have med at gøre. Vi snupper den sidste her.</p>
-<pre class="codehilite"><code>sudo apt-get install ufw</code></pre>
+<div class="codehilite"><pre><span></span>sudo apt-get install ufw
+</pre></div>
 
 
 <p>Først garanteres trafik via ssh og http.</p>
-<pre class="codehilite"><code>sudo ufw allow ssh
-sudo ufw allow http</code></pre>
+<div class="codehilite"><pre><span></span>sudo ufw allow ssh
+sudo ufw allow http
+</pre></div>
 
 
 <p>Derefter blokeres telnet specifikt og resten per default...</p>
-<pre class="codehilite"><code>sudo ufw deny 23
-sudo ufw default deny</code></pre>
+<div class="codehilite"><pre><span></span>sudo ufw deny 23
+sudo ufw default deny
+</pre></div>
 
 
 <p>Slå firewallen til.</p>
-<pre class="codehilite"><code>sudo ufw enable</code></pre>
+<div class="codehilite"><pre><span></span>sudo ufw enable
+</pre></div>
 
 
 <p>Og endelig: Check status på firewallen.</p>
-<pre class="codehilite"><code>sudo ufw status verbose</code></pre>
+<div class="codehilite"><pre><span></span>sudo ufw status verbose
+</pre></div>
 
 
 <p><em>Bonus</em>: Som nævnt er ufw et administrationsmodul til iptables og man kan læse reglerne i ip-tables.</p>
-<pre class="codehilite"><code>sudo iptables -L</code></pre>
+<div class="codehilite"><pre><span></span>sudo iptables -L
+</pre></div>
 
 
 <p>Det kan dog være lidt svært at gennemskue hvad der er sket, hvis ikke også man har kørt ovenstående før man lavede ændringerne og så sammenligner. ;)</p>

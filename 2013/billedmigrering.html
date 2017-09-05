@@ -25,7 +25,8 @@
         </h2>
        	<p><img alt="find + sed" src="https://log.logiskhave.dk/static/20131006_migrering.png" /></p>
 <p>For at lette arbejdsgangen for publicering af posts her på loggen, har jeg i dag flyttet alle billeder fra at ligge i en mediefolder under "www/" til sit helt eget subdomæne. Det tog ca. 10 minutter fra start til slut; for da alle posts er skrevet i ren tekst (og formateret med <a href="http://daringfireball.net/projects/markdown/">Markdown</a>) kunne jeg nemlig bare fyre nedenstående af via terminalen.</p>
-<pre class="codehilite"><code>find . -name &quot;*.md&quot; -exec sed -i '' &quot;s/\/media\//http\:\/\/static\.logiskhave\.dk\//g&quot; '{}' \;</code></pre>
+<div class="codehilite"><pre><span></span>find . -name &quot;*.md&quot; -exec sed -i &#39;&#39; &quot;s/\/media\//http\:\/\/static\.logiskhave\.dk\//g&quot; &#39;{}&#39; \;
+</pre></div>
 
 
 <p>Det substituerer alle referencer til "https://log.logiskhave.dk/static/" med referencer til "https://log.logiskhave.dk/static/" i <em>alle</em> mine posts. Herefter var det bare at uploade billederne til static.logiskhave.dk. Simpelt og nemt fordi det hele ligger som flade filer.</p>

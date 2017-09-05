@@ -37,17 +37,20 @@
 <p>For at få det til at spille har jeg dog inden go-live måtte kigge på det evigt frygtede datoformat -- for jeg gider ikke lave en fin side blot for ikke at kunne generere danske datoer.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup></p>
 <h3>Danske datoer</h3>
 <p>For at få danske datoer til at virke, måtte jeg dels lave denne rettelse i chisel.py:</p>
-<pre class="codehilite"><code>TIME_FORMAT = &quot;%B %d, %Y&quot;</code></pre>
+<div class="codehilite"><pre><span></span>TIME_FORMAT = &quot;%B %d, %Y&quot;
+</pre></div>
 
 
 <p><em>Engelsk format (eks. May 22, 2013)</em></p>
-<pre class="codehilite"><code>TIME_FORMAT = &quot;%d. %B, %Y&quot;</code></pre>
+<div class="codehilite"><pre><span></span>TIME_FORMAT = &quot;%d. %B, %Y&quot;
+</pre></div>
 
 
 <p><em>Dansk format (eks. 22. May, 2013)</em></p>
 <p>Men rykker jo ligesom bare rundt på formatet og ændrer ikke sproget. For at gøre det, skal man gøre chisel.py-scriptet opmærksomt på, at man vil afvige fra standardsproget, engelsk, ved at bruge pythons indbyggede lokalisations metode "locale" således:</p>
-<pre class="codehilite"><code>import locale
-locale.setlocale(locale.LC_TIME, &quot;da_DK.UTF-8&quot;)</code></pre>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">locale</span>
+<span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_TIME</span><span class="p">,</span> <span class="s2">&quot;da_DK.UTF-8&quot;</span><span class="p">)</span>
+</pre></div>
 
 
 <p><em>Dansk format og dansk sprog (eks. 22. maj, 2013)</em></p>

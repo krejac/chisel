@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<rss version="2.0"><channel><title>krestens log</title><link>https://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Sun, 20 Aug 2017 13:41:39 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>HTTPS p&amp;aring; loggen
+<rss version="2.0"><channel><title>krestens log</title><link>https://log.logiskhave.dk/rss.xml</link><description>Kresten Jacobsens log</description><lastBuildDate>Tue, 05 Sep 2017 20:42:04 GMT</lastBuildDate><generator>PyRSS2Gen-1.1.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>HTTPS p&amp;aring; loggen
 </title><link>https://log.logiskhave.dk/2017/https-paa-loggen.html</link><description>&lt;p&gt;&lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read"&gt;TL;DR&lt;/a&gt;&lt;/strong&gt; - Der er kommet hængelås på siden her, men trafikken er kun krypteret mellem browseren og &lt;a href="https://en.wikipedia.org/wiki/Content_delivery_network"&gt;CDN&lt;/a&gt;'en. Er det så nok? (Spoiler: Ja, det er det.)&lt;/p&gt;
 &lt;p&gt;&lt;img alt="https://" src="https://log.logiskhave.dk/static/20170819_https.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Indtil nu har al trafik mellem de besøgende og siden her været læsbar af tredje part. Det betyder at alle, der kan finde ud af at lytte på trafikken, principielt har haft mulighed for at opsnappe hvad man læser her på siden. Nu har jeg dog langt om længe fået lagt et ekstra lag af sikkerhed på, så det pludselig er langt mere besværligt (men ikke umuligt). Til det formål bruger jeg &lt;a href="https://www.cloudflare.com/ssl/"&gt;Cloudflares Flexible&lt;/a&gt; option. Det betyder at kommunikation mellem browseren og Cloudflares datacentre er krypteret, men at forbindelsen fra Cloudflares datacenter til &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; &lt;em&gt;ikke&lt;/em&gt; er.&lt;/p&gt;
@@ -65,13 +65,35 @@
 &lt;p&gt;Nogle gange har jeg brug for at kunne forbinde til min hjemme-mac og har hidtil gjort det via 'screen sharing' via 'Back To My Mac'. Det virker egentligt også fint, men som oftest har jeg slet ikke brug for den grafiske brugergrænseflade som skærmdeling giver mig. Jeg har bare brug for en terminal-adgang. Derfor ville jeg faktisl helst ssh'e mig ind til min maskine. Men jeg gider ikke rigtig rode med 'port forwarding' og åbne (mere) op til mit hjemmenetværk i min router. Så jeg kom til at tænke på, om man mon ikke kunne udnytte Back To My Mac-forbindelsen til dette formål. Og jo, efter 10 sekunder på &lt;a href="https://duckduckgo.com/?q=Remote+SSH+using+Back+To+My+Mac"&gt;duckduckgo&lt;/a&gt; fandt jeg &lt;a href="http://onethingwell.org/post/27835796928/remote-ssh-bact-to-my-mac"&gt;svaret&lt;/a&gt;. :)&lt;/p&gt;
 &lt;p&gt;Herefter skrev jeg mit eget lille script, som håndterer det tunge arbejde med at identificere iCloud-id'et og forbinde korrekt.&lt;/p&gt;
 &lt;p&gt;Kør det sådan her:&lt;/p&gt;
-&lt;pre class="codehilite"&gt;&lt;code&gt;./sshtomymac.sh [navn-på-mac]&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./sshtomymac.sh [navn-på-mac]
+&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;eller bare:&lt;/p&gt;
-&lt;pre class="codehilite"&gt;&lt;code&gt;./sshtomymac.sh&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./sshtomymac.sh
+&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;hr /&gt;
 &lt;p&gt;Scriptet:&lt;/p&gt;
-&lt;script src="https://gist.github.com/krestenjacobsen/6db8f8a9a9a48482a85c1b08ffdccbed.js"&gt;&lt;/script&gt;</description><author>Kresten Jacobsen</author><guid isPermaLink="true">https://log.logiskhave.dk/2017/turbo-paa-terminalen-ssh-to-my-mac.html</guid><pubDate>Wed, 22 Mar 2017 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class="nv"&gt;ACCOUNT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;show Setup:/Network/BackToMyMac&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; scutil &lt;span class="p"&gt;|&lt;/span&gt; sed -n &lt;span class="s1"&gt;&amp;#39;s/.* : *\(.*\).$/\1/p&amp;#39;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; ! -n &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ssh to which Mac? &amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;read&lt;/span&gt; MAC
+
+    &lt;span class="c1"&gt;# Uncomment the following two lines if you need to login to the remote host with a different user than the current local user.&lt;/span&gt;
+    &lt;span class="c1"&gt;#echo &amp;quot;As who? &amp;quot;&lt;/span&gt;
+    &lt;span class="c1"&gt;#read USER&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; USER &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        ssh &lt;span class="nv"&gt;$USER&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;@&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$MAC&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ACCOUNT&lt;/span&gt;
+        &lt;span class="k"&gt;else&lt;/span&gt;
+        ssh &lt;span class="nv"&gt;$MAC&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ACCOUNT&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="k"&gt;else&lt;/span&gt;
+    ssh &lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ACCOUNT&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><author>Kresten Jacobsen</author><guid isPermaLink="true">https://log.logiskhave.dk/2017/turbo-paa-terminalen-ssh-to-my-mac.html</guid><pubDate>Wed, 22 Mar 2017 00:00:00 GMT</pubDate></item></channel></rss>

@@ -26,37 +26,38 @@
        	<p><strong><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a></strong> - Det er lige gået op for mig, <em>hvor</em> nemt det egentligt er at sende en gmail med Python. Det må jeg lige få noteret...</p>
 <p><img alt="Code..." src="https://log.logiskhave.dk/static/20141023_code.jpg" title="Code..." /></p>
 <p>Nedenstående eksempel sender en email til 'user2@example.org' med en påmindelse om at medbringe en paraply (det kunne jo være en del af et script, der tjekkede sandsynligheden for regn. Ja, det skal jeg også have lavet...).</p>
-<pre class="codehilite"><code class="language-python">import smtplib
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">smtplib</span>
 
-# Credentials
-GMAIL_USERNAME = 'user1@example.org'
-GMAIL_PASSWORD = 'xyz123!'
+<span class="c1"># Credentials</span>
+<span class="n">GMAIL_USERNAME</span> <span class="o">=</span> <span class="s1">&#39;user1@example.org&#39;</span>
+<span class="n">GMAIL_PASSWORD</span> <span class="o">=</span> <span class="s1">&#39;xyz123!&#39;</span>
 
-# Contents (body_of_email can be either plaintext or html)
-email_subject = 'Email subject goes here'
-recipient = 'user2@example.org'
-body_of_email = &quot;&quot;&quot;Dear XXX,&lt;br&gt;
-Don't forget to bring an umbrella. It's going to be raining cats and dogs...&lt;br&gt;
-&lt;br&gt;
-See you soon.&lt;br&gt;
-&lt;br&gt;
-Sincerly,&lt;br&gt;
-UNIVAC
-&quot;&quot;&quot;
+<span class="c1"># Contents (body_of_email can be either plaintext or html)</span>
+<span class="n">email_subject</span> <span class="o">=</span> <span class="s1">&#39;Email subject goes here&#39;</span>
+<span class="n">recipient</span> <span class="o">=</span> <span class="s1">&#39;user2@example.org&#39;</span>
+<span class="n">body_of_email</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Dear XXX,&lt;br&gt;</span>
+<span class="s2">Don&#39;t forget to bring an umbrella. It&#39;s going to be raining cats and dogs...&lt;br&gt;</span>
+<span class="s2">&lt;br&gt;</span>
+<span class="s2">See you soon.&lt;br&gt;</span>
+<span class="s2">&lt;br&gt;</span>
+<span class="s2">Sincerly,&lt;br&gt;</span>
+<span class="s2">UNIVAC</span>
+<span class="s2">&quot;&quot;&quot;</span>
 
-# Establish secure connection, verify identity (you may have to create an app specific password if you - like me - have two factor authentification enabled).
-session = smtplib.SMTP('smtp.gmail.com', 587)
-session.starttls()
-session.login(GMAIL_USERNAME, GMAIL_PASSWORD)
+<span class="c1"># Establish secure connection, verify identity (you may have to create an app specific password if you - like me - have two factor authentification enabled).</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">&#39;smtp.gmail.com&#39;</span><span class="p">,</span> <span class="mi">587</span><span class="p">)</span>
+<span class="n">session</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
+<span class="n">session</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">GMAIL_USERNAME</span><span class="p">,</span> <span class="n">GMAIL_PASSWORD</span><span class="p">)</span>
 
-headers = &quot;\r\n&quot;.join([&quot;from: &quot; + GMAIL_USERNAME,
-                       &quot;subject: &quot; + email_subject,
-                       &quot;to: &quot; + recipient,
-                       &quot;mime-version: 1.0&quot;,
-                       &quot;content-type: text/html&quot;])
+<span class="n">headers</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\r\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;from: &quot;</span> <span class="o">+</span> <span class="n">GMAIL_USERNAME</span><span class="p">,</span>
+                       <span class="s2">&quot;subject: &quot;</span> <span class="o">+</span> <span class="n">email_subject</span><span class="p">,</span>
+                       <span class="s2">&quot;to: &quot;</span> <span class="o">+</span> <span class="n">recipient</span><span class="p">,</span>
+                       <span class="s2">&quot;mime-version: 1.0&quot;</span><span class="p">,</span>
+                       <span class="s2">&quot;content-type: text/html&quot;</span><span class="p">])</span>
 
-content = headers + &quot;\r\n\r\n&quot; + body_of_email
-session.sendmail(GMAIL_USERNAME, recipient, content)</code></pre>
+<span class="n">content</span> <span class="o">=</span> <span class="n">headers</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\r\n\r\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">body_of_email</span>
+<span class="n">session</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">GMAIL_USERNAME</span><span class="p">,</span> <span class="n">recipient</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+</pre></div>
 
 
 <p>Og da smtplib er implementeret i <a href="http://omz-software.com/pythonista/">Pythonista</a>, burde ovenstående eksempel virke der også. :)</p>
