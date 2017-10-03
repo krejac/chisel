@@ -6,21 +6,21 @@ Rundt i manegen med tele-scammeren
 
 ![tele-scammeren](https://log.logiskhave.dk/static/20171003_scam.jpg)
 
-I dag havde jeg _endelig_ tid til at lytte til den venlige indiske "Microsoft supporter"-dame, der med jævne mellemrum ringer og fortæller mig den er gal med min Windows-maskine[^1] - og den var tilsyneladende _helt_ gal for de kunne nemt påvise mange fejl...
+I dag havde jeg _endelig_ tid til at lytte til den venlige indiske "Microsoft" support-dame, der med jævne mellemrum ringer og fortæller mig den er gal med min Windows-maskine[^1] - og den var tilsyneladende _helt_ gal for de kunne nemt påvise mange fejl...
 
-<img src="https://log.logiskhave.dk/static/20171003_run-command-box.png" alt="cmd" style="width:401px;height:207px;">
+<img class="screen" src="https://log.logiskhave.dk/static/20171003_run-command-box.png" alt="cmd">
 
 Først vil tele-scammeren have een til at åbne en kommandoprompt ([win]+r efterfulgt af "cmd" og et tryk på ok). Her blev jeg så bedt om at taste "assoc" og de læste min maskines "unikke identifikator" op.
 
-<img src="https://log.logiskhave.dk/static/20171003_assoc-output.png" alt="assoc" style="width:401px;">
+<img class="screen" src="https://log.logiskhave.dk/static/20171003_assoc-output.png" alt="assoc">
 
-   .ZFSendToTarget=CLSID\{888DCA60-FC0A-11CF-8F0F-00C04FD7D062}
+    .ZFSendToTarget=CLSID\{888DCA60-FC0A-11CF-8F0F-00C04FD7D062}
 
 Jeps, den passede[^2]. Så jeg blev sendt videre til 2. level support - meget professionelt.
 
 2. level-supporteren, som var en mand, som bad mig åbne "event viewer" ([win]+r efterfulgt af "eventvwr" og et tryk på ok) og navigere frem til en laang list med "fejl"[^3].
 
-<img src="https://log.logiskhave.dk/static/20171003_event-log.jpg" alt="event log" style="width:401px;">
+<img class="screen" src="https://log.logiskhave.dk/static/20171003_event-log.jpg" alt="event log">
 
 Når det så er konstateret overfor mig som bruger, at der er en masse fejl på min maskine, bad 2. level-supporteren mig om at navigere til www[.]support[.]me og logge ind. Men den side er et link til et [fjernskrivebordsværktøj](https://en.wikipedia.org/wiki/LogMeIn), som man bliver bedt om at downloade og installere, hvorefter man giver dem fuld adgang til maskinen - _så her skal man altså stå af_.
 
