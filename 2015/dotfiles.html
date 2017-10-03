@@ -31,7 +31,7 @@
 <p>Filerne bliver læst på forskellige tidspunkter alt efter hvilken fil der er tale om, og jeg har endnu ikke fundet en bedre beskrivelse af det end denne på "<a href="https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/">The Lumber Room</a>"<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>.</p>
 <p>Problemet med at beskrive hvornår hvad læses er, at Bash trækker på forskellige filer alt efter hvilken slags shell den mener den kører i. Eks.: for en "interaktiv ikke-login-shell", læses .bashrc, men for en "interaktiv login-shell" læser den udelukkende fra den første af .bash_profile, .bash_login og .profile. Der er ingen fornuftig grund til, at det er sådan, sådan er det bare...</p>
 <p>Bash læser dotfilerne således (læs nedad i den relevante kolonne. Først udføres A, så B, så C osv. B1, B2, B3 betyder at bash kun udfører den første af disse filer, den støder på):</p>
-<div class="codehilite"><pre><span></span>+----------------+-----------+-----------+-------+
+<pre class="codehilite"><code>+----------------+-----------+-----------+-------+
 |                |Interactive|Interactive|Script*|
 |                |login      |non-login  |       |
 +----------------+-----------+-----------+-------+
@@ -56,255 +56,250 @@
 |~/.bash_logout  |    C      |           |       |
 +----------------+-----------+-----------+-------+
 
-* Or non-interactive non-login.
-</pre></div>
+* Or non-interactive non-login.</code></pre>
 
 
 <p>På en Mac afvikles en ny terminal et interaktivt login; på en linux-boks som et interaktivt non-login. Hvorfor det er sådan må Apple kunne svare på<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>. Det betyder også at på min Mac, bliver først ~/.bash_profile kørt og ved logud (altså, når Terminalen lukkes) bliver så ~/.bash_logout eksekveret af systemet, resten af filerne (.bash_aliases, .bash_prompt og .osx) bliver så sourcet fra disse eller kørt manuelt.</p>
 <h3>Filerne</h3>
 <p>~/.bash_profile - køres af køres af operativsystemet</p>
-<div class="codehilite"><pre><span></span><span class="c1"># .bash_profile</span>
-<span class="c1"># Executed for login bash shells</span>
+<pre class="codehilite"><code class="language-bash"># .bash_profile
+# Executed for login bash shells
 
-<span class="c1"># Add `~/bin` to the `$PATH`</span>
-<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span><span class="p">;</span>
+# Add `~/bin` to the `$PATH`
+export PATH=&quot;$HOME/bin:$PATH&quot;;
 
-<span class="c1"># don&#39;t put duplicate lines or lines starting with space in the history.</span>
-<span class="c1"># See bash(1) for more options</span>
-<span class="nv">HISTCONTROL</span><span class="o">=</span>ignoreboth
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
 
-<span class="c1"># append to the history file, don&#39;t overwrite it</span>
-<span class="nb">shopt</span> -s histappend
+# append to the history file, don't overwrite it
+shopt -s histappend
 
-<span class="c1"># for setting history length see HISTSIZE and HISTFILESIZE in bash(1)</span>
-<span class="nv">HISTSIZE</span><span class="o">=</span><span class="m">1000</span>
-<span class="nv">HISTFILESIZE</span><span class="o">=</span><span class="m">2000</span>
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
 
-<span class="c1"># Load the shell dotfiles, and then some:</span>
-<span class="c1"># * ~/.path can be used to extend `$PATH`.</span>
-<span class="c1"># * ~/.extra can be used for other settings you don’t want to commit.</span>
-<span class="k">for</span> file in ~/.<span class="o">{</span>bash_prompt,bash_aliases<span class="o">}</span><span class="p">;</span> <span class="k">do</span>
-    <span class="o">[</span> -r <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -f <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">source</span> <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span><span class="p">;</span>
-<span class="k">done</span><span class="p">;</span>
-<span class="nb">unset</span> file<span class="p">;</span>
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{bash_prompt,bash_aliases}; do
+    [ -r &quot;$file&quot; ] &amp;&amp; [ -f &quot;$file&quot; ] &amp;&amp; source &quot;$file&quot;;
+done;
+unset file;
 
-<span class="c1"># Enable bash completion</span>
-<span class="k">if</span> <span class="o">[</span> -f <span class="k">$(</span>brew --prefix<span class="k">)</span>/etc/bash_completion <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-    . <span class="k">$(</span>brew --prefix<span class="k">)</span>/etc/bash_completion
-<span class="k">fi</span>
+# Enable bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 
-<span class="c1"># Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards</span>
-<span class="o">[</span> -e <span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.ssh/config&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">complete</span> -o <span class="s2">&quot;default&quot;</span> -o <span class="s2">&quot;nospace&quot;</span> -W <span class="s2">&quot;</span><span class="k">$(</span>grep <span class="s2">&quot;^Host&quot;</span> ~/.ssh/config <span class="p">|</span> grep -v <span class="s2">&quot;[?*]&quot;</span> <span class="p">|</span> cut -d <span class="s2">&quot; &quot;</span> -f2- <span class="p">|</span> tr <span class="s1">&#39; &#39;</span> <span class="s1">&#39;\n&#39;</span><span class="k">)</span><span class="s2">&quot;</span> scp sftp ssh<span class="p">;</span>
-</pre></div>
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+[ -e &quot;$HOME/.ssh/config&quot; ] &amp;&amp; complete -o &quot;default&quot; -o &quot;nospace&quot; -W &quot;$(grep &quot;^Host&quot; ~/.ssh/config | grep -v &quot;[?*]&quot; | cut -d &quot; &quot; -f2- | tr ' ' '\n')&quot; scp sftp ssh;</code></pre>
 
 
 <p>~/.bash_aliases - køres fra ~/.bash_profile</p>
-<div class="codehilite"><pre><span></span><span class="c1"># .bash_aliases</span>
-<span class="c1"># Sourced by .bash_profile</span>
+<pre class="codehilite"><code class="language-bash"># .bash_aliases
+# Sourced by .bash_profile
 
-<span class="c1"># Easier navigation</span>
-<span class="nb">alias</span> ~<span class="o">=</span><span class="s2">&quot;cd ~&quot;</span> <span class="c1"># Home</span>
-<span class="nb">alias</span> -- -<span class="o">=</span><span class="s2">&quot;cd -&quot;</span> <span class="c1"># Last used dir</span>
+# Easier navigation
+alias ~=&quot;cd ~&quot; # Home
+alias -- -=&quot;cd -&quot; # Last used dir
 
-<span class="c1"># Always start vmware horizon view in detached state directing standard out to /dev/null</span>
-<span class="nb">alias</span> vmware-view<span class="o">=</span><span class="s2">&quot;vmware-view &lt;/dev/null &amp;&gt;/dev/null &amp;&quot;</span>
-<span class="c1"># v for vmware-view</span>
-<span class="nb">alias</span> <span class="nv">v</span><span class="o">=</span><span class="s2">&quot;vmware-view&quot;</span>
+# Always start vmware horizon view in detached state directing standard out to /dev/null
+alias vmware-view=&quot;vmware-view &lt;/dev/null &amp;&gt;/dev/null &amp;&quot;
+# v for vmware-view
+alias v=&quot;vmware-view&quot;
 
-<span class="c1"># Source virtualenv</span>
-<span class="nb">alias</span> <span class="nv">venv</span><span class="o">=</span><span class="s2">&quot;source ./venv/bin/activate&quot;</span>
+# Source virtualenv
+alias venv=&quot;source ./venv/bin/activate&quot;
 
-<span class="c1"># Weeknumber</span>
-<span class="nb">alias</span> <span class="nv">week</span><span class="o">=</span><span class="s1">&#39;date +%V&#39;</span>
+# Weeknumber
+alias week='date +%V'
 
-<span class="c1"># Get OS X Software Updates, and Homebrew, and their installed packages</span>
-<span class="nb">alias</span> <span class="nv">update</span><span class="o">=</span><span class="s1">&#39;sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup&#39;</span>
+# Get OS X Software Updates, and Homebrew, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup'
 
-<span class="c1"># Show/hide hidden files in Finder</span>
-<span class="nb">alias</span> <span class="nv">show</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool true &amp;&amp; killall Finder&quot;</span>
-<span class="nb">alias</span> <span class="nv">hide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool false &amp;&amp; killall Finder&quot;</span>
+# Show/hide hidden files in Finder
+alias show=&quot;defaults write com.apple.finder AppleShowAllFiles -bool true &amp;&amp; killall Finder&quot;
+alias hide=&quot;defaults write com.apple.finder AppleShowAllFiles -bool false &amp;&amp; killall Finder&quot;
 
-<span class="c1"># Detect which `ls` flavor is in use</span>
-<span class="k">if</span> ls --color &gt; /dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="p">;</span> <span class="k">then</span> <span class="c1"># GNU `ls`</span>
-    <span class="nv">colorflag</span><span class="o">=</span><span class="s2">&quot;--color&quot;</span>
-<span class="k">else</span> <span class="c1"># OS X `ls`</span>
-    <span class="nv">colorflag</span><span class="o">=</span><span class="s2">&quot;-G&quot;</span>
-<span class="k">fi</span>
+# Detect which `ls` flavor is in use
+if ls --color &gt; /dev/null 2&gt;&amp;1; then # GNU `ls`
+    colorflag=&quot;--color&quot;
+else # OS X `ls`
+    colorflag=&quot;-G&quot;
+fi
 
-<span class="c1"># List all files colorized in long format</span>
-<span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s2">&quot;ls -lF </span><span class="si">${</span><span class="nv">colorflag</span><span class="si">}</span><span class="s2">&quot;</span>
+# List all files colorized in long format
+alias ll=&quot;ls -lF ${colorflag}&quot;
 
-<span class="c1"># List all files colorized in long format, including dot files</span>
-<span class="nb">alias</span> <span class="nv">la</span><span class="o">=</span><span class="s2">&quot;ls -laF </span><span class="si">${</span><span class="nv">colorflag</span><span class="si">}</span><span class="s2">&quot;</span>
+# List all files colorized in long format, including dot files
+alias la=&quot;ls -laF ${colorflag}&quot;
 
-<span class="c1"># List only directories</span>
-<span class="nb">alias</span> <span class="nv">lsd</span><span class="o">=</span><span class="s2">&quot;ls -lF </span><span class="si">${</span><span class="nv">colorflag</span><span class="si">}</span><span class="s2"> | grep --color=never &#39;^d&#39;&quot;</span>
+# List only directories
+alias lsd=&quot;ls -lF ${colorflag} | grep --color=never '^d'&quot;
 
-<span class="c1"># Always use color output for `ls`</span>
-<span class="nb">alias</span> <span class="nv">ls</span><span class="o">=</span><span class="s2">&quot;command ls </span><span class="si">${</span><span class="nv">colorflag</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="nb">export</span> <span class="nv">LS_COLORS</span><span class="o">=</span><span class="s1">&#39;no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:&#39;</span>
-</pre></div>
+# Always use color output for `ls`
+alias ls=&quot;command ls ${colorflag}&quot;
+export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'</code></pre>
 
 
 <p>~/.bash_prompt - køres fra ~/.bash_profile</p>
-<div class="codehilite"><pre><span></span><span class="c1"># .bash_profile</span>
-<span class="c1"># Sourced by .bash_profile</span>
+<pre class="codehilite"><code class="language-bash"># .bash_profile
+# Sourced by .bash_profile
 
-<span class="c1"># Shell prompt based on the Solarized Dark theme.</span>
-<span class="c1"># More or less by Mathias Bynens. Heavily inspired by @necolas’s prompt: https://github.com/necolas/dotfiles</span>
-<span class="c1"># iTerm → Profiles → Text → use 13pt Monaco with 1.1 vertical spacing.</span>
+# Shell prompt based on the Solarized Dark theme.
+# More or less by Mathias Bynens. Heavily inspired by @necolas’s prompt: https://github.com/necolas/dotfiles
+# iTerm → Profiles → Text → use 13pt Monaco with 1.1 vertical spacing.
 
-<span class="k">if</span> <span class="o">[[</span> <span class="nv">$COLORTERM</span> <span class="o">=</span> gnome-* <span class="o">&amp;&amp;</span> <span class="nv">$TERM</span> <span class="o">=</span> xterm <span class="o">]]</span> <span class="o">&amp;&amp;</span> infocmp gnome-256color &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="p">;</span> <span class="k">then</span>
-    <span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span><span class="s1">&#39;gnome-256color&#39;</span><span class="p">;</span>
-<span class="k">elif</span> infocmp xterm-256color &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="p">;</span> <span class="k">then</span>
-    <span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span><span class="s1">&#39;xterm-256color&#39;</span><span class="p">;</span>
-<span class="k">fi</span><span class="p">;</span>
+if [[ $COLORTERM = gnome-* &amp;&amp; $TERM = xterm ]] &amp;&amp; infocmp gnome-256color &gt;/dev/null 2&gt;&amp;1; then
+    export TERM='gnome-256color';
+elif infocmp xterm-256color &gt;/dev/null 2&gt;&amp;1; then
+    export TERM='xterm-256color';
+fi;
 
-prompt_git<span class="o">()</span> <span class="o">{</span>
-    <span class="nb">local</span> <span class="nv">s</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">;</span>
-    <span class="nb">local</span> <span class="nv">branchName</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">;</span>
+prompt_git() {
+    local s='';
+    local branchName='';
 
-    <span class="c1"># Check if the current directory is in a Git repository.</span>
-    <span class="k">if</span> <span class="o">[</span> <span class="k">$(</span>git rev-parse --is-inside-work-tree <span class="p">&amp;</span>&gt;/dev/null<span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="si">${</span><span class="p">?</span><span class="si">}</span><span class="s2">&quot;</span><span class="k">)</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    # Check if the current directory is in a Git repository.
+    if [ $(git rev-parse --is-inside-work-tree &amp;&gt;/dev/null; echo &quot;${?}&quot;) == '0' ]; then
 
-        <span class="c1"># check if the current directory is in .git before running git checks</span>
-        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="k">$(</span>git rev-parse --is-inside-git-dir <span class="m">2</span>&gt; /dev/null<span class="k">)</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s1">&#39;false&#39;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+        # check if the current directory is in .git before running git checks
+        if [ &quot;$(git rev-parse --is-inside-git-dir 2&gt; /dev/null)&quot; == 'false' ]; then
 
-            <span class="c1"># Ensure the index is up to date.</span>
-            git update-index --really-refresh -q <span class="p">&amp;</span>&gt;/dev/null<span class="p">;</span>
+            # Ensure the index is up to date.
+            git update-index --really-refresh -q &amp;&gt;/dev/null;
 
-            <span class="c1"># Check for uncommitted changes in the index.</span>
-            <span class="k">if</span> ! <span class="k">$(</span>git diff --quiet --ignore-submodules --cached<span class="k">)</span><span class="p">;</span> <span class="k">then</span>
-                <span class="nv">s</span><span class="o">+=</span><span class="s1">&#39;+&#39;</span><span class="p">;</span>
-            <span class="k">fi</span><span class="p">;</span>
+            # Check for uncommitted changes in the index.
+            if ! $(git diff --quiet --ignore-submodules --cached); then
+                s+='+';
+            fi;
 
-            <span class="c1"># Check for unstaged changes.</span>
-            <span class="k">if</span> ! <span class="k">$(</span>git diff-files --quiet --ignore-submodules --<span class="k">)</span><span class="p">;</span> <span class="k">then</span>
-                <span class="nv">s</span><span class="o">+=</span><span class="s1">&#39;!&#39;</span><span class="p">;</span>
-            <span class="k">fi</span><span class="p">;</span>
+            # Check for unstaged changes.
+            if ! $(git diff-files --quiet --ignore-submodules --); then
+                s+='!';
+            fi;
 
-            <span class="c1"># Check for untracked files.</span>
-            <span class="k">if</span> <span class="o">[</span> -n <span class="s2">&quot;</span><span class="k">$(</span>git ls-files --others --exclude-standard<span class="k">)</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-                <span class="nv">s</span><span class="o">+=</span><span class="s1">&#39;?&#39;</span><span class="p">;</span>
-            <span class="k">fi</span><span class="p">;</span>
+            # Check for untracked files.
+            if [ -n &quot;$(git ls-files --others --exclude-standard)&quot; ]; then
+                s+='?';
+            fi;
 
-            <span class="c1"># Check for stashed files.</span>
-            <span class="k">if</span> <span class="k">$(</span>git rev-parse --verify refs/stash <span class="p">&amp;</span>&gt;/dev/null<span class="k">)</span><span class="p">;</span> <span class="k">then</span>
-                <span class="nv">s</span><span class="o">+=</span><span class="s1">&#39;$&#39;</span><span class="p">;</span>
-            <span class="k">fi</span><span class="p">;</span>
+            # Check for stashed files.
+            if $(git rev-parse --verify refs/stash &amp;&gt;/dev/null); then
+                s+='$';
+            fi;
 
-        <span class="k">fi</span><span class="p">;</span>
+        fi;
 
-        <span class="c1"># Get the short symbolic ref.</span>
-        <span class="c1"># If HEAD isn’t a symbolic ref, get the short SHA for the latest commit</span>
-        <span class="c1"># Otherwise, just give up.</span>
-        <span class="nv">branchName</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>git symbolic-ref --quiet --short HEAD <span class="m">2</span>&gt; /dev/null <span class="o">||</span> <span class="se">\</span>
-            git rev-parse --short HEAD <span class="m">2</span>&gt; /dev/null <span class="o">||</span> <span class="se">\</span>
-            <span class="nb">echo</span> <span class="s1">&#39;(unknown)&#39;</span><span class="k">)</span><span class="s2">&quot;</span><span class="p">;</span>
+        # Get the short symbolic ref.
+        # If HEAD isn’t a symbolic ref, get the short SHA for the latest commit
+        # Otherwise, just give up.
+        branchName=&quot;$(git symbolic-ref --quiet --short HEAD 2&gt; /dev/null || \
+            git rev-parse --short HEAD 2&gt; /dev/null || \
+            echo '(unknown)')&quot;;
 
-        <span class="o">[</span> -n <span class="s2">&quot;</span><span class="si">${</span><span class="nv">s</span><span class="si">}</span><span class="s2">&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">s</span><span class="o">=</span><span class="s2">&quot; [</span><span class="si">${</span><span class="nv">s</span><span class="si">}</span><span class="s2">]&quot;</span><span class="p">;</span>
+        [ -n &quot;${s}&quot; ] &amp;&amp; s=&quot; [${s}]&quot;;
 
-        <span class="nb">echo</span> -e <span class="s2">&quot;</span><span class="si">${</span><span class="nv">1</span><span class="si">}${</span><span class="nv">branchName</span><span class="si">}${</span><span class="nv">blue</span><span class="si">}${</span><span class="nv">s</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
-    <span class="k">else</span>
-        <span class="k">return</span><span class="p">;</span>
-    <span class="k">fi</span><span class="p">;</span>
-<span class="o">}</span>
+        echo -e &quot;${1}${branchName}${blue}${s}&quot;;
+    else
+        return;
+    fi;
+}
 
-<span class="k">if</span> tput setaf <span class="m">1</span> <span class="p">&amp;</span>&gt; /dev/null<span class="p">;</span> <span class="k">then</span>
-    tput sgr0<span class="p">;</span> <span class="c1"># reset colors</span>
-    <span class="nv">bold</span><span class="o">=</span><span class="k">$(</span>tput bold<span class="k">)</span><span class="p">;</span>
-    <span class="nv">reset</span><span class="o">=</span><span class="k">$(</span>tput sgr0<span class="k">)</span><span class="p">;</span>
-    <span class="c1"># Solarized colors, taken from http://git.io/solarized-colors.</span>
-    <span class="nv">black</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">0</span><span class="k">)</span><span class="p">;</span>
-    <span class="nv">blue</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">33</span><span class="k">)</span><span class="p">;</span>
-    <span class="nv">cyan</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">37</span><span class="k">)</span><span class="p">;</span>
-    <span class="nv">green</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">64</span><span class="k">)</span><span class="p">;</span>
-    <span class="nv">orange</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">166</span><span class="k">)</span><span class="p">;</span>
-    <span class="nv">purple</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">125</span><span class="k">)</span><span class="p">;</span>
-    <span class="nv">red</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">124</span><span class="k">)</span><span class="p">;</span>
-    <span class="nv">violet</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">61</span><span class="k">)</span><span class="p">;</span>
-    <span class="nv">white</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">15</span><span class="k">)</span><span class="p">;</span>
-    <span class="nv">yellow</span><span class="o">=</span><span class="k">$(</span>tput setaf <span class="m">136</span><span class="k">)</span><span class="p">;</span>
-<span class="k">else</span>
-    <span class="nv">bold</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">;</span>
-    <span class="nv">reset</span><span class="o">=</span><span class="s2">&quot;\e[0m&quot;</span><span class="p">;</span>
-    <span class="nv">black</span><span class="o">=</span><span class="s2">&quot;\e[1;30m&quot;</span><span class="p">;</span>
-    <span class="nv">blue</span><span class="o">=</span><span class="s2">&quot;\e[1;34m&quot;</span><span class="p">;</span>
-    <span class="nv">cyan</span><span class="o">=</span><span class="s2">&quot;\e[1;36m&quot;</span><span class="p">;</span>
-    <span class="nv">green</span><span class="o">=</span><span class="s2">&quot;\e[1;32m&quot;</span><span class="p">;</span>
-    <span class="nv">orange</span><span class="o">=</span><span class="s2">&quot;\e[1;33m&quot;</span><span class="p">;</span>
-    <span class="nv">purple</span><span class="o">=</span><span class="s2">&quot;\e[1;35m&quot;</span><span class="p">;</span>
-    <span class="nv">red</span><span class="o">=</span><span class="s2">&quot;\e[1;31m&quot;</span><span class="p">;</span>
-    <span class="nv">violet</span><span class="o">=</span><span class="s2">&quot;\e[1;35m&quot;</span><span class="p">;</span>
-    <span class="nv">white</span><span class="o">=</span><span class="s2">&quot;\e[1;37m&quot;</span><span class="p">;</span>
-    <span class="nv">yellow</span><span class="o">=</span><span class="s2">&quot;\e[1;33m&quot;</span><span class="p">;</span>
-<span class="k">fi</span><span class="p">;</span>
+if tput setaf 1 &amp;&gt; /dev/null; then
+    tput sgr0; # reset colors
+    bold=$(tput bold);
+    reset=$(tput sgr0);
+    # Solarized colors, taken from http://git.io/solarized-colors.
+    black=$(tput setaf 0);
+    blue=$(tput setaf 33);
+    cyan=$(tput setaf 37);
+    green=$(tput setaf 64);
+    orange=$(tput setaf 166);
+    purple=$(tput setaf 125);
+    red=$(tput setaf 124);
+    violet=$(tput setaf 61);
+    white=$(tput setaf 15);
+    yellow=$(tput setaf 136);
+else
+    bold='';
+    reset=&quot;\e[0m&quot;;
+    black=&quot;\e[1;30m&quot;;
+    blue=&quot;\e[1;34m&quot;;
+    cyan=&quot;\e[1;36m&quot;;
+    green=&quot;\e[1;32m&quot;;
+    orange=&quot;\e[1;33m&quot;;
+    purple=&quot;\e[1;35m&quot;;
+    red=&quot;\e[1;31m&quot;;
+    violet=&quot;\e[1;35m&quot;;
+    white=&quot;\e[1;37m&quot;;
+    yellow=&quot;\e[1;33m&quot;;
+fi;
 
-<span class="c1"># Highlight the user name when logged in as root.</span>
-<span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="si">${</span><span class="nv">USER</span><span class="si">}</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;root&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-    <span class="nv">userStyle</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">red</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
-<span class="k">else</span>
-    <span class="nv">userStyle</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">orange</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
-<span class="k">fi</span><span class="p">;</span>
+# Highlight the user name when logged in as root.
+if [[ &quot;${USER}&quot; == &quot;root&quot; ]]; then
+    userStyle=&quot;${red}&quot;;
+else
+    userStyle=&quot;${orange}&quot;;
+fi;
 
-<span class="c1"># Highlight the hostname when connected via SSH.</span>
-<span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="si">${</span><span class="nv">SSH_TTY</span><span class="si">}</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-    <span class="nv">hostStyle</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">bold</span><span class="si">}${</span><span class="nv">red</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
-<span class="k">else</span>
-    <span class="nv">hostStyle</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">yellow</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
-<span class="k">fi</span><span class="p">;</span>
+# Highlight the hostname when connected via SSH.
+if [[ &quot;${SSH_TTY}&quot; ]]; then
+    hostStyle=&quot;${bold}${red}&quot;;
+else
+    hostStyle=&quot;${yellow}&quot;;
+fi;
 
-<span class="c1"># Set the terminal title to the current working directory.</span>
-<span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;\[\033]0;\w\007\]&quot;</span><span class="p">;</span>
-<span class="nv">PS1</span><span class="o">+=</span><span class="s2">&quot;\[</span><span class="si">${</span><span class="nv">bold</span><span class="si">}</span><span class="s2">\]\n&quot;</span><span class="p">;</span> <span class="c1"># newline</span>
-<span class="nv">PS1</span><span class="o">+=</span><span class="s2">&quot;\[</span><span class="si">${</span><span class="nv">userStyle</span><span class="si">}</span><span class="s2">\]\u&quot;</span><span class="p">;</span> <span class="c1"># username</span>
-<span class="nv">PS1</span><span class="o">+=</span><span class="s2">&quot;\[</span><span class="si">${</span><span class="nv">white</span><span class="si">}</span><span class="s2">\] @ &quot;</span><span class="p">;</span>
-<span class="nv">PS1</span><span class="o">+=</span><span class="s2">&quot;\[</span><span class="si">${</span><span class="nv">hostStyle</span><span class="si">}</span><span class="s2">\]\h&quot;</span><span class="p">;</span> <span class="c1"># host</span>
-<span class="nv">PS1</span><span class="o">+=</span><span class="s2">&quot;\[</span><span class="si">${</span><span class="nv">white</span><span class="si">}</span><span class="s2">\] in &quot;</span><span class="p">;</span>
-<span class="nv">PS1</span><span class="o">+=</span><span class="s2">&quot;\[</span><span class="si">${</span><span class="nv">green</span><span class="si">}</span><span class="s2">\]\w&quot;</span><span class="p">;</span> <span class="c1"># working directory</span>
-<span class="nv">PS1</span><span class="o">+=</span><span class="s2">&quot;\$(prompt_git \&quot;</span><span class="si">${</span><span class="nv">white</span><span class="si">}</span><span class="s2"> on </span><span class="si">${</span><span class="nv">violet</span><span class="si">}</span><span class="s2">\&quot;)&quot;</span><span class="p">;</span> <span class="c1"># Git repository details</span>
-<span class="nv">PS1</span><span class="o">+=</span><span class="s2">&quot;\n&quot;</span><span class="p">;</span>
-<span class="nv">PS1</span><span class="o">+=</span><span class="s2">&quot;\[</span><span class="si">${</span><span class="nv">white</span><span class="si">}</span><span class="s2">\]\$ \[</span><span class="si">${</span><span class="nv">reset</span><span class="si">}</span><span class="s2">\]&quot;</span><span class="p">;</span> <span class="c1"># `$` (and reset color)</span>
-<span class="nb">export</span> PS1<span class="p">;</span>
+# Set the terminal title to the current working directory.
+PS1=&quot;\[\033]0;\w\007\]&quot;;
+PS1+=&quot;\[${bold}\]\n&quot;; # newline
+PS1+=&quot;\[${userStyle}\]\u&quot;; # username
+PS1+=&quot;\[${white}\] @ &quot;;
+PS1+=&quot;\[${hostStyle}\]\h&quot;; # host
+PS1+=&quot;\[${white}\] in &quot;;
+PS1+=&quot;\[${green}\]\w&quot;; # working directory
+PS1+=&quot;\$(prompt_git \&quot;${white} on ${violet}\&quot;)&quot;; # Git repository details
+PS1+=&quot;\n&quot;;
+PS1+=&quot;\[${white}\]\$ \[${reset}\]&quot;; # `$` (and reset color)
+export PS1;
 
-<span class="nv">PS2</span><span class="o">=</span><span class="s2">&quot;\[</span><span class="si">${</span><span class="nv">yellow</span><span class="si">}</span><span class="s2">\]→ \[</span><span class="si">${</span><span class="nv">reset</span><span class="si">}</span><span class="s2">\]&quot;</span><span class="p">;</span>
-<span class="nb">export</span> PS2<span class="p">;</span>
-</pre></div>
+PS2=&quot;\[${yellow}\]→ \[${reset}\]&quot;;
+export PS2;</code></pre>
 
 
 <p>~/.bash_logout - køres af køres af operativsystemet</p>
-<div class="codehilite"><pre><span></span><span class="c1"># .bash_logout</span>
-<span class="c1"># Executed after logout of bash shells</span>
+<pre class="codehilite"><code class="language-bash"># .bash_logout
+# Executed after logout of bash shells
 
-clear
-</pre></div>
+clear</code></pre>
 
 
 <p>~/.osx - håndkøres ved opsætning af ny Mac</p>
-<div class="codehilite"><pre><span></span><span class="c1"># .osx</span>
-<span class="c1"># Highly opinionated OS X specific configuration</span>
+<pre class="codehilite"><code class="language-bash"># .osx
+# Highly opinionated OS X specific configuration
 
-<span class="c1">###############################################################################</span>
-<span class="c1"># Installing apps                                                             #</span>
-<span class="c1">###############################################################################</span>
+###############################################################################
+# Installing apps                                                             #
+###############################################################################
 
-<span class="c1"># Install Xcode cli-tools</span>
+# Install Xcode cli-tools
 xcode-select --install
 
-<span class="c1"># Install Brew (http://brew.sh)</span>
-ruby -e <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&quot;</span>
+# Install Brew (http://brew.sh)
+ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 
-<span class="c1"># Install Caskroom (http://caskroom.io)</span>
+# Install Caskroom (http://caskroom.io)
 brew install caskroom/cask/brew-cask
 
-<span class="c1"># Install REAL python (including pip etc.)</span>
+# Install REAL python (including pip etc.)
 brew install python
 
-<span class="c1"># Install missing unix components</span>
+# Install missing unix components
 brew install ssh-copy-id
 brew install bash-completion
 
-<span class="c1"># Install apps</span>
+# Install apps
 brew cask install hazel
 brew cask install 1password
 brew cask install textwrangler
@@ -314,62 +309,61 @@ brew cask install transmit
 brew cask install little-snitch
 
 
-<span class="c1">###############################################################################</span>
-<span class="c1"># Global settings / UI                                                        #</span>
-<span class="c1">###############################################################################</span>
+###############################################################################
+# Global settings / UI                                                        #
+###############################################################################
 
-<span class="c1"># Tap-to-click (logout and back in to activate):</span>
-defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int <span class="m">1</span>
+# Tap-to-click (logout and back in to activate):
+defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
 
-<span class="c1"># Set highlight color to green</span>
-defaults write NSGlobalDomain AppleHighlightColor -string <span class="s2">&quot;0.764700 0.976500 0.568600&quot;</span>
+# Set highlight color to green
+defaults write NSGlobalDomain AppleHighlightColor -string &quot;0.764700 0.976500 0.568600&quot;
 
-<span class="c1"># Hot corners</span>
-<span class="c1"># Possible values:</span>
-<span class="c1">#  0: no-op</span>
-<span class="c1">#  2: Mission Control</span>
-<span class="c1">#  3: Show application windows</span>
-<span class="c1">#  4: Desktop</span>
-<span class="c1">#  5: Start screen saver</span>
-<span class="c1">#  6: Disable screen saver</span>
-<span class="c1">#  7: Dashboard</span>
-<span class="c1"># 10: Put display to sleep</span>
-<span class="c1"># 11: Launchpad</span>
-<span class="c1"># 12: Notification Center</span>
-<span class="c1"># Top left screen corner → Put display to sleep</span>
-defaults write com.apple.dock wvous-tl-corner -int <span class="m">10</span>
-defaults write com.apple.dock wvous-tl-modifier -int <span class="m">0</span>
-<span class="c1"># Top right screen corner → Desktop</span>
-defaults write com.apple.dock wvous-tr-corner -int <span class="m">4</span>
-defaults write com.apple.dock wvous-tr-modifier -int <span class="m">0</span>
-<span class="c1"># Bottom left screen corner → Show application windows</span>
-defaults write com.apple.dock wvous-bl-corner -int <span class="m">3</span>
-defaults write com.apple.dock wvous-bl-modifier -int <span class="m">0</span>
-<span class="c1"># Bottom right screen corner → Mission Control</span>
-defaults write com.apple.dock wvous-br-corner -int <span class="m">2</span>
-defaults write com.apple.dock wvous-br-modifier -int <span class="m">0</span>
+# Hot corners
+# Possible values:
+#  0: no-op
+#  2: Mission Control
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
+# Top left screen corner → Put display to sleep
+defaults write com.apple.dock wvous-tl-corner -int 10
+defaults write com.apple.dock wvous-tl-modifier -int 0
+# Top right screen corner → Desktop
+defaults write com.apple.dock wvous-tr-corner -int 4
+defaults write com.apple.dock wvous-tr-modifier -int 0
+# Bottom left screen corner → Show application windows
+defaults write com.apple.dock wvous-bl-corner -int 3
+defaults write com.apple.dock wvous-bl-modifier -int 0
+# Bottom right screen corner → Mission Control
+defaults write com.apple.dock wvous-br-corner -int 2
+defaults write com.apple.dock wvous-br-modifier -int 0
 
 
-<span class="c1">###############################################################################</span>
-<span class="c1"># Safari &amp; WebKit                                                             #</span>
-<span class="c1">###############################################################################</span>
+###############################################################################
+# Safari &amp; WebKit                                                             #
+###############################################################################
 
-<span class="c1"># Privacy: don’t send search queries to Apple</span>
-defaults write com.apple.Safari UniversalSearchEnabled -bool <span class="nb">false</span>
-defaults write com.apple.Safari SuppressSearchSuggestions -bool <span class="nb">true</span>
+# Privacy: don’t send search queries to Apple
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 
-<span class="c1"># Show the full URL in the address bar (note: this still hides the scheme)</span>
-defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool <span class="nb">true</span>
+# Show the full URL in the address bar (note: this still hides the scheme)
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
-<span class="c1"># Prevent Safari from opening ‘safe’ files automatically after downloading</span>
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool <span class="nb">false</span>
+# Prevent Safari from opening ‘safe’ files automatically after downloading
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
-<span class="c1"># Hide Safari’s bookmarks bar by default</span>
-defaults write com.apple.Safari ShowFavoritesBar -bool <span class="nb">false</span>
+# Hide Safari’s bookmarks bar by default
+defaults write com.apple.Safari ShowFavoritesBar -bool false
 
-<span class="c1"># Hide Safari’s sidebar in Top Sites</span>
-defaults write com.apple.Safari ShowSidebarInTopSites -bool <span class="nb">false</span>
-</pre></div>
+# Hide Safari’s sidebar in Top Sites
+defaults write com.apple.Safari ShowSidebarInTopSites -bool false</code></pre>
 
 
 <div class="footnote">

@@ -15,6 +15,46 @@
         <div id="header">
             <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
         </div><!-- /header --><div class="post">
+        <p class="date">03. Oktober, 2017</p>
+        <h2>
+            
+                <a href="2017/rundt-i-manegen-med-tele-scammeren.html" rel="bookmark" title="Permalink til Rundt i manegen med tele-scammeren
+">Rundt i manegen med tele-scammeren
+</a>
+            
+        </h2>
+        <!--<h2><a href="2017/rundt-i-manegen-med-tele-scammeren.html">Rundt i manegen med tele-scammeren
+</a></h2>-->
+	    <p><strong><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a></strong> - Tele-scammere ringer jævnligt rundt til uforvarende for at fra-narre dem penge eller lignende. Jeg prøvede i dag at tage med på turen for at se hvad de ville.</p>
+<p><img alt="tele-scammeren" src="https://log.logiskhave.dk/static/20171003_scam.jpg" /></p>
+<p>I dag havde jeg <em>endelig</em> tid til at lytte til den venlige indiske "Microsoft supporter"-dame, der med jævne mellemrum ringer og fortæller mig den er gal med min Windows-maskine<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - og den var tilsyneladende <em>helt</em> gal for de kunne nemt påvise mange fejl...</p>
+<p><img src="https://log.logiskhave.dk/static/20171003_run-command-box.png" alt="cmd" style="width:401px;height:207px;"></p>
+<p>Først vil tele-scammeren have een til at åbne en kommandoprompt ([win]+r efterfulgt af "cmd" og et tryk på ok). Her blev jeg så bedt om at taste "assoc" og de læste min maskines "unikke identifikator" op.</p>
+<p><img src="https://log.logiskhave.dk/static/20171003_assoc-output.png" alt="assoc" style="width:401px;"></p>
+<p>.ZFSendToTarget=CLSID{888DCA60-FC0A-11CF-8F0F-00C04FD7D062}</p>
+<p>Jeps, den passede<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup>. Så jeg blev sendt videre til 2. level support - meget professionelt.</p>
+<ol>
+<li>level-supporteren, som var en mand, som bad mig åbne "event viewer" ([win]+r efterfulgt af "eventvwr" og et tryk på ok) og navigere frem til en laang list med "fejl"<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>.</li>
+</ol>
+<p><img src="https://log.logiskhave.dk/static/20171003_event-log.jpg" alt="event log" style="width:401px;"></p>
+<p>Når det så er konstateret overfor mig som bruger, at der er en masse fejl på min maskine, bad 2. level-supporteren mig om at navigere til www[.]support[.]me og logge ind. Men den side er et link til et <a href="https://en.wikipedia.org/wiki/LogMeIn">fjernskrivebordsværktøj</a>, som man bliver bedt om at downloade og installere, hvorefter man giver dem fuld adgang til maskinen - <em>så her skal man altså stå af</em>.</p>
+<p>Det var så også her jeg bekendte kulør og sagde at jeg desværre måtte indrømme, at jeg arbejdede med it til dagligt og blot havde trukket dem en tur rundt i manegen for at finde ud af hvordan det foregik og havde spildt deres tid.</p>
+<p>Og jeg skal da SÅ ellers lige love for at jeg fik en sviner på et ellers meget sødt engelsk med indisk accent. :)</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Hvilket er spøjst fordi jeg bruger macOS.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Fordi det naturligvis <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms691424(v=vs.85).aspx"><em>ikke</em> er en "unik identifikator" for en given maskine</a>.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Som en alindelig bruger ikke bør bekymre sig om - de logs er primært til udviklere og / eller systemadministratorer.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div><div class="post">
         <p class="date">19. August, 2017</p>
         <h2>
             
@@ -119,54 +159,6 @@
 </blockquote>
 </blockquote>
 <p>Min arbejdsmaskine <em>havde</em> AMT slået til. Måske jeg lige skal tjekke en kollegas. Remote...</p>
-    </div><div class="post">
-        <p class="date">22. Marts, 2017</p>
-        <h2>
-            
-                <a href="2017/turbo-paa-terminalen-ssh-to-my-mac.html" rel="bookmark" title="Permalink til Turbo p&aring; Terminalen - ssh To My Mac
-">Turbo p&aring; Terminalen - ssh To My Mac
-</a>
-            
-        </h2>
-        <!--<h2><a href="2017/turbo-paa-terminalen-ssh-to-my-mac.html">Turbo p&aring; Terminalen - ssh To My Mac
-</a></h2>-->
-	    <p><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a> - Jeg har lavet et lille <a href="">script</a>, der tillader at man ssh'er tilbage til sin Mac uden at rode med routere, portforwarding ol. Alt det kræver er at Back To My Mac er aktiveret på begge maskiner.</p>
-<p><img src="https://log.logiskhave.dk/static/20170322-icloud-icon-ssh.png" alt="iCloud+SSH" style="width: 200px;"></p>
-<p>Nogle gange har jeg brug for at kunne forbinde til min hjemme-mac og har hidtil gjort det via 'screen sharing' via 'Back To My Mac'. Det virker egentligt også fint, men som oftest har jeg slet ikke brug for den grafiske brugergrænseflade som skærmdeling giver mig. Jeg har bare brug for en terminal-adgang. Derfor ville jeg faktisl helst ssh'e mig ind til min maskine. Men jeg gider ikke rigtig rode med 'port forwarding' og åbne (mere) op til mit hjemmenetværk i min router. Så jeg kom til at tænke på, om man mon ikke kunne udnytte Back To My Mac-forbindelsen til dette formål. Og jo, efter 10 sekunder på <a href="https://duckduckgo.com/?q=Remote+SSH+using+Back+To+My+Mac">duckduckgo</a> fandt jeg <a href="http://onethingwell.org/post/27835796928/remote-ssh-bact-to-my-mac">svaret</a>. :)</p>
-<p>Herefter skrev jeg mit eget lille script, som håndterer det tunge arbejde med at identificere iCloud-id'et og forbinde korrekt.</p>
-<p>Kør det sådan her:</p>
-<div class="codehilite"><pre><span></span>./sshtomymac.sh [navn-på-mac]
-</pre></div>
-
-
-<p>eller bare:</p>
-<div class="codehilite"><pre><span></span>./sshtomymac.sh
-</pre></div>
-
-
-<hr />
-<p>Scriptet:</p>
-<div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
-
-<span class="nv">ACCOUNT</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;show Setup:/Network/BackToMyMac&quot;</span> <span class="p">|</span> scutil <span class="p">|</span> sed -n <span class="s1">&#39;s/.* : *\(.*\).$/\1/p&#39;</span><span class="k">)</span>
-
-<span class="k">if</span> <span class="o">[</span> ! -n <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&quot;ssh to which Mac? &quot;</span>
-    <span class="nb">read</span> MAC
-
-    <span class="c1"># Uncomment the following two lines if you need to login to the remote host with a different user than the current local user.</span>
-    <span class="c1">#echo &quot;As who? &quot;</span>
-    <span class="c1">#read USER</span>
-
-    <span class="k">if</span> <span class="o">[[</span> USER <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-        ssh <span class="nv">$USER</span><span class="s2">&quot;@&quot;</span><span class="nv">$MAC</span><span class="s2">&quot;.&quot;</span><span class="nv">$ACCOUNT</span>
-        <span class="k">else</span>
-        ssh <span class="nv">$MAC</span><span class="s2">&quot;.&quot;</span><span class="nv">$ACCOUNT</span>
-    <span class="k">fi</span>
-<span class="k">else</span>
-    ssh <span class="nv">$1</span><span class="s2">&quot;.&quot;</span><span class="nv">$ACCOUNT</span>
-<span class="k">fi</span>
-</pre></div>
     </div>
   <div class="navleft">
   	<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp;Til arkivet</a>

@@ -27,92 +27,79 @@
 <p><img alt="Serving" src="https://log.logiskhave.dk/static/20160126_server.jpg" title="Live to serve..." /></p>
 <p>Fail2ban er en service, som holde øje med din servers logfiler og ændrer firewallregler baseret på, hvad fail2ban tror er uvedkomne forsøg på at tilgå maskinen. Som sådan er det uhyre effektivt til at blokere for forsøg på at få adgang til serveren via 'brute force'.</p>
 <p>Før vi begynder at installere noget som helst på en Linux-maskine (via distroens repositories ihvertfald), bør man opdatere kildefilerne, så man sikrer at man får de nyeste pakker ned. Dette gøres med:</p>
-<div class="codehilite"><pre><span></span>sudo apt-get update
-</pre></div>
+<pre class="codehilite"><code>sudo apt-get update</code></pre>
 
 
 <p>Hvorefter man gan installere fail2ban med:</p>
-<div class="codehilite"><pre><span></span>sudo apt-get install fail2ban
-</pre></div>
+<pre class="codehilite"><code>sudo apt-get install fail2ban</code></pre>
 
 
 <p>Den primære konfigurationsfil for fail2ban er <code>/etc/fail2ban/jail.conf</code>, men hvis vi retter i den rissikerer vi at en fremtidig opdatering af fail2ban ødelægger vores konfiguration. Derfor kopieres filen til en lokal fil, som vi bruger i stedet. Dette gøres med:</p>
-<div class="codehilite"><pre><span></span>sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-</pre></div>
+<pre class="codehilite"><code>sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local</code></pre>
 
 
 <p>Og herefter kan den lokale fil redigeres, så den holder øje med nginx<sup id="fnref:nginx"><a class="footnote-ref" href="#fn:nginx" rel="footnote">2</a></sup>:</p>
-<div class="codehilite"><pre><span></span>sudo nano /etc/fail2ban/jail.local
-</pre></div>
+<pre class="codehilite"><code>sudo nano /etc/fail2ban/jail.local</code></pre>
 
 
 <p>Under direktivet <code>[nginx-http-auth]</code> sættes - ikke overraskende - <code>enabled = true</code>, for at aktivere den indbyggede nginx beskyttelse. Desværre har fail2ban ikke supermeget beskyttelse på nginx fronten og jeg foretrækker også at aktivere beskyttelse for ondsindet afvikling af scripts og onde robotter ved at indsætte nedenstående direktiver umiddelbart under <code>[nginx-http-auth]</code> direktivet:</p>
-<div class="codehilite"><pre><span></span><span class="k">[nginx-noscript]</span>
+<pre class="codehilite"><code>[nginx-noscript]
 
-<span class="na">enabled</span>  <span class="o">=</span> <span class="s">true</span>
-<span class="na">port</span>     <span class="o">=</span> <span class="s">http,https</span>
-<span class="na">filter</span>   <span class="o">=</span> <span class="s">nginx-noscript</span>
-<span class="na">logpath</span>  <span class="o">=</span> <span class="s">/var/log/nginx/access.log</span>
-<span class="na">maxretry</span> <span class="o">=</span> <span class="s">6</span>
+enabled  = true
+port     = http,https
+filter   = nginx-noscript
+logpath  = /var/log/nginx/access.log
+maxretry = 6
 
-<span class="k">[nginx-badbots]</span>
+[nginx-badbots]
 
-<span class="na">enabled</span>  <span class="o">=</span> <span class="s">true</span>
-<span class="na">port</span>     <span class="o">=</span> <span class="s">http,https</span>
-<span class="na">filter</span>   <span class="o">=</span> <span class="s">nginx-badbots</span>
-<span class="na">logpath</span>  <span class="o">=</span> <span class="s">/var/log/nginx/access.log</span>
-<span class="na">maxretry</span> <span class="o">=</span> <span class="s">2</span>
-</pre></div>
+enabled  = true
+port     = http,https
+filter   = nginx-badbots
+logpath  = /var/log/nginx/access.log
+maxretry = 2</code></pre>
 
 
 <p>I de direktiver vi lige har sat op, er der referencer til nogle filtre. Disse skal vi naturligvis også have sat op. Gem derfor <code>/etc/fail2ban/jail.local</code> og skift til kataloget med filtrene:</p>
-<div class="codehilite"><pre><span></span>cd /etc/fail2ban/filter.d
-</pre></div>
+<pre class="codehilite"><code>cd /etc/fail2ban/filter.d</code></pre>
 
 
 <p>I første omgang skal vi lige ændre et enkelt parameter i filtret til den medfølgende <code>[nginx-http-auth]</code> direktiv. Rediger derfor filen <code>nginx-http-auth.conf</code> med:</p>
-<div class="codehilite"><pre><span></span>sudo nano nginx-http-auth.conf
-</pre></div>
+<pre class="codehilite"><code>sudo nano nginx-http-auth.conf</code></pre>
 
 
 <p>Indsæt regex'en <code>^ \[error\] \d+#\d+: \*\d+ no user/password was provided for basic authentication, client: &lt;HOST&gt;, server: \S+, request: "\S+ \S+ HTTP/\d+\.\d+", host: "\S+"\s*$</code> under den anden, gem og luk.</p>
 <p>Herefter stjæler vi apache-direktivets badbot-filter, da det er ganske glimrende som det står, således:</p>
-<div class="codehilite"><pre><span></span>sudo cp apache-badbots.conf nginx-badbots.conf
-</pre></div>
+<pre class="codehilite"><code>sudo cp apache-badbots.conf nginx-badbots.conf</code></pre>
 
 
 <p>Og endelig laver vi et filter til vores <code>[nginx-noscript]</code> direktiv:</p>
-<div class="codehilite"><pre><span></span>sudo nano nginx-noscript.conf
-</pre></div>
+<pre class="codehilite"><code>sudo nano nginx-noscript.conf</code></pre>
 
 
 <p>Og klippe-klisterer nedenstående ind i den tomme fil:</p>
-<div class="codehilite"><pre><span></span><span class="k">[Definition]</span>
+<pre class="codehilite"><code>[Definition]
 
-<span class="na">failregex</span> <span class="o">=</span> <span class="s">^&lt;HOST&gt; -.*GET.*(\.php|\.asp|\.exe|\.pl|\.cgi|\.scgi)</span>
+failregex = ^&lt;HOST&gt; -.*GET.*(\.php|\.asp|\.exe|\.pl|\.cgi|\.scgi)
 
-<span class="na">ignoreregex</span> <span class="o">=</span>
-</pre></div>
+ignoreregex =</code></pre>
 
 
 <p>Og gemmer. Det er i øvrigt helt lovligt at sætte yderligere filendelser ind, men pas på du ikke blokerer for noget du skal bruge...</p>
 <p>Til sidst skal det hele naturligvis (gen-)startes for at den nye konfiguration læses og aktiveres:</p>
-<div class="codehilite"><pre><span></span>sudo service fail2ban restart
-</pre></div>
+<pre class="codehilite"><code>sudo service fail2ban restart</code></pre>
 
 
 <p>Og endelig - efter det hele er gjort - kan man tjekke status på fail2ban med:</p>
-<div class="codehilite"><pre><span></span>sudo fail2ban-client status
-</pre></div>
+<pre class="codehilite"><code>sudo fail2ban-client status</code></pre>
 
 
 <p>Gør man som mig, finder man så lige ud af at man havde glemt et eller andet undervejs og kan begynde fejlsøgningen. :)</p>
 <p><em>BONUS</em>: Vil man følge lidt med i hvad der bliver bannet, kan man bruge nedenstående kommandoer til at se, hvad der aktuelt er sat i skammekrogen.<sup id="fnref:skammekrog"><a class="footnote-ref" href="#fn:skammekrog" rel="footnote">3</a></sup></p>
-<div class="codehilite"><pre><span></span>sudo fail2ban-client status nginx-http-auth
+<pre class="codehilite"><code>sudo fail2ban-client status nginx-http-auth
 sudo fail2ban-client status nginx-noscript
 sudo fail2ban-client status nginx-badbots
-sudo fail2ban-client status ssh
-</pre></div>
+sudo fail2ban-client status ssh</code></pre>
 
 
 <hr />
