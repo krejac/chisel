@@ -35,8 +35,8 @@ activate_env () {
 }
 
 commit_posts () {
-    echo "Comitting posts"
-    git add ./posts/
+    echo "Comitting posts, pages and static files to git"
+    git add ./posts/ ./theme/ ./static/
     git commit -m "Version auto-comitted :robot:"
     git push
 }
