@@ -18,7 +18,7 @@ Først vil "supporteren" have mig til at åbne en kommandoprompt ([win]+r efterf
 
 Jæs, jæs. Den passede[^3]. Så jeg blev sendt videre til 2. level support - meget professionelt.
 
-2. level-supporteren, som var en mand, som bad mig åbne "event viewer" ([win]+r efterfulgt af "eventvwr" og et tryk på ok) og navigere frem til en laang list med "fejl"[^4]. Her havde jeg lidt travl med at billedsøge igennem nettet samtidigt med for at kunne virke som om det rent faktisk stod på min skærm, når han bad mig forklare hvad jeg så. Men min langsomme reaktion har sikkert bare bestyrket hans forventning om at her var en, som han kunne snyde.
+Second level-supporteren, som var en mand, som bad mig åbne "event viewer" ([win]+r efterfulgt af "eventvwr" og et tryk på ok) og navigere frem til en laang list med "fejl"[^4]. Her havde jeg lidt travl med at billedsøge igennem nettet samtidigt med for at kunne virke som om det rent faktisk stod på min skærm, når han bad mig forklare hvad jeg så. Men min langsomme reaktion har sikkert bare bestyrket hans forventning om at her var en, som han kunne snyde.
 
 <img class="screen" src="https://log.logiskhave.dk/static/20171003_event-log.jpg" alt="event log">
 
