@@ -1,4 +1,4 @@
-En tur rundt i manegen med en tele-scammer
+Rundt i manegen med en telescammer
 03-10-2017
 
 
