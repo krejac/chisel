@@ -26,7 +26,7 @@ Når jeg så ved selvsyn kunne konstatere (ved ovenstående screenshot, som jeg 
 
 Det var så også her jeg bekendte kulør og sagde at jeg desværre måtte indrømme, at jeg arbejdede med it til dagligt og blot havde trukket dem en tur rundt i manegen for at finde ud af hvordan det foregik og havde spildt deres tid.
 
-Og jeg skal da SÅ ellers lige love for at jeg fik en sviner på et ellers meget sødt engelsk med indisk accent. "You fucking-fuck; you arshole; I'm gonna ..." *klik* Så lagde jeg på.
+Og jeg skal da SÅ ellers lige love for at jeg fik en sviner på et ellers meget sødt engelsk med indisk accent. "You fucking-fuck; you arshole; I'm gonna ..." \*klik\* Så lagde jeg på.
 
 [^1]: Telefonnummer medtaget, så folk kan finde denne advarsel, hvis de søger på nummeret.
 [^2]: Hvilket er spøjst fordi jeg bruger macOS.
