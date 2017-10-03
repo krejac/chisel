@@ -1,8 +1,8 @@
-Rundt i manegen med tele-scammeren
+En tur rundt i manegen med en tele-scammer
 03-10-2017
 
 
-**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - Tele-scammere ringer jævnligt rundt til uforvarende for at franarre dem penge eller lignende. Jeg prøvede i dag, da +45 4266 9829[^1] ringede, at tage med på turen for at se hvordan de ville snyde mig.
+**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - Tele-scammere ringer jævnligt rundt til uforvarende for at franarre dem penge eller lignende. Jeg prøvede i dag, da +45 4266 9829[^1] igen ringede, at tage med på turen for at se hvordan de ville snyde mig.
 
 ![tele-scammeren](https://log.logiskhave.dk/static/20171003_scam.jpg)
 
@@ -22,7 +22,7 @@ Second level-supporteren, som var en mand, som bad mig åbne "event viewer" ([wi
 
 <img class="screen" src="https://log.logiskhave.dk/static/20171003_event-log.jpg" alt="event log">
 
-Når jeg så ved selvsyn kunne konstatere (ved ovenstående screenshot, som jeg har [fundet på nettet](https://www.google.com/search?sa=G&hl=en&q=windows+10+event+viewer&tbm=isch&tbs=simg:CAQSlQEJrJpkkE2vflwaiQELEKjU2AQaAggKDAsQsIynCBpiCmAIAxIoxh2GE8UdhxOYE8Md9weXE5wT5gfUP9M_1xT_1DP409uj7EP_1w2wj--Phowdjj_1Jviy90mzAUnZLTLwjLvEanRikQzheeOfMd8nqeUm7WRlFc1j7Lq-wZkUzZF1IAQMCxCOrv4IGgoKCAgBEgSb5eTlDA&ved=0ahUKEwiGhJDk8dTWAhUMmrQKHcJnD2MQwg4IIygA&biw=1356&bih=793)), at der er en masse fejl på min maskine, bad 2. level-supporteren mig om at navigere til www[.]support[.]me og logge ind. Men den side linker til et [fjernskrivebordsværktøj](https://en.wikipedia.org/wiki/LogMeIn), som man bliver bedt om at downloade og installere, hvorefter man giver dem fuld adgang til maskinen - _så her skal man altså stå af_.
+Når jeg så ved selvsyn kunne konstatere (ved ovenstående screenshot, som jeg [fandt på nettet](https://www.google.com/search?sa=G&hl=en&q=windows+10+event+viewer&tbm=isch&tbs=simg:CAQSlQEJrJpkkE2vflwaiQELEKjU2AQaAggKDAsQsIynCBpiCmAIAxIoxh2GE8UdhxOYE8Md9weXE5wT5gfUP9M_1xT_1DP409uj7EP_1w2wj--Phowdjj_1Jviy90mzAUnZLTLwjLvEanRikQzheeOfMd8nqeUm7WRlFc1j7Lq-wZkUzZF1IAQMCxCOrv4IGgoKCAgBEgSb5eTlDA&ved=0ahUKEwiGhJDk8dTWAhUMmrQKHcJnD2MQwg4IIygA&biw=1356&bih=793) mens vi talte), at der er en masse fejl på min maskine, bad second level-supporteren mig om at navigere til www[.]support[.]me og logge ind. Men den side linker til et [fjernskrivebordsværktøj](https://en.wikipedia.org/wiki/LogMeIn), som man bliver bedt om at downloade og installere, hvorefter man giver dem fuld adgang til maskinen - _så her skal man altså stå af_.
 
 Det var så også her jeg bekendte kulør og sagde at jeg desværre måtte indrømme, at jeg arbejdede med it til dagligt og blot havde trukket dem en tur rundt i manegen for at finde ud af hvordan det foregik og havde spildt deres tid.
 
