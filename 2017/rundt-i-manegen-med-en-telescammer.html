@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>Rundt i manegen med en telescammer
+ | logiskhave</title>
+ <meta name="description" content="Log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="/static/favicon.ico">
+ <link rel="apple-touch-icon" href="/static/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
+        </div><!-- /header --><div class="post">
+		<p class="date">03. Oktober, 2017</p>
+    	<h2>
+            
+                Rundt i manegen med en telescammer
+
+            
+        </h2>
+       	<p><strong><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a></strong> - Tele-scammere ringer jævnligt rundt til uforvarende for at franarre dem penge eller lignende. Jeg prøvede i dag, da +45 4266 9829<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> igen ringede, at tage med på turen for at se hvordan de ville snyde mig.</p>
+<p><img alt="tele-scammeren" src="https://log.logiskhave.dk/static/20171003_scam.jpg" /></p>
+<p>I dag havde jeg <em>endelig</em> tid til at tale med den venlige indiske "Microsoft support"-dame, der med jævne mellemrum ringer og fortæller mig den er gal med min Windows-maskine<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> - og den var tilsyneladende <em>helt</em> gal for de kunne nemt påvise mange fejl.</p>
+<p><img class="screen" src="https://log.logiskhave.dk/static/20171003_run-command-box.png" alt="cmd"></p>
+<p>Først vil "supporteren" have mig til at åbne en kommandoprompt ([win]+r efterfulgt af "cmd" og et tryk på ok) og b-o-g-s-t-a-v-v-e-r-e-r mig igennem "assoc" så hun kunne læse min maskines "unikke identifikator" op.</p>
+<p><img class="screen" src="https://log.logiskhave.dk/static/20171003_assoc-output.png" alt="assoc"></p>
+<pre class="codehilite"><code>.ZFSendToTarget=CLSID\{888DCA60-FC0A-11CF-8F0F-00C04FD7D062}</code></pre>
+
+
+<p>Jæs, jæs. Den passede<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>. Så jeg blev sendt videre til 2. level support - meget professionelt.</p>
+<p>Second level-supporteren, som var en mand, som bad mig åbne "event viewer" ([win]+r efterfulgt af "eventvwr" og et tryk på ok) og navigere frem til en laang list med "fejl"<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>. Her havde jeg lidt travl med at billedsøge igennem nettet samtidigt med for at kunne virke som om det rent faktisk stod på min skærm, når han bad mig forklare hvad jeg så. Men min langsomme reaktion har sikkert bare bestyrket hans forventning om at her var en, som han kunne snyde.</p>
+<p><img class="screen" src="https://log.logiskhave.dk/static/20171003_event-log.jpg" alt="event log"></p>
+<p>Når jeg så ved selvsyn kunne konstatere (ved ovenstående screenshot, som jeg <a href="https://www.google.com/search?sa=G&amp;hl=en&amp;q=windows+10+event+viewer&amp;tbm=isch&amp;tbs=simg:CAQSlQEJrJpkkE2vflwaiQELEKjU2AQaAggKDAsQsIynCBpiCmAIAxIoxh2GE8UdhxOYE8Md9weXE5wT5gfUP9M_1xT_1DP409uj7EP_1w2wj--Phowdjj_1Jviy90mzAUnZLTLwjLvEanRikQzheeOfMd8nqeUm7WRlFc1j7Lq-wZkUzZF1IAQMCxCOrv4IGgoKCAgBEgSb5eTlDA&amp;ved=0ahUKEwiGhJDk8dTWAhUMmrQKHcJnD2MQwg4IIygA&amp;biw=1356&amp;bih=793">fandt på nettet</a> mens vi talte), at der er en masse fejl på min maskine, bad second level-supporteren mig om at navigere til www[.]support[.]me og logge ind. Men den side linker til et <a href="https://en.wikipedia.org/wiki/LogMeIn">fjernskrivebordsværktøj</a>, som man bliver bedt om at downloade og installere, hvorefter man giver dem fuld adgang til maskinen - <em>så her skal man altså stå af</em>.</p>
+<p>Det var så også her jeg bekendte kulør og sagde at jeg desværre måtte indrømme, at jeg arbejdede med it til dagligt og blot havde trukket dem en tur rundt i manegen for at finde ud af hvordan det foregik og havde spildt deres tid.</p>
+<p>Og jeg skal da SÅ ellers lige love for at jeg fik en sviner på et ellers meget sødt engelsk med indisk accent. :)</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Telefonnummer medtaget, så folk kan finde denne advarsel, hvis de søger på nummeret.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Hvilket er spøjst fordi jeg bruger macOS.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Fordi det naturligvis <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms691424(v=vs.85).aspx"><em>ikke</em> er en "unik identifikator" for en given maskine</a>.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Som en alindelig bruger ikke bør bekymre sig om - de logs er primært til udviklere og / eller systemadministratorer.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+
+        <div id="footer">
+            <p>Kresten Jacobsen @ logiskhave</p><p>Udgivet under <a href="//log.logiskhave.dk/static/solipsistisk_licens.html">Solipsistisk Offentlig Licens</a></p>
+        </div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>
