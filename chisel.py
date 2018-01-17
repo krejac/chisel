@@ -97,8 +97,6 @@ def get_tree(source):
                 'epoch': time.mktime(date),
                 'link': link,
                 'content': FORMAT(''.join(f.readlines()[1:]).decode('UTF-8')),
-                #'url': '/'.join([str(year), "%.2d" % month, "%.2d" % day, os.path.splitext(name)[0] + ".html"]),
-                # Uncheck the following line if you have no rewrite (URLs end with .html).
                 'url': '/'.join([str(year), os.path.splitext(name)[0] + URLEXT]),
                 'pretty_date': time.strftime(TIME_FORMAT, date),
                 'date': date,
