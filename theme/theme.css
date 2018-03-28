@@ -71,7 +71,7 @@ h1 span, #footer p {
     font-weight:400;
 }
 .post h2 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Serif Pro', sans-serif;
     font-size:39px;
     text-transform:uppercase;
     text-align:center;
@@ -86,7 +86,7 @@ h1 span, #footer p {
 }
 td, th, .post p, .post ul, .post ol, .post pre, .post h3, .post > .date, .post blockquote {
     margin:15px 70px;
-    font-family:'Source Serif Pro', 'Helvetica Neue', Helvetica;
+    font-family:'Source Sans Pro', 'Helvetica Neue', Helvetica;
 }
 .post img {
     min-width:640px;
