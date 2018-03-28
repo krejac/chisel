@@ -2,7 +2,7 @@
 For ckunte.net log by Chyetanya Kunte.
 Edited for logiskhave.dk by Kresten Jacobsen.
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,600,900,900italic|ABeeZee|Source+Sans+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,600,900,900italic|ABeeZee|Source+Sans+Pro|Source+Serif+Pro);
 sup {
 font:11px/11px Lato, Helvetica
 }
@@ -86,7 +86,7 @@ h1 span, #footer p {
 }
 td, th, .post p, .post ul, .post ol, .post pre, .post h3, .post > .date, .post blockquote {
     margin:15px 70px;
-    font-family:ABeeZee, 'Helvetica Neue', Helvetica;
+    font-family:'Source Serif Pro', 'Helvetica Neue', Helvetica;
 }
 .post img {
     min-width:640px;
