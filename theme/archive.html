@@ -7,7 +7,7 @@
 {%- block post %}
 	<div class="post">
 	 <h2>Arkivet</h2>
-	 <p><img src="https://log.logiskhave.dk/static/archive@2x.png"></p>
+	 <p><img src="/static/archive@2x.png"></p>
 	 <p>Der er {{ entries|length }} artikler i arkivet.</p>
 
 	 {%- for year, year_list in entries|groupby('year')|reverse -%}

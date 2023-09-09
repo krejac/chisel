@@ -4,7 +4,7 @@ Foto backup workflow
 
 **[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** -- Jeg har konstrueret et automatisk workflow, som sikrer husstandens mange billeder og videoer taget med iPhones - samtidigt med, at de ikke behøver fylde på telefonen.
 
-![iPhone i jord](https://log.logiskhave.dk/static/20140912_iphone-i-jord@2x.jpg)
+![iPhone i jord](/static/20140912_iphone-i-jord@2x.jpg)
 
 Jeg har længe eksperimenteret med - og betalt til - diverse billedbackuptjenester, som kunne frigøre plads på vores iPhones, fandt egentligt en god en som desværre gik rabundus. Så nu har jeg bygget mit eget ret robuste og relativt simple setup, som sikrer vores billeder, selvom iPhones'ne ryger ud af lommen i haven eller vores Macs diske dør. Det giver en vis tryghed at vide, at vores højt skattede billeder er sikre i skyen.
 
@@ -21,7 +21,7 @@ Et billede tages med **telefonen**, uploades med **Dropbox**-app'en, sorteres p�
 
 Det første trin i workflowet er at aktivere fotoupload i Dropdox-app'en[^4]. Åbn Dropbox app'en gå til Indstillinger og slå både "Kameraoverførsel" og "Upload i baggrunden" til.
 
-![Dropbox' Camera Upload](https://log.logiskhave.dk/static/20140908_camera-upload.png)
+![Dropbox' Camera Upload](/static/20140908_camera-upload.png)
 
 Dette aktiverer Dropbox' upload funktion og sørger for, at alle dine billeder bliver uploadet til kataloget "Camera Uploads" i roden af din Dropbox mappe.[^5]
 
@@ -29,7 +29,7 @@ Herefter skal du over på din Mac. På Mac'en åbnes Hazel fra "Instillinger" og
 
 *Billedsorteringsreglen*    
 
-[![Hazel billedsorteringsregel](https://log.logiskhave.dk/static/20140908_image-sort.png)](https://log.logiskhave.dk/static/20140908_image-sort.png)
+[![Hazel billedsorteringsregel](/static/20140908_image-sort.png)](/static/20140908_image-sort.png)
 
 >If ```[all]``` of the following conditions are met    
 >```[Kind]``` ```[is]``` ```[Image]```    
@@ -44,7 +44,7 @@ Når man så vælger "date created", trykker man på <i class="fa fa-caret-down"
 
 *Videosorteringsreglen*   
 
-[![Hazel videosorteringsregel](https://log.logiskhave.dk/static/20140908_video-sort.png)](https://log.logiskhave.dk/static/20140908_video-sort.png)
+[![Hazel videosorteringsregel](/static/20140908_video-sort.png)](/static/20140908_video-sort.png)
 
 >If ```[all]``` of the following conditions are met    
 >```[Kind]``` ```[is]``` ```[Movie]```    
@@ -58,7 +58,7 @@ Her følger "date created" samme form som for billedsorteringsreglen.
 
 Og det var så Hazel-delen. Når du tager et billede med din iPhone, vil Dropbox appen opdage det og smide billedet i Dropbox. Herefter tager Hazel og sorterer billederne ud i din valgte folderstruktur og du kan derfor roligt slette dine billeder fra iPhone. [^6]
 
-*Jeg* slutter så det hele af med at tage backup af folderen med alle mine billeder med Backblaze - og vil på *det kraftigste* anbefale dig at gøre det samme fordi [HARDDISKE DØR](http://log.logiskhave.dk/2014/0908_back-nu-op-mand.html)!
+*Jeg* slutter så det hele af med at tage backup af folderen med alle mine billeder med Backblaze - og vil på *det kraftigste* anbefale dig at gøre det samme fordi [HARDDISKE DØR](/2014/0908_back-nu-op-mand.html)!
 
 [^0]: Der behøver ikke partout være tale om iPhones; andre telefoner med en Dropbox app, der kan uploade billeder automatisk vil virke.
 [^1]: Betalingsversionen kan også bruges, men giver ikke bedre resultater til dette formål.

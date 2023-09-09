@@ -2,7 +2,7 @@ Min F&oslash;rste Mac
 30-09-2014
 
 
-![Object 04](https://log.logiskhave.dk/static/20140930_object-04.jpg "Object #04 - via fiftyfootshadows.net")
+![Object 04](/static/20140930_object-04.jpg "Object #04 - via fiftyfootshadows.net")
 
 Efter jeg så [disse enormt flotte billeder](http://fiftyfootshadows.net/2014/01/25/object-04/)[^0] af en Mac Classic, kom jeg til at tænke på mit første møde med Mac-verdenen i starten af 90'erne. Det var tre 10" Macs, som stod på rad og række, på det lokale bibliotek. Udover at jeg slet ikke kendte til Macs før da - og syntes at en så helstøbt maskine med integreret skærm og computer og et helt andet operativ system var spændende - så var det især interessant, at de var forbundet til internettet. Før disse computere havde mit eneste kendskab til internettet været via Internets[^1] forløber BBS ([Bulletin Board System](http://da.m.wikipedia.org/wiki/BBS)), som var en ren-tekst brugerflade, som vi kendte fra DOS i Microsoft verdenen.
 
@@ -22,11 +22,11 @@ Så i slutningen af maj 2006 fik jeg min Mac. En hvid MacBook med [Mac OS X Tige
 
 Men uagtet min kontrovers med Apple og min mindre-end-perfekte hvide MacBook, så var jeg fanget. OS X havde fået hold i mig. Så jeg købte en ny MacBook Pro, som stadig kører upåklageligt her fem år, en fordobling af ram og installering af en SSD senere.
 
-Seneste skud på stammen er så en brugt Mac mini Server, som står på kontoret og snurrer og [holder styr på familiens fotos](http://log.logiskhave.dk/2014/0924_foto_workflow.html) ol. Den trænger dog også til at få en SSD-opgradering som min MacBook Pro.
+Seneste skud på stammen er så en brugt Mac mini Server, som står på kontoret og snurrer og [holder styr på familiens fotos](/2014/0924_foto_workflow.html) ol. Den trænger dog også til at få en SSD-opgradering som min MacBook Pro.
 
 Men min første Mac vil altid være den fra biblioteket, som var forbundet til World Wide Web og som altså ligner den fra de utroligt flotte billeder her.
 
-![Object 04](https://log.logiskhave.dk/static/20140930_object-04-1.jpg "Object #04 - via fiftyfootshadows.net")
+![Object 04](/static/20140930_object-04-1.jpg "Object #04 - via fiftyfootshadows.net")
 
 -----------------------------------------------------------
 

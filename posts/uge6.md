@@ -4,7 +4,7 @@ Uge 6 - S&aring; kom skaden
 
 *Dette blogindlæg er en del af en [række indlæg](/marathon.html), som omhandler træningen til mit første maraton - Copenhagen Marathon 2012.*
 
-Jeg havde først [besluttet](http://log.logiskhave.dk/2012/20120304_uge5.html) mig for at tage i mod den næste frivillige hviledag, men da jeg ikke følte mig slidt efter sødagens [lange tur](http://connect.garmin.com/activity/154808094), besluttede jeg mig mandag for at krydstræne, som programmet foreslog. Men, men, men. Da jeg endelig var færdig med at arbejde kunne jeg ikke tage mig sammen.[^1]
+Jeg havde først [besluttet](/2012/20120304_uge5.html) mig for at tage i mod den næste frivillige hviledag, men da jeg ikke følte mig slidt efter sødagens [lange tur](http://connect.garmin.com/activity/154808094), besluttede jeg mig mandag for at krydstræne, som programmet foreslog. Men, men, men. Da jeg endelig var færdig med at arbejde kunne jeg ikke tage mig sammen.[^1]
 
 Så meget for rygrad.
 

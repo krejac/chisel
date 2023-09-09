@@ -58,9 +58,9 @@ Fed, fed lykke!
 [^2]: Vi har boet sammen andre steder; men Penthouse, var det første sted som rigtigt var *vores*.
 [^3]: Antydninger af at Esther ændrer sig har ulmet de seneste dage. Men måske er der blot tale om et skift i [udviklingstrin][]. Hvem ved?
 
-[km]: http://log.logiskhave.dk/2012/uge16.html   
-[gc]: http://log.logiskhave.dk/2012/uge3.html   
-[cm]: http://log.logiskhave.dk/2012/maraton.html   
-[lejlighed]: http://log.logiskhave.dk/2012/lejlighedssalg.html   
-[esthers_fodselsdag]: http://log.logiskhave.dk/2012/foedselsdag.html   
+[km]: /2012/uge16.html   
+[gc]: /2012/uge3.html   
+[cm]: /2012/maraton.html   
+[lejlighed]: /2012/lejlighedssalg.html   
+[esthers_fodselsdag]: /2012/foedselsdag.html   
 [udviklingstrin]: http://www.vidunderligeuger.dk/om-bogen/hvad-handler-bogen-om   

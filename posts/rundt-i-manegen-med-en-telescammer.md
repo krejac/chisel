@@ -4,15 +4,15 @@ Rundt i manegen med en telescammer
 
 **[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - Tele-scammere ringer jævnligt rundt til uforvarende for at franarre dem penge eller lignende. Jeg prøvede i dag, da +45 4266 9829[^1] igen ringede, at tage med på turen for at se hvordan de ville snyde mig.
 
-![tele-scammeren](https://log.logiskhave.dk/static/20171003_scam.jpg)
+![tele-scammeren](/static/20171003_scam.jpg)
 
 I dag havde jeg _endelig_ tid til at tale med den venlige indiske "Microsoft support"-dame, der med jævne mellemrum ringer og fortæller mig den er gal med min Windows-maskine[^2] - og den var tilsyneladende _helt_ gal for de kunne nemt påvise mange fejl.
 
-<img class="screen" src="https://log.logiskhave.dk/static/20171003_run-command-box.png" alt="cmd">
+<img class="screen" src="/static/20171003_run-command-box.png" alt="cmd">
 
 Først vil "supporteren" have mig til at åbne en kommandoprompt ([win]+r efterfulgt af "cmd" og et tryk på ok) og b-o-g-s-t-a-v-v-e-r-e-r mig igennem "assoc" så hun kunne læse min maskines "unikke identifikator" op.
 
-<img class="screen" src="https://log.logiskhave.dk/static/20171003_assoc-output.png" alt="assoc">
+<img class="screen" src="/static/20171003_assoc-output.png" alt="assoc">
 
     .ZFSendToTarget=CLSID\{888DCA60-FC0A-11CF-8F0F-00C04FD7D062}
 
@@ -20,7 +20,7 @@ Jæs, jæs. Den passede[^3]. Så jeg blev sendt videre til 2. level support - me
 
 Second level-supporteren, som var en mand, som bad mig åbne "event viewer" ([win]+r efterfulgt af "eventvwr" og et tryk på ok) og navigere frem til en laang list med "fejl"[^4]. Her havde jeg lidt travl med at billedsøge igennem nettet samtidigt med for at kunne virke som om det rent faktisk stod på min skærm, når han bad mig forklare hvad jeg så. Men min langsomme reaktion har sikkert bare bestyrket hans forventning om at her var en, som han kunne snyde.
 
-<img class="screen" src="https://log.logiskhave.dk/static/20171003_event-log.jpg" alt="event log">
+<img class="screen" src="/static/20171003_event-log.jpg" alt="event log">
 
 Når jeg så ved selvsyn kunne konstatere (ved ovenstående screenshot, som jeg [fandt på nettet](https://www.google.com/search?sa=G&hl=en&q=windows+10+event+viewer&tbm=isch&tbs=simg:CAQSlQEJrJpkkE2vflwaiQELEKjU2AQaAggKDAsQsIynCBpiCmAIAxIoxh2GE8UdhxOYE8Md9weXE5wT5gfUP9M_1xT_1DP409uj7EP_1w2wj--Phowdjj_1Jviy90mzAUnZLTLwjLvEanRikQzheeOfMd8nqeUm7WRlFc1j7Lq-wZkUzZF1IAQMCxCOrv4IGgoKCAgBEgSb5eTlDA&ved=0ahUKEwiGhJDk8dTWAhUMmrQKHcJnD2MQwg4IIygA&biw=1356&bih=793) mens vi talte), at der er en masse fejl på min maskine, bad second level-supporteren mig om at navigere til www[.]support[.]me og logge ind. Men den side linker til et [fjernskrivebordsværktøj](https://en.wikipedia.org/wiki/LogMeIn), som man bliver bedt om at downloade og installere, hvorefter man giver dem fuld adgang til maskinen - _så her skal man altså stå af_.
 

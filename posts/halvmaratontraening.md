@@ -2,7 +2,7 @@ Halvmaratontr&aelig;ning
 08-01-2014
 
 
-![VM i Halvmaraton](https://log.logiskhave.dk/static/201401_cphhalfmarathon.png)
+![VM i Halvmaraton](/static/201401_cphhalfmarathon.png)
 
 Så skal vi til det igen. I [2012 var det maraton](/marathon.html); i år er det et [halvt](/halfmarathon2014.html).
 

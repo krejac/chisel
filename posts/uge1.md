@@ -22,4 +22,4 @@ Søndag var [løbsdag](http://connect.garmin.com/activity/147318421). Tuxen kom 
 
 Alt i alt en god (omend noget kold) uge, hvor fysikken artede sig som den skulle.
 
-[resultat]: https://log.logiskhave.dk/static/201202_resultatblad.pdf
+[resultat]: /static/201202_resultatblad.pdf

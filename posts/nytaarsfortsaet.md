@@ -2,7 +2,7 @@ Nyt&aring;rsforts&aelig;t
 03-01-2013
 
 
-![Bokeh](https://log.logiskhave.dk/static/20130120_bokeh.jpg)
+![Bokeh](/static/20130120_bokeh.jpg)
 
 Nytårsfortsæt. Jeg har altid hadet dem. Men sidste år satte jeg mig det mål at jeg ville løbe et maraton - og gjorde det. Det var en rigtig fed oplevelse at gennemføre sådan en bedrift.
 

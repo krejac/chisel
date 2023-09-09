@@ -4,7 +4,7 @@ iPad blog flow
 
 **TL**;**DR** - I've implemented a workflow for my Chisel log using a combination of Pythonista scripts and x-callback-urls enabling me to write, uploading and inserting images in posts and publishing all of it on a tiny Linux box. 
 
-![ Image name ](https://log.logiskhave.dk/static/20140120_call_byword.png)
+![ Image name ](/static/20140120_call_byword.png)
 
 *This post is written in english because of the limited interest such a subject would have among a danish audience.*
 
@@ -24,7 +24,7 @@ The steps in my workflow is as follows:
 
 So the workflow ends up looking like this (note the gears that indicate an action that is being automated):
 
-![ workflow ](https://log.logiskhave.dk/static/20140120_workflow.png)
+![ workflow ](/static/20140120_workflow.png)
 
 ### The scripts
 *All the scripts are subject to changes and improvements which is why I don't post them here, but link to them instead.*

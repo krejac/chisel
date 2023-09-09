@@ -4,7 +4,7 @@ Uge 7 - Tilbage p&aring; sporet
 
 *Dette blogindlæg er en del af en [række indlæg](/marathon.html), som omhandler træningen til mit første maraton - Copenhagen Marathon 2012.*
 
-Denne uge afveg fra programmet, da jeg i [sidste uge](http://log.logiskhave.dk/2012/20120311_uge6.html) pådrog mig en fiberskade og ugen har derfor været et forsøg på at komme tilbage på sporet.
+Denne uge afveg fra programmet, da jeg i [sidste uge](/2012/20120311_uge6.html) pådrog mig en fiberskade og ugen har derfor været et forsøg på at komme tilbage på sporet.
 
 Mandag stod derfor på en [3-kilometers tur](http://connect.garmin.com/activity/157214497), hvor jeg bare skulle se om venstre lægmuskel holdt. Det gjorde den nogenlunde. Jeg havde ingen smerter, men de irriterede fibre var stadig lidt irriterede.
 

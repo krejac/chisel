@@ -4,7 +4,7 @@ Min yndlingsl&aelig;rer
 
 Min yndlingslærer er ikke en lærer, der har undervist mig i skolen. Forstå mig ret: jeg har haft ganske udemærkede lærer i min egen skoletid, men jeg havde nok ikke en tendens - som andre fra min klasse havde - til at knytte mig følelsesmæssigt til dem. 
 
-![ Image name ](https://log.logiskhave.dk/static/20140222_yndlings_laerer.png)
+![ Image name ](/static/20140222_yndlings_laerer.png)
 
 Min yndlingslærer er hårdtarbejdende, omsorgsfuld, fleksibel, ansvarlig, kærlig overfor hendes elever såvel som for hendes familie. Men hun skal snart træffe nogle valg, for folkeskolereformen lægger op til forandring. Med de strikse rammer der presses ned over lærerne - fuld tilstedeværelse, forhøjelse af timetal og stadig faste (tvungne!) ferier daler lysten og engagementet. Det bliver sværere at opretholde alle de egenskaber, som jeg sætter så højt ved hende, når det ikke længere er lysten, men pisken der driver værket på arbejdet. Jeg ved at hun stadig vil være hårdtarbejdende og ansvarlig, men når hun ikke oplever at blive respekteret som person - for det er den oplevelse hun har - er det svært at give så meget af sig selv, som hun gør i sit arbejde.
 

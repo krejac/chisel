@@ -4,9 +4,9 @@ Opf&oslash;lgning
 
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - At skrive ønsker og mål ned hjælper mig med at fastholde fokus i en travl hverdag. 
 
-![Skriv...](https://log.logiskhave.dk/static/20150307_write.jpg "Skriv...")
+![Skriv...](/static/20150307_write.jpg "Skriv...")
 
-Dette er en kort opfølgning på de sidste to indlæg her på siden, hvor jeg hhv. ønskede at komme til at [læse lidt mere](http://log.logiskhave.dk/2014/foundation-trilogien.html) og udvikle mig fagligt ved at (gen-)[lære at programmere](http://log.logiskhave.dk/2014/en-udviklingsplan.html). Den slags er rigtig svært at få tid til i en travl hverdag med familie, arbejde, venner og alt de andre dejlige ting, der skal nås. Og jeg fik ikke rigtig *mere* tid ved at få barn nr. 2 i starten af året.
+Dette er en kort opfølgning på de sidste to indlæg her på siden, hvor jeg hhv. ønskede at komme til at [læse lidt mere](/2014/foundation-trilogien.html) og udvikle mig fagligt ved at (gen-)[lære at programmere](/2014/en-udviklingsplan.html). Den slags er rigtig svært at få tid til i en travl hverdag med familie, arbejde, venner og alt de andre dejlige ting, der skal nås. Og jeg fik ikke rigtig *mere* tid ved at få barn nr. 2 i starten af året.
 
 Til min store begejstring fandt jeg dog ud af, at jeg kunne lytte til bøger i toget i stedet for at læse dem. At læse bøger havde nemlig den uheldige effekt, at jeg faldt i søvn i toget til og fra arbejde, som er det eneste sted, jeg reelt har tid til at læse. Men siden sidst har jeg så faktisk fået tygget mig igennem hele Asimovs oprindelige trilogi på lydbog.[^2] Derudover har jeg forudbestilt en ny biografi om Steve Jobs, der udkommer i slutningen af marts, som jeg også forventer at komme igennem inden for en overskuelig tidshorisont.
 

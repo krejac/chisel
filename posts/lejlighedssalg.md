@@ -39,7 +39,7 @@ Har man tænkt sig at blive boende i længere tid, kan man også se frem til Met
 ###Kontakt
 Hvis du er blevet interesseret af at læse overnstående, må du meget gerne ringe eller skrive til mig på `23 35 91 75` eller Kimmie på `29 72 50 44`.
 
-[opstilling]: https://log.logiskhave.dk/static/201206_lejlighed/201206_andelsvaerdi.pdf
-[referat]: https://log.logiskhave.dk/static/201206_lejlighed/201206_referat.pdf
-[regnskab]: https://log.logiskhave.dk/static/201206_lejlighed/201206_regnskab_og_budget.pdf
-[vedtaegter]: https://log.logiskhave.dk/static/201206_lejlighed/201206_vedtaegter.pdf
+[opstilling]: /static/201206_lejlighed/201206_andelsvaerdi.pdf
+[referat]: /static/201206_lejlighed/201206_referat.pdf
+[regnskab]: /static/201206_lejlighed/201206_regnskab_og_budget.pdf
+[vedtaegter]: /static/201206_lejlighed/201206_vedtaegter.pdf

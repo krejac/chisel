@@ -4,7 +4,7 @@
 
 [TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) - Jeg har et par servere snurrende rundt om i verdenen og ser derfor tydeligt, hvor ofte de bliver udsat for angreb. Her er mine noter til opsætning af fail2ban på en Ubuntu/Debian-box[^1].
 
-![Serving](https://log.logiskhave.dk/static/20160126_server.jpg "Live to serve...")
+![Serving](/static/20160126_server.jpg "Live to serve...")
 
 Fail2ban er en service, som holde øje med din servers logfiler og ændrer firewallregler baseret på, hvad fail2ban tror er uvedkomne forsøg på at tilgå maskinen. Som sådan er det uhyre effektivt til at blokere for forsøg på at få adgang til serveren via 'brute force'.
 

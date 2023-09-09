@@ -2,7 +2,7 @@ Esthers Ode til Leverpostej
 07-10-2013
 
 
-![Esther med finger i næsen](https://log.logiskhave.dk/static/20131007_esther.png)
+![Esther med finger i næsen](/static/20131007_esther.png)
 
 > Først spiser jeg al leverpostejen.
 
