@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>Favicon og apple-touch-icon | logiskhave</title>
+ <meta name="description" content="Log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="/static/favicon.ico">
+ <link rel="apple-touch-icon" href="/static/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
+        </div><!-- /header --><div class="post">
+		<p class="date">Oktober 08, 2013</p>
+    	<h2>
+            
+                Favicon og apple-touch-icon
+            
+        </h2>
+       	<p>Så kom der også favicon og apple-touch-icon på siden. Favicon'et kan typisk ses ud for URL'en, hvis browseren understøtter det. Apple-touch-icon'et bliver vist, hvis man tilføjer siden til sin hjemmeskærm på sin iPxx-enhed.</p>
+<p><img alt="Billede af log.logiskhave.dk-ikon på hjemmeskærmen" src="/static/20131008_apple-icon.png" /></p>
+<p>Så jeg kan huske det til en anden god gang, så brugte jeg <a href="http://favicon-generator.org">Favicon Generator</a> til at lave en .ico-fil ud af et billede, uploadede det og indsatte nedenstående i headeren i min index.html.</p>
+<pre><code> &lt;link rel="icon" href="/static/favicon.ico"&gt;
+</code></pre>
+<p>Apple-touch-icon'et er her en jpg-fil med dimentionerne 200x200 - selvom det højeste nogen iPxx kan bruge, uden at nedskalere, vist er 144x144. Denne fil uploades og refereres så til med denne linie (indsat lige under ovenstående i headeren):</p>
+<pre><code> &lt;link rel="apple-touch-icon" href="/static/apple-touch-icon.jpg"/&gt;
+</code></pre>
+    </div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+
+        <div id="footer">
+            <p>Kresten Jacobsen @ logiskhave</p><p>Udgivet under <a href="/static/solipsistisk_licens.html">Solipsistisk Offentlig Licens</a></p>
+        </div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>

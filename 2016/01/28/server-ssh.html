@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>'Server hardening' - Sikring af SSH | logiskhave</title>
+ <meta name="description" content="Log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="/static/favicon.ico">
+ <link rel="apple-touch-icon" href="/static/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
+        </div><!-- /header --><div class="post">
+		<p class="date">Januar 28, 2016</p>
+    	<h2>
+            
+                'Server hardening' - Sikring af SSH
+            
+        </h2>
+       	<p><a href="http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">TL;DR</a> - Jeg har et par servere snurrende rundt om i verdenen og ser derfor, hvor ofte de bliver udsat for angreb. Her er mine noter til at lukke ssh af for uvedkomne på en Ubuntu/Debian-box<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p><img alt="Serving" src="/static/20160126_server.jpg" title="Live to serve..." /></p>
+<p>SSH er et vigtigt redskab til drift og administration af servere og kan sjældent helt undværes. Derfor har mange servere åben for SSH-adgang, og det er et af de første steder du bliver forsøgt hacket. Derfor er det også vigtigt at sikre adgangen hertil hurtigt.</p>
+<p>Første skridt for at sikre din ssh-indgang er at forbyde at login med root. Brugere skal i stedet ssh'e ind med deres personlige bruger og su'e til root, hvis det er påkrævet - eller endnu bedre: bruge 'sudo'. Først laves en ny bruger ('mario' herunder er brugernavnet på den nye bruger).</p>
+<pre><code>adduser mario
+</code></pre>
+<p>Giv mario sudo-rettigheder.</p>
+<pre><code>gpasswd -a mario sudo
+</code></pre>
+<p>Åbn ssh-servicens konfigurationsfil.</p>
+<pre><code>nano /etc/ssh/sshd_config
+</code></pre>
+<p>Find det parameter der hedder 'PermitRootLogin' og ændr det fra 'yes' til 'no' og gem filen med 'CTRL-X'. Endelig genstaters ssh-servicen, så den læser de nye indstillinger.</p>
+<pre><code>service ssh restart
+</code></pre>
+<p>Inden man lukker forbindelsen til serveren, bør man lige teste brugeren med en ny ssh-session, for ikke at blive låst ude.</p>
+<p>Man <em>kan</em> faktisk gå skridtet videre og begrænse adgangen til serveren til udelukkende at stamme fra kendte ip-adresser. I samme fil som ovenfor (/etc/ssh/sshd_config) sættes parametret 'ListenAddress' til den ip-adresse som man godt må logge ind fra - men pas på: ændrer din adresse sig, ryger ssh-adgangen til serveren...</p>
+<hr />
+<p><em>Posts om server hardening:</em></p>
+<ul>
+<li><a href="/2016/server-opdater.html">Automatiske opdateringer</a></li>
+<li><a href="/2016/server-ssh.html">Sikring af SSH</a></li>
+<li><a href="/2016/server-firewall.html">Skærm af med en firewall</a></li>
+<li><em>Kommer</em>: <a href="">Login med private keys</a></li>
+<li><a href="/2016/server-fail2ban.html">Bloker uønsket trafik med fail2ban</a></li>
+<li><em>Kommer</em>: ???</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Herefter bare Ubuntu; men det meste vil også gælde på Debian.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+
+        <div id="footer">
+            <p>Kresten Jacobsen @ logiskhave</p><p>Udgivet under <a href="/static/solipsistisk_licens.html">Solipsistisk Offentlig Licens</a></p>
+        </div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>

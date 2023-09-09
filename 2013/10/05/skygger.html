@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>Skygger p&aring; billeder | logiskhave</title>
+ <meta name="description" content="Log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="/static/favicon.ico">
+ <link rel="apple-touch-icon" href="/static/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
+        </div><!-- /header --><div class="post">
+		<p class="date">Oktober 05, 2013</p>
+    	<h2>
+            
+                Skygger p&aring; billeder
+            
+        </h2>
+       	<p><strong>tl</strong>;<strong>dr</strong> - Jeg bruger ImageMagick via kommandolinien til at lægge skygger på mine billeder i stedet for et dyrt billedbehandlingsprogram.</p>
+<hr />
+<p>Jeg vil gerne have skygge på de billeder, der ikke fylder hele sidens bredde her på loggen for lige som at ramme dem lidt ind. Men jeg vil meget nødigt købe et dyrt billedbehandlingsprogram til kun det. I den forbindelse var jeg derfor i stedet forbi gratis og opensource software, men fælles for dem alle er, at de ikke kun løser mit problem, men installerer et fuldt billedbehandlingsprogram, hvilket er en anelse overkill lige her.</p>
+<p>I stedet faldt jeg i min søgen over ImageMagick, som jeg egentligt kun har tænkt på som serversoftware til at beskære og ændre størrelse på billeder automatisk. Men netop muligheden for at automatisere handlinger er genial - og da jeg så også fik googlet mig frem til hvordan jeg kunne bruge det til at lægge skygger på med passede det jo som fod i hose.</p>
+<h3>Installation</h3>
+<p>ImageMagick kan godt virke forvirrende. Og det er det. Installationen kan dog gøres nem ved at hente en installationspakke fra <a href="http://cactuslab.com/imagemagick/">Cactuslab</a> eller hvis man har Mac Ports installeret</p>
+<pre><code>sudo port install ImageMagick
+</code></pre>
+<h3>Brug</h3>
+<p>Når man skal lægge skygge på en billede gør man det via Terminal.app således:</p>
+<pre><code>convert billede_uden_skygge.png \( +clone -background black -shadow 80x20+0+15 \) +swap -background transparent -layers merge +repage billede_med_skygge.png
+</code></pre>
+<p>Det vil tage "billede_uden_skygge.png" lægge skygge på og gemme det som "billede_med_skygge.png". Nemt og smart (og scriptbart).</p>
+<p>Hvis skyggerne skal fjernes igen kan ImageMagick også klare det. Bare kør nedenstående mod dit billede med skygge:</p>
+<pre><code>convert billede_med_skygge.png -crop +40+25 -crop -40-55 billede_uden_skygge.png
+</code></pre>
+<h3>Alternativ</h3>
+<p>Vil man bare undgå skygger på sine screenshots kan man slå dem fra ved at fyre følgende af i teminal:</p>
+<pre><code>defaults write com.apple.screencapture disable-shadow -bool true
+</code></pre>
+<p>Og derefter:</p>
+<pre><code>killall SystemUIServer
+</code></pre>
+    </div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+
+        <div id="footer">
+            <p>Kresten Jacobsen @ logiskhave</p><p>Udgivet under <a href="/static/solipsistisk_licens.html">Solipsistisk Offentlig Licens</a></p>
+        </div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>

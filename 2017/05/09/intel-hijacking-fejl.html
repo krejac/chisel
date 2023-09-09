@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+ <meta charset="utf-8">
+ <title>Intel Hijacking fejl | logiskhave</title>
+ <meta name="description" content="Log ajourf&oslash;rt af Kresten Jacobsen.">
+ <meta name="viewport" content="width=720">
+ <link rel="icon" href="/static/favicon.ico">
+ <link rel="apple-touch-icon" href="/static/apple-touch-icon.jpg"/>
+ <link rel="stylesheet" href="/css/theme.css" type="text/css">
+ <link rel="alternate" type="application/rss+xml" title="" href="/rss.xml">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><span>Jeg er</span> <a title="Kolofon" href="/colophon.html">Kresten Jacobsen.</a> <span>Dette er</span> <a title="Log" href="/"> min log.</a></h1>
+        </div><!-- /header --><div class="post">
+		<p class="date">Maj 09, 2017</p>
+    	<h2>
+            
+                Intel Hijacking fejl
+            
+        </h2>
+       	<p><img alt="Chip" src="/static/20170509_chip.jpg" /></p>
+<p>Udemærket intro til det store gabende hul i Intels professionelle chips af David Bisson:</p>
+<blockquote>
+<p>[...] by exploiting this vulnerability, an unauthenticated network attacker could gain system privileges to the AMT or ISM technology. From there, they could abuse their privileges to reboot the system and examine drive contents.</p>
+<p>That's not even the worst part. Linux kernel expert Matthew Garrett elaborates:</p>
+<blockquote>
+<p>"AMT supports providing an ISO remotely. In older versions of AMT (before 11.0) this was in the form of an emulated IDE controller. In 11.0 and later, this takes the form of an emulated USB device. The nice thing about the latter is that any image provided that way will probably be automounted if there's a logged in user, which probably means it's possible to use a malformed filesystem to get arbitrary code execution in the kernel. Fun!"</p>
+</blockquote>
+</blockquote>
+<p>Min arbejdsmaskine <em>havde</em> AMT slået til. Måske jeg lige skal tjekke en kollegas. Remote...</p>
+    </div>
+	<div class="navleft">
+		<a rel="prev prefetch" href="/archive.html">&lsaquo;&nbsp; Til arkivet</a>
+	</div>
+
+        <div id="footer">
+            <p>Kresten Jacobsen @ logiskhave</p><p>Udgivet under <a href="/static/solipsistisk_licens.html">Solipsistisk Offentlig Licens</a></p>
+        </div><!-- /footer -->
+    </div><!-- /container -->
+</body>
+</html>
