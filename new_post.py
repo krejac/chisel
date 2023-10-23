@@ -1,11 +1,13 @@
 #encoding: utf-8
-import urllib, time, os
+import time, os
+import urllib.parse
+
 
 # Ask for post title
-title = raw_input("What do you want title to say? \n> ")
+title = input("What do you want the title to say? \n> ")
 
 # urlencode title
-slug = urllib.quote(title.replace(' ', '-')).lower()
+slug = urllib.parse.quote(title.replace(' ', '-')).lower()
 
 # set date
 ENTRY_TIME_FORMAT = "%d-%m-%Y" # from chisel.py
@@ -18,4 +20,4 @@ with open(file,'w') as f:
     "**[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read)** - ")
 
 # open file
-os.system("atom " + file)
+os.system("code " + file)
